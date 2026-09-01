@@ -41,7 +41,7 @@ function flatten(input: string): string {
 }
 
 export const scrapeArxiv: Scraper = async (source) => {
-  const xml = await fetchText(source.endpoint);
+  const xml = await fetchText(source.endpoint, { expect: 'xml' });
   const feed = await parser.parseString(xml);
 
   const items: RawItem[] = [];

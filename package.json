@@ -23,7 +23,8 @@
     "db:push": "prisma db push",
     "db:migrate": "prisma migrate dev",
     "db:studio": "prisma studio",
-    "capture": "node scripts/capture.mjs"
+    "capture": "node scripts/capture.mjs",
+    "ingest:probe": "tsx worker/diagnose.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.19.3",

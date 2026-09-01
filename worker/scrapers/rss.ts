@@ -63,7 +63,7 @@ function pickUrl(item: ParsedItem, base: string): string | undefined {
 }
 
 export const scrapeRss: Scraper = async (source) => {
-  const xml = await fetchText(source.endpoint);
+  const xml = await fetchText(source.endpoint, { expect: 'xml' });
   const feed = await parser.parseString(xml);
 
   const items: RawItem[] = [];

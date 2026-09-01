@@ -24,6 +24,37 @@ export class FetchError extends Error {
   }
 }
 
+/**
+ * Thrown when a request succeeds but the body is not the kind of
+ * document the caller asked for. This is a real and common failure: some
+ * publishers intermittently answer a feed URL with a cookie-consent
+ * page, and others quietly turn a feed into an HTML index after a
+ * redesign. Both produce a 200 and an unparseable feed, and both deserve
+ * a message that says so rather than a sax error about line 13.
+ */
+export class ContentShapeError extends FetchError {
+  constructor(url: string, expected: string, received: string) {
+    super(`${url} returned ${received} where ${expected} was expected`);
+    this.name = 'ContentShapeError';
+  }
+}
+
+const XML_PROLOGUE = /^\s*(<\?xml|<rss|<rdf:RDF|<feed|<!DOCTYPE\s+rss)/i;
+
+function looksLikeXml(body: string): boolean {
+  // A byte order mark ahead of the prologue is common enough to allow.
+  return XML_PROLOGUE.test(body.replace(/^\uFEFF/, ''));
+}
+
+export type FetchOptions = {
+  /**
+   * 'xml' makes a non-XML body a retryable failure, which recovers from
+   * publishers that intermittently interpose a consent page and gives a
+   * clear diagnosis when a feed URL has genuinely stopped being a feed.
+   */
+  expect?: 'xml' | 'any';
+};
+
 function backoff(attempt: number): number {
   // 500ms, 1500ms, 4500ms. Enough to ride out a brief upstream blip
   // without holding the scheduler open for a source that is properly down.
@@ -32,7 +63,10 @@ function backoff(attempt: number): number {
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-export async function fetchText(url: string): Promise<string> {
+export async function fetchText(
+  url: string,
+  options: FetchOptions = {},
+): Promise<string> {
   let lastError: unknown;
 
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt += 1) {
@@ -70,13 +104,27 @@ export async function fetchText(url: string): Promise<string> {
         );
       }
 
-      return await response.text();
+      const body = await response.text();
+
+      if (options.expect === 'xml' && !looksLikeXml(body)) {
+        throw new ContentShapeError(
+          url,
+          'a feed',
+          body.trimStart().startsWith('<') ? 'an HTML page' : 'a non-XML body',
+        );
+      }
+
+      return body;
     } catch (error) {
       lastError = error;
 
       const status = error instanceof FetchError ? error.status : undefined;
       const retryable =
-        status === undefined || status >= 500 || status === 429 || status === 408;
+        error instanceof ContentShapeError ||
+        status === undefined ||
+        status >= 500 ||
+        status === 429 ||
+        status === 408;
 
       if (!retryable || attempt === MAX_ATTEMPTS) break;
       await sleep(backoff(attempt));
