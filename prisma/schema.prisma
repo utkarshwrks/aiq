@@ -1,0 +1,120 @@
+// AIQuantumOS persistence schema.
+//
+// Three tables carry the Update Panel: the sources we are allowed to
+// read, the items ingested from them, and a log of every ingestion run.
+// The log exists so that "last synced" in the UI is a fact read from the
+// database rather than a value the client invents.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// Where an item came from. Regions are kept as a hard split rather than
+/// a tag because the product treats India as a first-class lens, not as
+/// a filter over a single global feed.
+enum Region {
+  GLOBAL
+  INDIA
+}
+
+/// Coarse subject classification, assigned during ingestion.
+enum Topic {
+  HARDWARE
+  ALGORITHMS
+  POLICY
+  FUNDING
+  RESEARCH_PAPER
+  INDUSTRY
+  EDUCATION
+}
+
+/// How a source is read. Official feeds and APIs are strongly preferred
+/// over HTML scraping; the adapter kind is recorded so the mix is
+/// auditable rather than assumed.
+enum SourceKind {
+  RSS
+  ATOM
+  JSON_API
+  HTML
+}
+
+model Source {
+  id          String     @id @default(cuid())
+  /// Stable slug used by the adapter registry, e.g. "arxiv-quant-ph".
+  slug        String     @unique
+  name        String
+  /// Publisher homepage, shown in the sourcing disclosure.
+  homepage    String
+  /// The feed, API endpoint or index page the adapter reads.
+  endpoint    String
+  kind        SourceKind
+  region      Region
+  /// Two or three letters used as a monogram where no logo is available.
+  monogram    String
+  /// Adapters can be disabled without being deleted, so a source that
+  /// starts misbehaving leaves an auditable record.
+  enabled     Boolean    @default(true)
+  /// Politeness interval in minutes; the scheduler will not read a
+  /// source more often than this regardless of the cron cadence.
+  minInterval Int        @default(180)
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  items       UpdateItem[]
+  runs        IngestionLog[]
+
+  @@index([region, enabled])
+  @@map("sources")
+}
+
+model UpdateItem {
+  id          String   @id @default(cuid())
+  title       String
+  /// Short original paraphrase written during ingestion. Never an
+  /// excerpt: the panel curates and links out, it does not republish.
+  summary     String
+  sourceName  String
+  sourceUrl   String
+  /// SHA-256 of the canonicalised URL. Unique, and the sole basis for
+  /// deduplication across runs and across sources that syndicate.
+  urlHash     String   @unique
+  region      Region
+  topic       Topic
+  publishedAt DateTime
+  ingestedAt  DateTime @default(now())
+  /// Optional author or institution line where the source provides one.
+  byline      String?
+
+  sourceId    String?
+  source      Source?  @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+
+  /// The feed is read by region and ordered by publication date on every
+  /// request, so that pair is the index that matters.
+  @@index([region, publishedAt(sort: Desc)])
+  @@index([topic, publishedAt(sort: Desc)])
+  @@map("update_items")
+}
+
+model IngestionLog {
+  id          String    @id @default(cuid())
+  startedAt   DateTime  @default(now())
+  finishedAt  DateTime?
+  /// Null for a whole-schedule run; set when a single source was read.
+  sourceId    String?
+  source      Source?   @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+  itemsSeen   Int       @default(0)
+  itemsStored Int       @default(0)
+  itemsSkipped Int      @default(0)
+  ok          Boolean   @default(true)
+  /// Truncated error message when a run fails. Kept short on purpose;
+  /// this table is for observability, not for stack traces.
+  error       String?
+
+  @@index([startedAt(sort: Desc)])
+  @@map("ingestion_log")
+}
