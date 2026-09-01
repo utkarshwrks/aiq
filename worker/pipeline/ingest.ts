@@ -1,7 +1,7 @@
 import type { SourceDefinition } from '../../src/lib/sources';
 import type { NormalisedItem, SourceResult } from '../types';
 import { scraperFor } from '../scrapers';
-import { activeClassifier, isQuantumRelevant } from './classify';
+import { activeClassifier, isQuantumRelevant, regionFor } from './classify';
 import { cleanText, parseDate, urlHash } from './normalize';
 import { activeSummariser } from './summarise';
 
@@ -120,7 +120,7 @@ export async function ingestSource(
       sourceName: source.name,
       sourceUrl: entry.url,
       urlHash: hash,
-      region: source.region,
+      region: regionFor(title, summary, source.region),
       topic: activeClassifier(title, summary, source.slug),
       publishedAt: published,
       publishedAtEstimated: parsed === null,

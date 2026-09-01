@@ -191,6 +191,67 @@ function haystack(title: string, summary: string): string {
 }
 
 /**
+ * India signals.
+ *
+ * Word-bounded on purpose: a substring match on "india" also matches
+ * Indiana, and a substring match on "iit" matches nothing useful at all.
+ * Institution and company names are included because a story about IISc
+ * or QNu Labs is an India story whether or not the word India appears.
+ */
+const INDIA_SIGNALS: readonly RegExp[] = [
+  /\bindia(?:n|ns)?\b/i,
+  /\bnational quantum mission\b/i,
+  /\bnqm\b/i,
+  /\biit\b|\biits\b|\bindian institute of technology\b/i,
+  /\biisc\b|\bindian institute of science\b/i,
+  /\biiser\b|\btifr\b|\braman research institute\b/i,
+  /\bc-dac\b|\bcdac\b|\bdrdo\b|\bisro\b|\bbarc\b/i,
+  /\bdepartment of science and technology\b/i,
+  /\bqnu labs\b|\bqpiai\b|\bbosonq\b/i,
+  /\bbengaluru\b|\bbangalore\b|\bhyderabad\b|\bchennai\b|\bpune\b|\bindore\b|\bkanpur\b|\bkharagpur\b|\bnew delhi\b|\bmumbai\b/i,
+  /\bcrore\b|\blakh\b/i,
+  /\btata\b|\binfosys\b|\bwipro\b|\bhcl\b/i,
+];
+
+function countSignals(text: string): number {
+  let hits = 0;
+  for (const signal of INDIA_SIGNALS) {
+    if (signal.test(text)) hits += 1;
+  }
+  return hits;
+}
+
+/**
+ * Decides which lens an item belongs to.
+ *
+ * A publisher's own nationality is the default, but it is not the whole
+ * story: when The Quantum Insider reports on the National Quantum
+ * Mission, that item belongs in the India column, and leaving it in the
+ * global one would make the India lens a list of who published rather
+ * than a lens on the ecosystem.
+ *
+ * The threshold is deliberately asymmetric. A signal in the headline is
+ * enough, because a headline is about its subject. In the body, two
+ * distinct signals are required, so a global story that mentions India
+ * once in passing is not relocated out of the global feed.
+ *
+ * The two lenses stay disjoint: an item appears in one column or the
+ * other, never both.
+ */
+export function regionFor(
+  title: string,
+  summary: string,
+  sourceRegion: 'GLOBAL' | 'INDIA',
+): 'GLOBAL' | 'INDIA' {
+  if (sourceRegion === 'INDIA') return 'INDIA';
+
+  if (countSignals(title) >= 1) return 'INDIA';
+  if (countSignals(summary) >= 2) return 'INDIA';
+
+  return 'GLOBAL';
+}
+
+/**
  * True when an item plausibly concerns quantum computing. Applied only
  * to sources flagged as general-interest; a quantum-specific feed is
  * trusted on its own subject.
