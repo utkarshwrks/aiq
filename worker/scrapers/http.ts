@@ -79,8 +79,15 @@ export async function fetchText(
         redirect: 'follow',
         headers: {
           'User-Agent': USER_AGENT,
+          // Feed requests must not advertise text/html. Several
+          // publishers content-negotiate on this header and will serve
+          // the human landing page - or a cookie-consent interstitial -
+          // to any client that says it accepts HTML, which is how a feed
+          // URL comes back as an unparseable web page.
           Accept:
-            'application/rss+xml, application/atom+xml, application/xml, text/xml, text/html;q=0.9, */*;q=0.5',
+            options.expect === 'xml'
+              ? 'application/rss+xml, application/atom+xml, application/xml;q=0.9, text/xml;q=0.9, */*;q=0.1'
+              : 'text/html, application/xhtml+xml, */*;q=0.5',
           'Accept-Language': 'en',
         },
       });
