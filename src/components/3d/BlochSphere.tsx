@@ -6,9 +6,8 @@ import { BlochSphereScene } from './BlochSphereScene';
 import { BlochSphereStill } from './fallbacks/BlochSphereStill';
 import { cn } from '@/lib/cn';
 import {
-  anglesToAmplitudes,
   clampTheta,
-  formatAmplitude,
+  formatState,
   probabilityOne,
   probabilityZero,
   toDegrees,
@@ -51,7 +50,7 @@ export function BlochSphere({
 }: BlochSphereProps) {
   const [angles, setAngles] = useState<BlochAngles>(initial);
 
-  const amplitudes = useMemo(() => anglesToAmplitudes(angles), [angles]);
+  const state = useMemo(() => formatState(angles), [angles]);
   const p0 = probabilityZero(angles);
   const p1 = probabilityOne(angles);
 
@@ -124,11 +123,7 @@ export function BlochSphere({
 
           <div className="col-span-2 bg-inset px-4 py-3 md:col-span-4">
             <p className="label-caps mb-1.5">State</p>
-            <p className="data text-[length:var(--text-sm)] text-ink">
-              {amplitudes.alpha.toFixed(3)} |0&gt;
-              {'  +  '}
-              {formatAmplitude(amplitudes.betaRe, amplitudes.betaIm)} |1&gt;
-            </p>
+            <p className="data text-[length:var(--text-sm)] text-ink">{state}</p>
           </div>
         </div>
       )}

@@ -95,14 +95,35 @@ export function probabilityOne(angles: BlochAngles): number {
 }
 
 /**
- * Formats an amplitude the way it would be written on a whiteboard:
- * a real part, then a signed imaginary part, both to three decimals.
+ * Formats a complex amplitude the way it would be written on a
+ * whiteboard: a real part, then a signed imaginary part, three decimals
+ * each. A genuinely complex value is parenthesised so that a negative
+ * real part does not read as "+ -0.367" once it is placed after the
+ * addition in the state expression.
  */
 export function formatAmplitude(re: number, im: number): string {
   const r = re.toFixed(3);
   if (Math.abs(im) < 5e-4) return r;
   const sign = im < 0 ? '-' : '+';
-  return `${r} ${sign} ${Math.abs(im).toFixed(3)}i`;
+  return `(${r} ${sign} ${Math.abs(im).toFixed(3)}i)`;
+}
+
+/**
+ * The full single-qubit state as it would be written out, e.g.
+ * `0.844 |0> + (-0.367 + 0.391i) |1>`. Terms whose amplitude rounds to
+ * zero are dropped rather than printed as `0.000 |1>`.
+ */
+export function formatState(angles: BlochAngles): string {
+  const { alpha, betaRe, betaIm } = anglesToAmplitudes(angles);
+  const betaMagnitude = Math.hypot(betaRe, betaIm);
+
+  const terms: string[] = [];
+  if (alpha >= 5e-4) terms.push(`${alpha.toFixed(3)} |0>`);
+  if (betaMagnitude >= 5e-4) {
+    terms.push(`${formatAmplitude(betaRe, betaIm)} |1>`);
+  }
+
+  return terms.join(' + ');
 }
 
 /** Radians to degrees, rounded, for the angle readouts. */
