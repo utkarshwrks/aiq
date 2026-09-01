@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-01T21:13:48.744Z",
-  "sourceCount": 35,
-  "feedSourceCount": 25,
+  "generatedAt": "2026-09-01T21:16:25.080Z",
+  "sourceCount": 37,
+  "feedSourceCount": 27,
   "global": [
     {
       "id": "eb329b048d4a6c4140a4d283",
@@ -14,7 +14,7 @@
       "topic": "HARDWARE",
       "publishedAt": "2026-09-01T17:00:02.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
       "id": "b59af070391a2e3b9ec9c22c",
@@ -27,7 +27,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T16:08:57.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Mohib Ur Rehman"
     },
     {
@@ -41,7 +41,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T15:22:56.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -55,7 +55,7 @@
       "topic": "HARDWARE",
       "publishedAt": "2026-09-01T15:08:38.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -69,7 +69,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T13:59:29.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Mohib Ur Rehman"
     },
     {
@@ -83,7 +83,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T12:59:34.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Mohib Ur Rehman"
     },
     {
@@ -97,7 +97,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T10:21:38.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Resonance"
     },
     {
@@ -111,7 +111,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T03:07:43.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -125,7 +125,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T02:57:54.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -139,7 +139,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:59:59.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Doojin Kim"
     },
     {
@@ -153,7 +153,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:59:12.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Jean-Yves Desaules"
     },
     {
@@ -167,7 +167,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:55:49.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "David Roberts"
     },
     {
@@ -181,7 +181,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:54:47.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Marco Paradina"
     },
     {
@@ -195,7 +195,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-08-31T13:20:07.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
       "id": "c179c07c76bb08ca3b68c388",
@@ -208,7 +208,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-08-31T12:05:06.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
       "id": "eef207b696162dce2c5e88fc",
@@ -221,7 +221,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-08-31T12:00:02.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
       "id": "020d3cbb82032ebaa9c12afd",
@@ -234,7 +234,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-08-30T13:00:02.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
       "id": "69ba74aae811b4b6b8c69ff7",
@@ -247,7 +247,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-08-27T20:21:27.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
       "id": "c03947b267cf6555ea5c7f35",
@@ -260,7 +260,7 @@
       "topic": "FUNDING",
       "publishedAt": "2026-08-27T20:07:48.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
       "id": "009bbaabebcb3a1fa488ec62",
@@ -273,7 +273,7 @@
       "topic": "POLICY",
       "publishedAt": "2026-08-25T12:05:00.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
       "id": "187c6d7fd2c743a531781ffb",
@@ -286,7 +286,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-08-12T14:00:01.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Lucas Laursen"
     },
     {
@@ -300,7 +300,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-08-05T16:46:11.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Martin Schuetz"
     },
     {
@@ -314,7 +314,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-08-05T12:00:00.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
       "id": "c1367e53802f9d149391e5cd",
@@ -327,7 +327,7 @@
       "topic": "ALGORITHMS",
       "publishedAt": "2026-07-31T14:00:01.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Edd Gent"
     },
     {
@@ -341,7 +341,7 @@
       "topic": "ALGORITHMS",
       "publishedAt": "2026-07-23T20:03:07.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Mao Lin"
     },
     {
@@ -355,7 +355,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-07-20T18:38:09.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Dimitar Trenev"
     },
     {
@@ -369,7 +369,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-07-18T13:00:01.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Charles Q. Choi"
     },
     {
@@ -383,7 +383,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-07-17T16:21:26.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Tyler Takeshita"
     },
     {
@@ -397,7 +397,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-07-07T13:30:01.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Charles Q. Choi"
     },
     {
@@ -411,7 +411,7 @@
       "topic": "HARDWARE",
       "publishedAt": "2026-06-02T18:30:00.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Chetan Nayak"
     },
     {
@@ -423,9 +423,9 @@
       "sourceSlug": "quantinuum-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:41.608Z",
+      "publishedAt": "2026-09-01T21:16:03.316Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
       "id": "383f4e3488422ce0f27e425a",
@@ -436,9 +436,9 @@
       "sourceSlug": "quantinuum-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:41.608Z",
+      "publishedAt": "2026-09-01T21:16:03.316Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
       "id": "e6873483f46f9903223c7b93",
@@ -449,9 +449,9 @@
       "sourceSlug": "quantinuum-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:41.608Z",
+      "publishedAt": "2026-09-01T21:16:03.316Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
       "id": "87b21d2190305b935b78c8d2",
@@ -462,9 +462,9 @@
       "sourceSlug": "ionq-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:38.709Z",
+      "publishedAt": "2026-09-01T21:16:00.486Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
       "id": "b8dd0aa06e1a2797f20b0137",
@@ -475,9 +475,9 @@
       "sourceSlug": "ionq-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:38.709Z",
+      "publishedAt": "2026-09-01T21:16:00.486Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
       "id": "7c454321b48663414deb0cff",
@@ -488,9 +488,48 @@
       "sourceSlug": "ionq-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:38.709Z",
+      "publishedAt": "2026-09-01T21:16:00.486Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "0f56abf9b7bd700aede21568",
+      "title": "Ponder This Challenge - August 2026 - The Wheel of Buttons",
+      "summary": "",
+      "sourceName": "IBM Research",
+      "sourceUrl": "https://research.ibm.com/blog/ponder-this-august-2026",
+      "sourceSlug": "ibm-research",
+      "region": "GLOBAL",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-09-01T21:15:45.459Z",
+      "publishedAtEstimated": true,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "0b382f80a4556fb93787c8e9",
+      "title": "Researchers demonstrate quantum advantage through trusted quantum computation",
+      "summary": "",
+      "sourceName": "IBM Research",
+      "sourceUrl": "https://research.ibm.com/blog/quantum-advantage",
+      "sourceSlug": "ibm-research",
+      "region": "GLOBAL",
+      "topic": "ALGORITHMS",
+      "publishedAt": "2026-09-01T21:15:45.459Z",
+      "publishedAtEstimated": true,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "4a3fb7da96a036201e89aac7",
+      "title": "Bringing a common language to AI evaluation",
+      "summary": "",
+      "sourceName": "IBM Research",
+      "sourceUrl": "https://research.ibm.com/blog/every-evaluation-ever",
+      "sourceSlug": "ibm-research",
+      "region": "GLOBAL",
+      "topic": "FUNDING",
+      "publishedAt": "2026-09-01T21:15:45.459Z",
+      "publishedAtEstimated": true,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
       "id": "d2be280c7b86937beda91ad1",
@@ -501,48 +540,9 @@
       "sourceSlug": "ibm-research",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:23.629Z",
+      "publishedAt": "2026-09-01T21:15:45.458Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
-    },
-    {
-      "id": "983650f086861205556b8b7f",
-      "title": "What happens when information theory accounts for reasoning?",
-      "summary": "",
-      "sourceName": "IBM Research",
-      "sourceUrl": "https://research.ibm.com/blog/information-theory-meaning",
-      "sourceSlug": "ibm-research",
-      "region": "GLOBAL",
-      "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:23.629Z",
-      "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
-    },
-    {
-      "id": "73bf5f0a5e568aac24ba2405",
-      "title": "Ponder This Challenge - September 2026 - Loeschian Arithmetic Progressions",
-      "summary": "",
-      "sourceName": "IBM Research",
-      "sourceUrl": "https://research.ibm.com/blog/ponder-this-september-2026",
-      "sourceSlug": "ibm-research",
-      "region": "GLOBAL",
-      "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:23.629Z",
-      "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
-    },
-    {
-      "id": "448fa331923f48e1b43667b0",
-      "title": "Qiskit Fermions: a modular toolbox for fermionic systems",
-      "summary": "",
-      "sourceName": "IBM Research",
-      "sourceUrl": "https://research.ibm.com/blog/qiskit-fermions",
-      "sourceSlug": "ibm-research",
-      "region": "GLOBAL",
-      "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:23.629Z",
-      "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
       "id": "bf47f6cb92e5ec07b1f6143b",
@@ -555,7 +555,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T09:19:03.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Resonance"
     },
     {
@@ -569,7 +569,7 @@
       "topic": "ALGORITHMS",
       "publishedAt": "2026-09-01T09:05:00.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Matt Swayne"
     },
     {
@@ -583,7 +583,7 @@
       "topic": "HARDWARE",
       "publishedAt": "2026-09-01T08:35:00.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Matt Swayne"
     },
     {
@@ -597,7 +597,7 @@
       "topic": "POLICY",
       "publishedAt": "2026-09-01T08:03:44.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Matt Swayne"
     },
     {
@@ -611,7 +611,7 @@
       "topic": "EDUCATION",
       "publishedAt": "2026-09-01T07:46:46.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Matt Swayne"
     },
     {
@@ -625,7 +625,7 @@
       "topic": "FUNDING",
       "publishedAt": "2026-09-01T02:46:49.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -639,7 +639,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T02:06:57.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -653,7 +653,7 @@
       "topic": "HARDWARE",
       "publishedAt": "2026-09-01T01:59:11.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -667,7 +667,7 @@
       "topic": "HARDWARE",
       "publishedAt": "2026-09-01T01:49:18.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -681,7 +681,7 @@
       "topic": "HARDWARE",
       "publishedAt": "2026-09-01T01:33:57.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -695,7 +695,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-08-31T22:03:02.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Matt Swayne"
     },
     {
@@ -709,7 +709,7 @@
       "topic": "POLICY",
       "publishedAt": "2026-08-31T19:59:01.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Doug Finke"
     },
     {
@@ -723,7 +723,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:26:27.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Snehal Raj"
     },
     {
@@ -737,7 +737,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:17:49.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Andrea Coladangelo"
     },
     {
@@ -751,7 +751,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:03:30.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Zicheng Zhang"
     },
     {
@@ -765,7 +765,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:02:10.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Holly G. Stemp"
     },
     {
@@ -779,7 +779,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:00:03.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Aitor Balmaseda"
     },
     {
@@ -793,7 +793,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:00:00.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Dario Cilluffo"
     },
     {
@@ -807,7 +807,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T16:53:42.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Guocheng Zhen"
     },
     {
@@ -821,11 +821,171 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T16:53:17.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:13:48.744Z",
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
       "byline": "Parameshwar R. Pasnoori"
     }
   ],
   "india": [
+    {
+      "id": "00e59f5a75252b81e5e2ccf1",
+      "title": "National Conference on Quantum Biotechnology Charts India's Path in Quantum-Enabled Life Sciences",
+      "summary": "",
+      "sourceName": "Voice of Healthcare",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPRDQtd3M3YTlVOEJwYW0yTmo3ZmhYQmxlZXM3bDlJcHRJdXAteWxsbGp1SkcwYklla0pnNDF5cGlwLVBRNVQxRnZ4a1NoWUdWTVY3U0pEU0RGNTdidTlNeFpLaU5Sc0lEQmNINTNiZHJxX2FtNm1MdWZ1V1BVdmMwY012a3lvVmtjdHYyMkU0bjFNYjdXNDdSR09OcEdvRUJ0NERXRlRiVnhOS2ZDSGYwQ3JjRjVnMjdfaXlIaDU3dWpKdlB1LVhKME92T2Y?oc=5",
+      "sourceSlug": "news-search-nqm",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-09-01T06:34:55.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "32d5e4b4dc09df5c86f0f27c",
+      "title": "Amaravati to get India's first dedicated Quantum and AI University Campus",
+      "summary": "",
+      "sourceName": "Elets Technomedia",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQaGVyb3NJVFpiNzg0ZGZxbllCMnBhT0FzX3NZM1VidDdJUUdmVGRmMURQZEhpdkRlOTJLcGRFalQ2a3hScTNnS25Xd1EyVFlsNlhLNUFvckttRGRyOE1CclVFdmd6ekRRZ2lZX3RVZDhDYjdlOUd4Nk1YbDl3STJsR1FPbmlyd2x5NU5sZ3l1NTBtYld0TTAza0VjVmNCcDlWT0Y4WlZsQThDUHlQaGJ3eEV2TmExX1dzbEpFaXlB?oc=5",
+      "sourceSlug": "news-search-india-quantum",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-09-01T05:16:19.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "74f69619e8bfd565446d2b0a",
+      "title": "IISc sets up unit to boost quantum computing",
+      "summary": "",
+      "sourceName": "The New Indian Express",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcENKcFM2djBVNzgyTW1Naks5aUt1X2o0eG1ZVFVEM2VESjVvUGloTlJrS0d5SzhTOXdJTVNzZm4yM1k5WUFQaGViUVVjdVllY0F4SzlINFJVNkZKTl9vbElUNTdmTFpzbEtrTW9KdzhvWWFSbXNBZ0Q2eEUwRWp3ZmZPVG4zZUVPa1E4NzhobXk2U3A3djJaeUJQbk0wdWloWGd6SXlPWG9Ud9IBtwFBVV95cUxPZkVsVzVteVlEZy1ia3gwY2Z4VGZPWE1lbFROYjl1ZXVKa19KZ1FJN19EUFd3dV8xbnIza2lxZGhRaUExTTBXb0pPYW5nVUhyTFFJdnpGMVd3aFNvX3J5dUZWeXlLWmNsdzlkYXlNa1VvdXBpS1hIZmZiejY3T1I3Q1Jfb3BkV0hZN2NqZ2FhNEZtX1NfOEc1ZjBKbDRZWnZwOVg4aHpGTlBfenAzb051NUhyeHlnMmc?oc=5",
+      "sourceSlug": "news-search-india-quantum",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-09-01T01:49:05.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "529a117704cbd025873043ad",
+      "title": "India achieves 1,000-km quantum communication milestone under National Quantum Mission: Jitendra Singh",
+      "summary": "",
+      "sourceName": "DD News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNbGg1OWJrVTVjcl9vQS1maVNzaXhpVmFSakdSck95c2ZJQmhTOTZRVnVfZFhXVFhKM19vMm5aUTBhMDZZTllqS29kSlBYaXZTZjdPTDVFU0MtSzk0LTJ3TDlHbXRhdkU5NEZqZEU1YlBtUmRDYmE1b01tU2MzOEZXYWVzendLRE9rMkRtczFUQUYtMWZLUHFNNDhOUHBGWFNUV1dqdlZlUzV1NFltM0xfd29ad1JNMUhxT05qaGVqaUJhOXAw?oc=5",
+      "sourceSlug": "news-search-nqm",
+      "region": "INDIA",
+      "topic": "POLICY",
+      "publishedAt": "2026-08-31T19:25:30.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "0cef904c52cb544b3b52792e",
+      "title": "IISc sets up quantum computing hub under National Quantum Mission",
+      "summary": "",
+      "sourceName": "The Times of India",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZzdQaXFyTkxNdW9JSTZISVY3YWh1VGdDUjhNZHFGWnNZSlRxYWdMWk9SNmZsQjZDb1FXaEJVcnI0Z0VPZFg5cjhnaVBkSEJscVZ1Xzd1ZkFaaHlacjd5MkVxcnFRc2I2QTVHaUM0akJjaDlteDFuTFB5SzdKQmg2ZWtIUzBLYlVLRjJHSjZtNnU0LWc4MElrNTIwNFMzeVpFLWMtcmg2dXMzM3pTMTJnQ1o4a0NhOWkyUmhTaHB3ZGdKMjc0SVppUWNPSFNtZ9IB0wFBVV95cUxPMVY4TTA3QXVSM0xTYlNIVUtlTFNJdXJSSi1JTjM0UjVieS1PRFBuSUp5YW40Z2dZU3pORDFzSUpBSzlCUno5Rkw3ZFFaMjdZUEZTNVBPUXZ1bUpRbnZkWGVReW5nUlVjdXM3MjA5Ql9vZWxFQ3VzaEVfaG51eVNNN2IzbnQ0b1JsY3Vta2VkQlRjWkJwNHdSTHliZnFUeGpGdnhTeHExdkVRbV9Ed1VBV1RfQXVrOHRieHhHUVNWZElMZEtpb09mTjRwQzhmM2RCb3g0?oc=5",
+      "sourceSlug": "news-search-nqm",
+      "region": "INDIA",
+      "topic": "POLICY",
+      "publishedAt": "2026-08-31T11:02:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "049ab03673c22e913ee5098f",
+      "title": "Amaravati to Get India's First Dedicated Quantum and AI University Campus",
+      "summary": "",
+      "sourceName": "CXO Digitalpulse",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxONG9vYzVJcFBXYXdDbkNKSjBWVzd4LXdiMWZ0TVNFNGpiZHRrSm5LeGw3Tko1QlZPQ3BVVnNyTGpXbGhsSHl2aWZsT1E1NnlIM210NzNOMWxCOU9TcTRUaHJkNHAtenJFSWZsay1kMnFlNWNPQVU3LUhTWUkwX0hvQUJHM3VxRThVei1xVjk4RW5uR1U3OEw2Z3Ytejcwd3ZPVjVONFo2clU?oc=5",
+      "sourceSlug": "news-search-india-quantum",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-08-29T10:13:04.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "8d96300a33068b3deab9d47a",
+      "title": "Andhra Pradesh CM Approves India's First Dedicated Quantum & AI University Campus in Amaravati",
+      "summary": "",
+      "sourceName": "itvoice.in",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNd18xVnpYeHFyQkswUjZQRkp0NURuQ3pwanBVSmoxZEFZdi1FUDlyM2s3dlNZbHp3WXRFa01PVWE2ZnVfZ3ZkbWhURXp5UDMzUHVjRGt6MXBSeDluc1lYNkNJSnNSeXJETTZVcE5ZVU5DNXNNZzAwZmwtWkRtNWpGVUVocC10Y0Qyd2VwbFlYejM2Q1pubm9jclhUdHNVMGNtOGxSQkhaM1JVTWdhZ3pDMDJxMnU?oc=5",
+      "sourceSlug": "news-search-india-quantum",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-08-29T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "1533a0dfbf78c43630b7ea84",
+      "title": "India to Establish Quantum and AI University Campus in Amaravati",
+      "summary": "Insider Brief Andhra Pradesh Chief Minister N.",
+      "sourceName": "The Quantum Insider India",
+      "sourceUrl": "https://thequantuminsider.com/2026/08/28/india-quantum-ai-university-campus-amaravati/",
+      "sourceSlug": "quantum-insider-india",
+      "region": "INDIA",
+      "topic": "POLICY",
+      "publishedAt": "2026-08-28T12:43:51.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
+      "byline": "Mohib Ur Rehman"
+    },
+    {
+      "id": "cc04f1b10f70d0214338644b",
+      "title": "NIELIT To Establish Quantum And AI University In Amaravati",
+      "summary": "",
+      "sourceName": "Rediff",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOb1JOX29TQTd6SXNUbm1ZRnJJbWVRazFvQkczQURQTXFhZ1NVVDZWbWpvMk5ySDJndGk5UzBMejh5SjNCZ1JFVlh6bF9xa283ZXZYZEVVZnZYQmNSWGFJZ0k2V0tCaEJ2eHRPZHkzby1DYmUtZ1Zrc3JWSlVaNVlxb3dITlBpNDBUd2l0ZDg5YTFaUzZYdlJjSTAzRGJqZFdiOG1tStIBpwFBVV95cUxPZ2NTVFRrOHlYaEM0bUZ0Tm93YkY2MWttTGhMREJYTFF1NUxsc21YY1Q2R2RRQ0R5a2NDS19BNGkxV0JIakxnR3V5anljXzJQMXBIU2Fhb0FnR3FOM3BGX0ZkQlFnVElwX29sTk1kQndGd1ZhVXVCMVM3anBEMUE1WGo1T2piYjEzT0ZxejkwYy1SY3puU252dkxBd2NTZjR3a0Y4XzFXZw?oc=5",
+      "sourceSlug": "news-search-nqm",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-08-28T05:35:54.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "2bcaafa130c667ae0d859b72",
+      "title": "Amity Opens New York Research Hub for India-US Technology Collaboration",
+      "summary": "Insider Brief Press release - In a significant step towards strengthening India-United States collaboration in science, technology and innovation, the Amity Global Research Hub...",
+      "sourceName": "The Quantum Insider India",
+      "sourceUrl": "https://thequantuminsider.com/2026/08/25/amity-global-research-hub-new-york-india-us/",
+      "sourceSlug": "quantum-insider-india",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-08-25T12:21:16.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
+      "byline": "Mohib Ur Rehman"
+    },
+    {
+      "id": "6f42c3842b55af502dfd30b6",
+      "title": "India Highlights 6G and Quantum Communications as Technology Priorities",
+      "summary": "Insider Brief India has an opportunity to create an impact in sixth-generation (6G) technology, quantum communications, and quantum security, Minister of State for...",
+      "sourceName": "The Quantum Insider India",
+      "sourceUrl": "https://thequantuminsider.com/2026/08/25/india-6g-quantum-communications-development/",
+      "sourceSlug": "quantum-insider-india",
+      "region": "INDIA",
+      "topic": "POLICY",
+      "publishedAt": "2026-08-25T10:41:29.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
+      "byline": "Mohib Ur Rehman"
+    },
+    {
+      "id": "687401be394d4967eb70429c",
+      "title": "QpiAI Opens Quantum Chip Foundry in India, Targets 10,000-Qubit Processors",
+      "summary": "Insider Brief Quantum computing startup QpiAI has opened a manufacturing facility in Bengaluru capable of fabricating superconducting quantum processors, part of an effort to...",
+      "sourceName": "The Quantum Insider India",
+      "sourceUrl": "https://thequantuminsider.com/2026/08/17/qpiai-opens-quantum-chip-foundry-in-india-targets-10000-qubit-processors/",
+      "sourceSlug": "quantum-insider-india",
+      "region": "INDIA",
+      "topic": "HARDWARE",
+      "publishedAt": "2026-08-17T11:08:06.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z",
+      "byline": "Matt Swayne"
+    },
     {
       "id": "2b4f8d97f4ffcf0360abba08",
       "title": "2029 Is the New 2035: The Post-Quantum Deadline Just Moved Up",
@@ -835,9 +995,9 @@
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:48.153Z",
+      "publishedAt": "2026-09-01T21:16:24.440Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
       "id": "6b3a300322462f2408029e41",
@@ -848,9 +1008,9 @@
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:48.153Z",
+      "publishedAt": "2026-09-01T21:16:24.440Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
       "id": "36d283fe9fd692fb2d526170",
@@ -861,9 +1021,9 @@
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:48.153Z",
+      "publishedAt": "2026-09-01T21:16:24.440Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
       "id": "edf9b8995038f68cf1848ffb",
@@ -874,191 +1034,581 @@
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:48.153Z",
+      "publishedAt": "2026-09-01T21:16:24.440Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
-      "id": "6ffabcabc044b8ab780e2dfd",
-      "title": "How to Build a Cryptographic Agility Roadmap",
+      "id": "ac5c5f18e37f065b82ca880c",
+      "title": "Amaravati to get India's first dedicated university for quantum tech, AI and other deep-tech fields",
       "summary": "",
-      "sourceName": "QNu Labs",
-      "sourceUrl": "https://qnulabs.com/blog/cryptographic-agility-roadmap",
-      "sourceSlug": "qnu-labs",
+      "sourceName": "ThePrint",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOTl84SWVDVTdfMjBRWk1UWWVnV2ktYnRVck10eVcybzFHSXFBMGFsRXNYd2luMzNFeGkybEZRNnVjUzE3UnJXLTRxU2Z5NU54SlphTlU4TF80cS1TclpkNHRNYlRhV0lfdXp1VlNUTEJvM1Y5SldkTEtlb2VqSnhZOUdsZjBLbkxVME5MQzFvMnZ4QlVJb0tRcXByUjRiSTM1N2FlQk9oblF4LVRqZTdDb1FKWEgwU05aRzNUZHR5c1ZrakJUNzFSN1JRMNIB0AFBVV95cUxOQ1dzWlE2aTRUVWNiUlhRNE1KYVJ5ZGpyUk9JQXB2S21pTTl1UnY3V18wMUJHRWRCNER4U2N2RXN3bFhqSXJFck0zVDZkTWhKdXpMMFhZdTZGRFhTX3RlUnpMMzBvdURuTnlhbktPOGN1M2V2dWM1QW1TUzlocGw0TDFoTkFsSUhfT3hINlBYOEJBUGE2ak04XzRKanFWc01IRkFEekhadlplcWc3OFZIeWV2RmUwM25sS1E2X1FjM0p3ZjF5VFpuY1lDXzFNM0RY?oc=5",
+      "sourceSlug": "news-search-india-quantum",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:48.153Z",
-      "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "publishedAt": "2026-08-29T03:44:07.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
-      "id": "8c666632d86821519d9c4ad1",
-      "title": "What Is a PKI Certificate? The Complete Guide",
+      "id": "0974f0aeb8ef80ac5e6f6969",
+      "title": "India's First Quantum and AI University to Be Built in Amaravati: Classes to Begin in September 2026",
       "summary": "",
-      "sourceName": "QNu Labs",
-      "sourceUrl": "https://qnulabs.com/blog/what-is-pki-certificate",
-      "sourceSlug": "qnu-labs",
+      "sourceName": "jagranjosh.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNUE4xSU5uMVl5MFY0RDNXQk1GTF92OWtsclZzNWhBVnRnTnBOSkYxcUVucU44QlNmdlAzRWoySmFHb0JFQXZEOUlMb08zcHlpX205dTNvcHQzdjNJb0RoV2xpODNUUkplcENCYzVCSUt5MXJDWHB2Yk1MVmZMUEg4ZzNjTjZMSWJiaTJESDQzSzY4Y19UYjFCNWhfam14NmlvcmxZbGp2eDBSeHJQOXN5XzJseVFKVnFSUHpPLVd5Zm0tNkZacUFMRFZDcmJTQm5lV2VGSGZUeFpkNTJHN2pxNkltTHUwX19LWU9kWtIB8wFBVV95cUxNN3FDaWwyMEJJLUJ0d1p1cktFaGhRSWVoNWE3VFlHdFc0WTNaUnVYV0N1WXNtMThLWW9ZdkJKNzFWQ1U3UE44MUlLNUdTT0dQamphYkkwRGxvdExQbTB3TnJhRFVTQm03VkRPUFlGdmNreEFoUjhUX0NiMnhwcHdKZGRuZkFzcTg1UVh0d0NfUWNPSC14cFg3Q19NNnNUNjhkSUVMNk10QUNCWTU4R0I0RTRfNTF4R29IeW5LQ3g5RnA4OTFCWmVCYXVuaGRldHhSaExFOXh0WTZGZmxkU0VOTDVPb1J1M0V6Z0JJQnA4MGNqOW8?oc=5",
+      "sourceSlug": "news-search-india-quantum",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:48.153Z",
-      "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "publishedAt": "2026-08-28T15:10:11.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
-      "id": "8aaec6e1e8be58f8beaf80c7",
-      "title": "What Is Quantum Encryption? How Does it Work?",
+      "id": "49c45498c9733e2807004037",
+      "title": "India to Establish Quantum and AI University Campus in Amaravati",
       "summary": "",
-      "sourceName": "QNu Labs",
-      "sourceUrl": "https://qnulabs.com/blog/what-is-quantum-encryption",
-      "sourceSlug": "qnu-labs",
+      "sourceName": "The Quantum Insider",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNnFxbnRLNU40ZWE3a19faVVFRFduMHlkdkZKRjJXVkNhTXlheUtuZlJvMHdQeDJsV21hR1pHQmhmODRDT3lxNjZpN3ZralFwZXVhZGNkdkdhNndDdmkzdjNIdHI4c3ZaWHIxOEduTlNadDJyWjlpbFk3blNiOUk0aEp3N3k1YWNLeU9ia1NnTQ?oc=5",
+      "sourceSlug": "news-search-india-quantum",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:48.153Z",
-      "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "publishedAt": "2026-08-28T14:04:46.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
-      "id": "e66a51192446929bc0ae5800",
-      "title": "Post Quantum Cryptography Migration: A Complete guide",
+      "id": "360b4f5e7658738fcf4f64cb",
+      "title": "Quantum Computing: AI's Next Frontier",
       "summary": "",
-      "sourceName": "QNu Labs",
-      "sourceUrl": "https://qnulabs.com/blog/guide-to-pqc-post-quantum-cryptography-migration",
-      "sourceSlug": "qnu-labs",
+      "sourceName": "Rediff",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUEU4ZXUyQi1HaDBBRnhVTno2MnN2clVBNC1qLVJDZlp6TDZhNWtZYWxwZm1zZThsZjZtX0p2NDRuem83enB0dVhhWTlFUkhkUVZDR1ZVcDlQTlV6R0EyODktamQ3SHRzT3JjM2pQNy1hWlpOX1VnZDRMSnhkRU1CdWc4OGx5NGpZN2NlVjliNDRpWVYxbUtV0gGaAUFVX3lxTE5DZGstbE5EbmNDbG9HcWZDcWQ0UGxULXEtemc4cnVseFZiVzB4N09uRFpLOC1QdndDaGZ4aV9mZkt6T0dubDRaTHBrZXZnbDlFUUVTVzUxODRCZmNENXNfVUd5T3FfYk0wQU5hVDZJc1dwUEhHOFR1QkFZR1NrdnM2V1FndEtFV1JpTWdKakd0Z0dDaGNHckdXSGc?oc=5",
+      "sourceSlug": "news-search-india-quantum",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:48.153Z",
-      "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "publishedAt": "2026-08-28T12:23:39.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
-      "id": "5af40f2090c05b2646fd1ba6",
-      "title": "PQC HSM: How Hardware Security Modules Fit Into Post-Quantum Migration",
+      "id": "058c27490bd8795772be0378",
+      "title": "Amaravati is getting India's first Quantum and AI university",
       "summary": "",
-      "sourceName": "QNu Labs",
-      "sourceUrl": "https://qnulabs.com/blog/pqc-hsm",
-      "sourceSlug": "qnu-labs",
+      "sourceName": "yourstory.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPay1EYVhmdUVGVzNlUElmRmZOelpjQ2dsOUlGcnpnSkdTU21oaEdzOHJ0S0tCY21ONkpiQ21fSVlleVFDWkRsLVJOT09oWGNnRU9qSUtDSFZXODFtLXZiN210RE4zTHhkVEl1UUVwMEw4MlNBWXhYTzkxVGZqcmlrWg?oc=5",
+      "sourceSlug": "news-search-india-quantum",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:48.153Z",
-      "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "publishedAt": "2026-08-28T11:51:21.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
-      "id": "765e292a152ab6ebf5392ddb",
-      "title": "Hybrid Cryptography for the Post Quantum Era",
+      "id": "15b025af83bd80efc79ec48c",
+      "title": "Inside India's First Quantum-AI University: Amaravati's Rs 730-Crore Bet",
       "summary": "",
-      "sourceName": "QNu Labs",
-      "sourceUrl": "https://qnulabs.com/blog/hybrid-cryptography",
-      "sourceSlug": "qnu-labs",
+      "sourceName": "NDTV",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUl9hTGtQVFRsMEROTVRFTDQ1S0p4clpGUzcxMnpPdjhZZ1dxQ0tSMDZHWDJzQ2dzRjNFMXp3Z0RmNWZBYVRzZm5XcHlIcHpWNmpBb3ZsM2FDcnV3ajh1SGh3OHBxSE96WW12OWdkNldFdVFZaFZPMks4ZndLVzFWTzYydE03NmgzN1E4TFJtWlQtV3dSSTRxNjhCeS1VcVQyMEpYWlo5akxXQUs5MElLak9MVWpJMXZFVG5JMdIBxAFBVV95cUxOUjhpYURKd2hYVXJQUFRpc0o4MXF1VUxtTTNnYmk4eGhGVmZmZVVORXMtRmxKYy1ZMlRfeGhJSzlGTDZDOHcteW5IMXF0c3podDc5d0t3bGtha3dVNThXczlNc2JJd251Y3BabzVzUm9EVkNua0kxak1OWm5uSDhTS2RkOTZ4c2NIZFNqN0lFLWRzWWtfUlVsaWFEc1VPRUxEVlp6RTdBX05aNEJSVnlNX1VSckZaTTBLMURSUE9zYmVCWGI3?oc=5",
+      "sourceSlug": "news-search-india-quantum",
       "region": "INDIA",
-      "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:48.153Z",
-      "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "topic": "FUNDING",
+      "publishedAt": "2026-08-28T08:43:11.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
-      "id": "dca4047b6c9731ed9badd95c",
-      "title": "PQC vs Classical Cryptography: What Changes for Enterprise Security?",
+      "id": "f4b0358ce1e5a063341a1988",
+      "title": "Amaravati to get India's first Quantum & AI varsity",
       "summary": "",
-      "sourceName": "QNu Labs",
-      "sourceUrl": "https://qnulabs.com/blog/pqc-vs-classical-cryptography",
-      "sourceSlug": "qnu-labs",
+      "sourceName": "The New Indian Express",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOeEhlVm0wSWlYWUdkaHMzTnU0YjZ6WVJ2RHdzLVJ5OXk3a2RVeHQ3eVlpNWltbkxFQ3NfLXNodG1scDVSMEFqVHFNREdFX2xYbDdBVlJmSEVISEZXWXVZbnhSSm1QcjZxWjY0NmlJbWZnR202a0U5T256Y01hbWUtb2NJQnRWSGxqbGFKTnVnN3RFaTZfR3BWX2JkeFZScXhibmVjNDlZanNYdHNrM2JjNEJWMmFmZ9IBwwFBVV95cUxPQno4VDEyblJmek5XeWRjTVRkNktsRmFKalFQNE1JZE1uZXBQd1h1V3NkRlZsOXNKcV80dDJ2NTZfTHRjem90WW9wUWxQQlZkWjNYeG1rNUNERFNjcENtRHE5QzlzQXQ5cTMzb1BxRXhFQVNuN1dQMXJDVkV0Q2F1THB3UVdfb3dheXk4dExhQmEwbWNVUHBuR2FIUTdNaUNydFhNaWE0UDFPZmZMSTVxSkd5MmpHUmVzWHhveG1uRGtOYVE?oc=5",
+      "sourceSlug": "news-search-nqm",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:48.153Z",
-      "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "publishedAt": "2026-08-28T05:09:46.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
-      "id": "97c0a8aed791acae8e7159e1",
-      "title": "Quantum Cryptography vs Post-Quantum Cryptography: What's the Key Differences?",
+      "id": "bb26909d7428e0093596c5aa",
+      "title": "PDEU, QpiAI Sign MoU To Set Up Quantum Computing Centre In Western India",
       "summary": "",
-      "sourceName": "QNu Labs",
-      "sourceUrl": "https://qnulabs.com/blog/quantum-cryptography-vs-post-quantum-cryptography",
-      "sourceSlug": "qnu-labs",
+      "sourceName": "BW Education",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOSWxTTTdoc0dFQ2JQQVBZSll4WmpOZ3pJcUExb1JtdWFYb1hWMjQ1V3o0UE5iLUV0ZFF3WWZPZHBsTFZaVHJDTWhhdVBpVDRBNXZMMDIyenFUWUh3T296d1JJM0Jod1JtWnVwV2R1QkpuUzZSR0dwMllyY05ZZjVVVkdzT2t4SWJBU3M1Um1pTmlZM3RzQTQ0WWE3b2tmbDdHUDYwMGx1bzBzUDg0M2dwWWxMWHc?oc=5",
+      "sourceSlug": "news-search-india-quantum",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:48.153Z",
-      "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "publishedAt": "2026-08-26T04:49:22.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
-      "id": "7a371674fdda962321960235",
-      "title": "Quantum Readiness Assessment for Enterprises",
+      "id": "71884c5e4823615395f65204",
+      "title": "India's C-DOT Unveils 14 Indigenous Quantum Products During 43rd Foundation Day",
       "summary": "",
-      "sourceName": "QNu Labs",
-      "sourceUrl": "https://qnulabs.com/blog/quantum-readiness-assessment",
-      "sourceSlug": "qnu-labs",
+      "sourceName": "Quantum Computing Report",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQVjdoTHh4di1EQmw2bW8zeGRQSlpIQ2JkSU0zMzI0T1VhdXdsdWotWnJoX3FIUUdwbmlEWk1DejBBR05wRVZNRWRKSUFXeDFFOEpHN2lDVHR2emlna0UwSElMUS00M3ZXY3c4Q2FQVFV4M290LXNEOWlCaTdEYkVYczFVUzBuSkNiZTYzNWZ6UjRfM1IyLVh0bHpLYi1sUF81SW9Fb3VtTjJuNG1Kd1RGY3Q2bVfSAboBQVVfeXFMT2FkZnhSaWpsM0tuOXk2elZJTVpHZF9RUFIxRWdwNHI2MlpsTlJuNG5WbWRsVTF3b3N3TnNCNElqendTUFd0RHJDaHRXWHp4MUhtR2xFM0hfay16UVlPQ05JaGlxNE9WUjFILUJmZldoUEpDZV9HZnVsOFNhNndXVTlaNWl4T0hKUjVCc1dvYnNINnp3bGxjcmhFa0xQM2VVcHdnSWc0MkowRnRRQWh3N2lUeWZhZUdqblJB?oc=5",
+      "sourceSlug": "news-search-india-quantum",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:48.153Z",
-      "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "publishedAt": "2026-08-25T18:01:27.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
-      "id": "b6d1a117edc7056b2e6480ab",
-      "title": "PQC Certificates: What They Are and Why They Matter",
+      "id": "1363a57e88146be593c6359c",
+      "title": "C-DOT Unveils 14 Products As India Pushes For Quantum-Secure Future",
       "summary": "",
-      "sourceName": "QNu Labs",
-      "sourceUrl": "https://qnulabs.com/blog/pqc-certificate",
-      "sourceSlug": "qnu-labs",
+      "sourceName": "ETV Bharat",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOUWFEUmtEb2xHVE03Skdya3VHMzN1QlJaRXNBN2RTYkJpVEhZZGEzMXVnLVlyYXZEXzhlVFZwWDdnOHNQVGtSU1Q3QVV1V29QOUdjUkZBZ3BlSGtBRFIzS0ZLamk5bVZBdU92YVBNZHd2OXluUFBTdjhyVFJ4UXhuajk4cnFjVFF1a2JOa1d1YjltSW4yTkdfMUs4YndEbjEza0JDUEptY09mSFAwOWw0NHV1YXZUZmRVNEHSAb8BQVVfeXFMTnQ0TzFKbVBMS1drcnR3TDhLM0V6alJvZnh0U1RNaHAzQW9xMFdpT045OXZkbE5uUWkwaExQOF9welJobnNOSzFMMEpqclhiZHN3dmZyY19YRXdXQVJ6LWhrY1hjd3E4NlVVX3NnR0oxemprZnBOcFpITkYzd3R1U1pIcHpyOVRlNTZYd285dXpoMzhxWGFDMVo1UUhWR2I0VzZDSjBzRXZobWQwMzR4X09ncVZXek4yZU9jSXVxMXM?oc=5",
+      "sourceSlug": "news-search-india-quantum",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:48.153Z",
-      "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "publishedAt": "2026-08-25T14:34:32.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
-      "id": "c1484db0e24e4b34a9f7721c",
-      "title": "Cybercrime Now Sells Subscriptions. Here Is What That Costs You.",
+      "id": "f5e606ca4a7965b09d840aaa",
+      "title": "How quantum talent will decide India's deep tech future",
       "summary": "",
-      "sourceName": "QNu Labs",
-      "sourceUrl": "https://qnulabs.com/blog/cybercrime-now-sells-subscriptions-here-is-what-that-costs-you",
-      "sourceSlug": "qnu-labs",
+      "sourceName": "ET Edge Insights",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQQy1mSVRfNHBydW11cm5QQ0hCaUw0dHJwaEF4Qmk1dENmSWNFYzNRQWVKZkpDNWU1dV8yUldMNVRBb09mbGdyRjZRZmxmNENpNUtWajFTNjhTTmFKS2lPTWU2WEZITG0zaGxJc1ZJVnQtYVVCLV9kXzVIOXpUMHVyM2dfaW1vTHRaN2gxMXZJdVBuMFdicE9CZENn?oc=5",
+      "sourceSlug": "news-search-nqm",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:48.153Z",
-      "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "publishedAt": "2026-08-24T05:05:45.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
-      "id": "9526abe904d26de03d09ca42",
-      "title": "Dark Data: The Blind Spot AI Turned Into a Target",
+      "id": "368a6173b6caa0a540eff138",
+      "title": "India may not be ready for its 2028 quantum-security deadline: National Quantum Mission Chair Ajai...",
       "summary": "",
-      "sourceName": "QNu Labs",
-      "sourceUrl": "https://qnulabs.com/blog/dark-data-the-blind-spot-ai-turned-into-a-target",
-      "sourceSlug": "qnu-labs",
+      "sourceName": "Moneycontrol.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNc3RreUUyUE9famFfN2pJUUdMYlo3NWRvcnVFWmV6YzJXT0xUbHg3MXVPUGVfa0E4SElwLWFlN2o0M0pPZjU4cXBlTHU2YmtYOHJPV1NjUHRBeDVaMnRma3pYMmdPa2s5bzY4cm1FUURHT2pyRElzRVVWcVdXOVhIa0ZnamdZV0VQNVFYS2Q4aGJ4LWFrVGQ4QnZTdDFiZHpwVi1OZjlqUC1oQzFSR19VVGNEeE5qbmpQRVc4SV9ZV1RDMmUwR0RIR3FiSXFmQ3pWa2NDdkNsVFJ5MkJkNWR3aDE0bGNqVG5ka0xKdTlPUzZ4My1HdmZ2NVUycmdyenVkS1R4d250aWl2dEg4UEHSAZMCQVVfeXFMUEVVOEw0eFFodS1Gb0xiYWx1dDBnNjIxOElUZUFNV2VUTlpWdDV1cDB5R21fMmIxbFoxTFVuVlF3MnkwY21sZ1Z1WlBnY0VKdEpMNURuWklvaDBRRlJMNFhpQXlBVm1mQkFIWWVkX2J3R0U0cGI2QmM1azZVaVhkM2xQb2RORGl2RjFIODZZWTZTbFV2ZF9nX3RRbU1jcDV0dUtDY2swZWJ2YVVBU29UdE5veTVacmNLcWQ3VERfcGVnQUs0RDF2VHFCNFpYOW5saE1vcFJKY2RraG5TbWtlUVVRT3MxUHVZeUZYTk1EazRiVlFoWnhmWjRDOTBfYTh2NHF5TUE0bFd3LU9UMkxiQ0xkOVE?oc=5",
+      "sourceSlug": "news-search-nqm",
       "region": "INDIA",
-      "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:48.153Z",
-      "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "topic": "POLICY",
+      "publishedAt": "2026-08-19T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
-      "id": "90f019bb6b219ae7c5ac6515",
-      "title": "Invisible Banking: The Quiet Revolution Reshaping India's Financial Ecosystem",
+      "id": "692ad1554e85686e6b3cc5e1",
+      "title": "India needs to protect critical infrastructure against cyber threats: National Quantum Mission chair Ajai",
       "summary": "",
-      "sourceName": "QNu Labs",
-      "sourceUrl": "https://qnulabs.com/blog/invisible-banking-the-quiet-revolution-reshaping-indias-financial-ecosystem",
-      "sourceSlug": "qnu-labs",
+      "sourceName": "The Economic Times",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMimAJBVV95cUxOLXBiaEVWaG53UkNtWG85ZXlEby1JVkJCdndUTVdmTHJJQ1dDRTA0NXVtUnQ4am1jY1E3ZGtPLVlpUHNoc1lhZ2Rsa2NrWHdCVThNSVRGbGUxMG9hMGUwVGpEUEtMRlZ6U2U4M1hsR0JTSjIxdDRwSW1iRFl2dVFTZEhid2ppWXF0NlJRbERJdVVBbVF4dTZkOXlWazc5N1BqRzhrazFfU21ZVGpJYkZVeGlJZVVSM0tkNTM1ZkZBeHU3MEREMTc2U2g0QUliWjRLeGNuRTNpSFlDV29CVjJ5WU45RlctQ0I5SDI5Z3VmNzRMb1hQRU5iX1hUXzlqT1pZYlBoODlIT0JScW5ZV010c0hPekwtTlpl0gGeAkFVX3lxTE96WE9zbkhiVUhkdldDV1oxNEhyN3FmbzZhYVFTVUJNV20zUVZuQUZWb0p1UC1pbC1lcHNmc2hCZldOTGFsUXdxdzE3N2tSeVhEQWR2UzVEakczV1FUcjhSTmtBMWx0Wlk4ai1JcFotaTQ5UHl5WjF3OFdSQk5tYTA1MFUtMHNsbE1fMXAwTzIxeXFLTHlQYkV3UE0zUVVKcW11Y1NTOVR0VENISkdQTkt2VV9yY0VGT05PSTFSYzNZNFlvMFFMSEVRMEJBeTkzNW4waGdJYXRrVXU4X191YTFHVUZtX0VKcm5MYzdwTEN5dVY0YkNMT2lIbmw5dDFwd0tEWGo5NEdxYXBJZGRBZGhpRGY0N1Bra2lhQWloYXc?oc=5",
+      "sourceSlug": "news-search-nqm",
       "region": "INDIA",
-      "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:48.153Z",
-      "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "topic": "POLICY",
+      "publishedAt": "2026-08-19T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     },
     {
-      "id": "a2788828794759db00d881ca",
-      "title": "The Global Quantum Security Shift: Why 2026 Matters",
+      "id": "70050ae30c9a1b86105bbf0d",
+      "title": "[Exclusive] C-DAC's 108-Qubit Quantum Computer to Launch by November",
       "summary": "",
-      "sourceName": "QNu Labs",
-      "sourceUrl": "https://qnulabs.com/blog/global-quantum-security-2026-changed-everything",
-      "sourceSlug": "qnu-labs",
+      "sourceName": "analyticsindiamag.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVVhLSHJiMU50QzVudFRKMTAxVDFMaW93TEZFaGRNZnNGSEVEQjZTWktZQWJoaW82dG5aSENfdHFLTUNEdElxT3M4bVBxNmVpVDM1SWY0ZHdtRFh6b250YjFKUnVJTTZ0dGswV1lwMmR4eUtIMGNQWlotNkZTUGl6RkFQcU5CX2V0czFtVlg4RU1rTm1qY25vQlVRQnctX2xoaUdWMHBB?oc=5",
+      "sourceSlug": "news-search-india-quantum",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:13:48.153Z",
-      "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:13:48.744Z"
+      "publishedAt": "2026-08-19T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "5f168d6a29e5db1e75df3d52",
+      "title": "Quarkitech raises Rs 2 crore in pre-seed funding, reports Rs 1.5 crore quantum mission grant",
+      "summary": "",
+      "sourceName": "Indian Startup News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPanN5MWRJZjNNVElVbzBlckYzTU1zb1JxSWx1UzFncTFCTGY3UnBIaUY2ay1leS1aZGZHa0IyZlFCUUxhUDl4dWJZNEM3UnBJN185VFhrVVY3UGNKc18wUVBLbks4MHZfV09fOVlWdkc0SGd3bkNvSUxjT3Rydi1WcDZFUnEyd3NFS1BuVjJ1MkloVDVqeUJvRThrSHNISmpRRkxWR2pJcGI2VmJ3ZlFnZGlmblVaeUc3aXZGX0NuZHE0Z1JxV0k0N1N6ekdTZ3VoaEJn0gHTAUFVX3lxTE9qc3kxZElmM01USVVvMGVyRjNNTXNvUnFJbHVTMWdxMUJMZjdScEhpRjZrLWV5LVpkZkdrQjJmUUJRTGFQOXh1Ylk0QzdScEk3XzlUWGtVVjdQY0pzXzBRUEtuSzgwdl9XT185WVZ2RzRIZ3duQ29JTGNPdHJ2LVZwNkVScTJ3c0VLUG5WMnUySWhUNWp5Qm9FOGtIc0hKalFGTFZHaklwYjZWYndmUWdkaWZuVVp5RzdpdkZfQ25kcTRnUnFXSTQ3U3p6R1NndWhoQmc?oc=5",
+      "sourceSlug": "news-search-nqm",
+      "region": "INDIA",
+      "topic": "FUNDING",
+      "publishedAt": "2026-08-13T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "26ae4d53671827c384ee7b90",
+      "title": "Three Indian engineers spent six months in a library studying quantum computing, now they are building wh",
+      "summary": "",
+      "sourceName": "The Times of India",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMisAJBVV95cUxOXzRlcmtRUUdlZ05yaE85d2hyWUpEeFFtc1ZyeDNQNUZKdXZZZW1WZ0FaelRoN1JTTHFOUVR2d010TUlKSlZqMjZkblVGMHliUmNnZF9Mc2x1OE1EbkJZUUVxc09mOTJpUmtOUjg2THpoSEFyTmplZzVGdHVTUF9qc0JuUU90aEVVTXhhNVZGbWxEbTlDSHdudDVSYnhHd0gwRlRPemhTN1hTTjhJbTBNcFNUX2dvTS04Rkp6Tk51NHAwU0JvaWtEX3VaNHI3VTJtTHZkZkpiTGxaUjB4QWhDYkZQbmNpN0plRTN0ZW10dk1mQnBLekJuTVBrOHc2bXFJSHp1aGlGbllSdlp4T3ZmR0Z5N2FWVElaYzloR21MdEU1ekR5ejFySWVxblctTGdX0gG2AkFVX3lxTFAtRkV2S05OcTJXY0dsSzY1QkhpWEFvTFpQTXg2S1RJMGJVTVV6bDEySXBFbENqMVNicEhRbjNiLUVzUS1BZlFhOGJLUmxZc0FtSVZXd05KcEp5Z3RMY3Bpd2hfczl1N0lVMy16TDJCbFpFN1plZlZmbjc0VmZnNHpqMGhvR0s0VjNLR1pVYUpHRGFoM0tLV2lRNGdPSGJHb1J0WTAzcTI5V0xBWXFYejkzVVlBY0lBT1MyWW9mNC1jZlNHS0w5NGM1eVBQM0ZvcW9ZeHVpNnBzVXRTQU91ZlhjVW85bmw5UHZLTXhrdzFkcFB4blhvYko2VTZmaW1rcW5ST0w5clpZT1hGcU5aZl9ld1JYQjdJUUw0cTQyZkVSOWdEaWxZdDA2SV9mMzQtR0xfN2p1Nmc?oc=5",
+      "sourceSlug": "news-search-india-quantum",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-08-13T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "ff36706f999b05b1fec97b95",
+      "title": "Gujarat Plans Quantum Mission To Drive Next-Gen Technology",
+      "summary": "",
+      "sourceName": "Vibes Of India",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRldsai1ZeFRxd21Pbjh3QnA3bWJXem40ZXFWUTlnejBaUF9HSWF1S05Lb2JiYzdHT0R4WDM2OTRqaEcta1pXNDcyaHdPUjluUllmOFpyWEdMdVV5T2dpYm9scmxSejFHTFY5S2ZtS2lkeUJjYUJuNDRfTEQ4U0d1SU0tZnZXdWNPMHR1VA?oc=5",
+      "sourceSlug": "news-search-nqm",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-08-12T15:06:47.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "f3c10d2e11a59a6536daa36d",
+      "title": "Gujarat govt to set up Quantum Mission",
+      "summary": "",
+      "sourceName": "The Times of India",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPTjRGSWJudThhRW1LbHB4WDQxMnJQTE5xRjByckJmTm5YUHdCU0pRc2JpMGl4R19jWXFxcFBITklicE9QUEcwWEYteWdpa3RsS2lRNUlLNVNTNVNheEMtb3lCLU1sY24ySVFpd1dvVFpQVEFyQ3g3MW1MWFJJb2hRcklPc3BvM0thbm1iMS0tU2pOak5BQUF4QTM3WUNFV1FBT24zdkliaDZBaFdHbF9tX0lYeHdTd9IBuwFBVV95cUxNNndsMW1JMlJMRzlGclVqN3FHY2VISDJtcnRidXV1cUVHUzNHVU5JZlpTX1hOU1d2anplbnFjVkJMTkctNDFub1FpTjQ1dVRfc2RXTExDUHpMbS1FVEJMcDVTVnRFbDJpdTYtVGMzTzYyd3l1NWpZekNmZEVEWDN1RkNvT2ExVFllNVNCbExMc0xNXzMwTm0zcTJLSnJ2Rm1CTkN6b2U0RE1vTkswVmpMR0p1WEJaYUh6Tm44?oc=5",
+      "sourceSlug": "news-search-nqm",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-08-12T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "f9408da0a631bbf1760a6340",
+      "title": "Tech Mahindra, I-Hub QTF to jointly develop trapped-ion quantum computing capabilities in India",
+      "summary": "",
+      "sourceName": "Telecompaper",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNZU1UTUhZUnVoSTNVNlZObmVGVWxHSlNKNVloU3pkRXRtRGFIQjVvTnpOYnFxQ3Q0OUdxd1VINHVtSW5VLW9zX1N1NWNrYUNCZnM0QVBUcWNqTUhJTU1CUXRwOU5maGF2MndaWlc4ZVI3V1ZXYjlFRldtOGI1VTh3c3V0Z2NnRFhON21ZenlTcGR4WjBpTHl4blpRUFFUUzA0OUc0V29zSVFac2txU0IxV09LQkw1bVdXcWpkaWF2Wkg5WDVmWlk2ZXFQcnZuMXVYejNZ?oc=5",
+      "sourceSlug": "news-search-india-quantum",
+      "region": "INDIA",
+      "topic": "HARDWARE",
+      "publishedAt": "2026-08-10T09:25:56.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "50c2a5cd601d64168d136914",
+      "title": "India Among Few Countries To Have Dedicated Biotechnology Policy Bioe3 Also National Quantum Mission And AI Mission: Dr Jitendra Singh.",
+      "summary": "",
+      "sourceName": "TRIPURA STAR NEWS",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQR05xWjhySGxYZEJjN3RlMnBrbkd5aUN3Q2cyN3dXazhyRmV4ZDBiMzFGQWU5OHlZcGtWSm9ldk5HTi1qQTNNUkJnTFMtejZDSHhXVWIxbHlXaXhhc1hIMFZvYU1Wa0xIczZEZjNHMEpaeUdNWFdkY2Vsbk9CUVVZTDRGdlRPRjBlS3lFQWpCX3JVdTQ5bVY4Z0tmM3ItS002dzNVekRvUmNUcVE1VzdORG40eFU4SThkR2NLS0hvaG9idFVmazl1bGpmU3dkdkY5bDNFdlAwSUZsaThYVjlpRzh5bmJCUExFeU1oNGZGNURmSFBteWF1NEZR?oc=5",
+      "sourceSlug": "news-search-nqm",
+      "region": "INDIA",
+      "topic": "POLICY",
+      "publishedAt": "2026-08-09T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "e354d394db813a4c4e062124",
+      "title": "FMU proposes Quantum Technology Hub",
+      "summary": "",
+      "sourceName": "The Times of India",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQLUxmNjFyU0F5NTJPV01EdFRTdnQtQVVPcnU1eEMwX3Y5ZkM3a0ZwWDNoeHQyLTk2QlB4enZMOHdfbkloVjlzNC14X3pvdUhrc1R1TmxoS19VcGpMb0gta1pLR3RwN1pVWFhtN25OUlBTZ195RTBoNnV1bEk5eS16Q3FQdWxocWpFRWtSMExWYk1WZ0hfeU5SeTRpUGhfRlB4cXFqR2JXZERTVk13cXcxak9BZjLSAboBQVVfeXFMTVNtUTB4RXVnNkl4SFJKM0pTZnBsTjJ2MVJGTzhuRllDNXVhcVNrMk00eWQtWnRSYjJMMUdOb1p0enNnaU1lRXBqdUlVVnRYYURmb3lDeEpyeVFQN1liRm1qUWdkRXFVTGQ1RFg1TWdHQm9lZlM0SEdOWDNoSEUwQVdPQm5mbFBqbFloRVR0dEhaNVhxNTdRWXNSSVAwWUp1VkVXWVl3aVIyNExwODh2TU1nTkFhSHRyd3Bn?oc=5",
+      "sourceSlug": "news-search-nqm",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-08-09T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "c015087ed09b5b39f7596a03",
+      "title": "India hits half its 10-year quantum communications target in just 3 years",
+      "summary": "",
+      "sourceName": "ThePrint",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBEOG56b21wYW5aWmdwQTA2V20yMHJSLTJYdnVnT2FkQ0xWM1AyQ0lXR1diUGVxZGlwU3h6cVZsX1lYejhQazltYnI0WnpuS1dERERPS0FlX2pNc01tTUFOckpHTi1GOXgwSU1udW1nekw0VFlodlRYdkxNX1nSAYIBQVVfeXFMTWllQS1TZjZxMlVPWllzcnMzNU0waVNlR0J1M3h3cC0xTlJHeHFyVzNIaVktbzFOS1g4MmhYVFNldkdCUFRDZnBIcU9JQW1kQ0xuWWZHSDd5X0lKQkxGX21leld4eHJZN2tnUnZhT3FQUFdDSC1TaVlfcGF3NHIydVd3UQ?oc=5",
+      "sourceSlug": "news-search-nqm",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-08-07T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "11139e0c6da89119f68cf57e",
+      "title": "Vijayawada student presents research paper on quantum computing at King's College in U.K.",
+      "summary": "",
+      "sourceName": "The Hindu",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNMmU3aDNnNURqMndobDhkaWFpdmcxR3NPLVk5eGc2aVQtS05WalQ3UG9QNVctekdCV1FFWGc5ZlE0R3hjYjRqWE1oZHZ2a05yVWZkZUZvaTY4UER6OU9SVVhXOGZoRl9rMXc5WGRqaTdTcFBIZTBKZjROeUd0X2twWDJnOXFZYndiR2RqYzRqRzdOVEY4clk5aHptREdFaVQzS08tUWFkczNyX3MzUnF2bnZNVE5icS10SFNxRjk4Q1pBYkk1UUdNYkFmRHVrNW1hMUJBUFdKM3dSMC1kMmVJXzhUck5aWWpPMTU1Q2plakxXZ9IB-AFBVV95cUxOYUtQSS1FVTRSYlBKdEItZVc5U09MZ2lWYS1YUmx1OV9WT0dING1xQmNtOUJUN19jRnZ5VlZFMlV2b0JaSTdCWkZCbzNBc0l1X0d6cVFsNktlak1rOGFrRWo5ZGc4d2JkZGtEbkxkWTNpakd3dTRTZGpQdXpTUHh4OTJzNHJ4T0NEak1HNFBrTWFQbDlpQUR5amY2RDJ6QmhNTlFvMExmdUtxTU5xOUhZZ09TRWpid1BmUW5DVU13NUJjZHdtVGM3LXJBRzFRU2s5WE9IRXl1OEZHZkZSU1dKZU55ZHZLVTRXVWNhbFRmd0pod1R4ZlU0WA?oc=5",
+      "sourceSlug": "news-search-india-quantum",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-08-04T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "896849002f693eb693f27ea8",
+      "title": "FM varsity seeks govt approval for setting up Quantum Technology Hub",
+      "summary": "",
+      "sourceName": "The New Indian Express",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQdy01VEpGSVFaTzNBRC12WllSUWdXMTQzNW8yZ3l5aEhUUElreHhlRHZaU0lldmJHR05WdkdYbWpSSG5rWVdTX0tlZGQyaUxURElPTHNzQ3M3aG9MOUVrWTZHWEJmdzRuQkd3Y0pRd2xjWl9mRTB1NmxXdU9STVBxTGsyY2NxeWkwaG4wblJsdTlzWHBNTHJEbVRtV2pGeHdSUlY5RzN6V2kta0RLakMtTHg1QjFBcWNfbFRNa0tJeFh0R2RJZWfSAdMBQVVfeXFMT2FwdkpvblpPeW90SE5kOXJRck4zcC1ITDlSSGtsYTl3dkxrRFpJUHNtUUlEYVZGQURjbHRnZWo5NHJHaFRTQThIQ0pUX0ZRTHM4LTVRQUlTa0d3QTBHcUhsYXVhajAtNEJwUWVHOXd3Q0xwQ2NiQ21mTUhhMUxpUmlKS2lHOWNHRER4blBtWVlsMXpTQlJTUG5fbF8xN2w5MDUtNzJmU2phaFgxcjJRV01pRW1zVzQ0S2dVbEFyQ0M3YUtfb2tjRENVQ0pZbWFfeG1Tbw?oc=5",
+      "sourceSlug": "news-search-nqm",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-08-03T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "9c71f21093503ddb9b8e27ec",
+      "title": "Sandhu seeks update on National Quantum Mission progress in RS | Hindustan Times",
+      "summary": "",
+      "sourceName": "Hindustan Times",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNSWp4dXcxdV9mMnNJNmhabmpPNmpwTUVMRUd3TU5SQkJWcUh0Qk9sODdpT3FURjlkRHUzTUh5eGJqdDVzMEpvVGJ0ZU1saURZZjVmaUs4cmNmX0hmd2lKRXI3enhoTnZGb0VrTDBfVDdIcUp6YlllekszMFdkMzJlbDQ4NGZsaW9jd09oam9nWmJZZzFhcTBnR1hDNEF0cG03ekg3dW1OOEF5YXlDTTVpLXJKcTVFV25rczl1QzV0aEI1V3lDLTdyaTQ3VlVDUUN3Zk4w0gHYAUFVX3lxTE5RRE95RXZMM19wUTFyZGRTaEs5Y2NKTUZkUlRBcDBia2N4NlFDb09ja0lJd3NuODNwQ3BweXZsWFoyYk5XM0thLTRJVXA1SEVnSGZJTUhuVXg2V0pZNnJla21aTjdRWFVXSC1MbkJFYkpCRmFKZWJySEJoZWlpYjkzdDMwTTItaFJBZUZJNzRJMDdrdzdKU2RqV0ZyYmFzWlRlLThtcm4yeEIzNFR3SnlKWTVENXdLMm1QZ0cwb2txUmRDblFTUGVMQ2p4TFQtNkJETDFKRXBjWg?oc=5",
+      "sourceSlug": "news-search-nqm",
+      "region": "INDIA",
+      "topic": "POLICY",
+      "publishedAt": "2026-08-01T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "c7f367e9ffe6a55696f7e608",
+      "title": "How 3 engineers are chasing India's quantum computing dream with an IIT professor",
+      "summary": "",
+      "sourceName": "indiatoday.in",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNZkNhZFBFYzd2TnVFaUdLdXJSQmcyR2l2Q1hzWmVvVWVLdGZ3dEJaRThvVy0tVEptTzEzWTZlc0F5VndVZnFCM0lJOFJjUWN3UVEzS0ZnNlhPYkNIVE4yZFdFZXc3djhvZDZjVW40X0F4S1d6cGFpVV9FV01wamtEbk4tRlA5VmZBZVVjUXJsSDd1Y1lPbVh5N3R3dGs4cFl3WXRoWnZ3ZzBBY2h6Sk5IOGd2MVR6RWVxV2NVdWNKODRGV0lkaW5hZTVzWTJJeWs2N3ZtRmZseTh3ZVpQS3ZoVzBBYmxmNnUxaHdDTNIB8gFBVV95cUxOQXZ1TmZNdnZ6LXVzQUdvNl9NUzVGSTFhdnN3VHJEQkQ3Y2N5aGtRal9pbGNhbWFhblZzSWtScTRvWnIwX0VhOFkzMnNjQ2lrdmdwQWxUTUVLMXFKbVpFVW52RTdqMEEwaDBORDdPcklsc24xYnh4cEU4b1dHRWFNUHZCazBTb3Q1clNTQllPcVIxbEcwLWZqMGNPemNwNWcxYTd4VUo5ZlowanBTRHpXNWhmOGlJc3dIeUJ0SVFuOFZtZnR5Yl9HaGdJQ0NMX2owRnUtTjJTSHZtbDlMWTVfWllwajR0Y2FBQ3FMUUVLOTFLUQ?oc=5",
+      "sourceSlug": "news-search-india-quantum",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-07-26T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "965f528f078f8cbf73080de3",
+      "title": "Quantum Computing, AI must drive growth: CM Naidu",
+      "summary": "",
+      "sourceName": "The New Indian Express",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOSjgyMXFKbDFramV1NFI0ZnJQcTRuN0ZFWkVEZkNZRVAwdUdtTDBBWmZveXdHM2RvVkFxMGtHbW5fWTNyN3FmNUpsSUV5dVdqZmhxejJCYnFhT1dwYjNiVWVCM2J6V2JnOEpzVUdJX2tIYVpjclhrTk5zWFcySlVxTGVhR3VLNkNVMl9YWTc4SEt2ck1iekhmYTdzeVE3SmhPWmkzT2J5eWNsNEZrRkI3Z2d2Q2rSAcIBQVVfeXFMTW1HcTBXV2dvNUxBS21FU191bWNBbEpjaDU3VTJsMmo3QkZteFBXbVRWZUVNTHB5b1pLaERYNXRaLW9jcjduamF3M2UtRkFTYnpSbXg1M0dsQlo5Tm11Wl9aRWJzdE1CcWxwZ0R2S004RUh6RXpmbjZaY3VFc3BiMlFiZGt5TzZiOElYVm5QLWJXNDJqQlYzWWlDcDBJMnN2QXVPUGNYRkI3MDdkbEtQWmYzcVhuaVdQOXBTMzNhZXhEUVE?oc=5",
+      "sourceSlug": "news-search-nqm",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-07-24T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "7834cf0b211584d1d9f8aed3",
+      "title": "Quantum-Safe Networks Must Be in Place by 2028-29, Warns National Quantum Mission Chairman",
+      "summary": "",
+      "sourceName": "varindia.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbDBYRFFocTRoRE91MFg4TUJ2MERhTXpveEZkM1h3bE5TRHliQnZmNUo4cjd3NjRHQXJySDhfOU9TMHE0akNGVHQ1ZUJXVmRubDNoSjlCNHgwQ0ZXYWpMb0tPSGstVHBkdlJtbFJEYnZlOHphVVNhVnkxejFsSTdmTVVsWmM5LUMwYWVBSzNYTlRXNmhlblBsSnEzR0NLRFpPSU1pSXpmSzJPd0w4NlhTMXAxdWNfTkZKQ09F?oc=5",
+      "sourceSlug": "news-search-nqm",
+      "region": "INDIA",
+      "topic": "POLICY",
+      "publishedAt": "2026-07-20T06:35:23.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "7a744a3f85097b23960ed790",
+      "title": "India's Quantum Leap: From Ancient Philosophy to Post-Quantum Cryptography",
+      "summary": "",
+      "sourceName": "The Hindu",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZkxIeEp3ejhTZktGVVNjSEpGWnZIZkFOdUZCMC13U3NBWk5uQlBfREJDVVRscDdpaGtxbVlrbktZcEVaRGx6dnItOTEwdEl4THB5NWJsRXZZYUtSWWYwN25ZSHF1cmNxaW5rSndvc0JiZldmQWtsU2xFa1J2ZFlkSzBYOXBQUzdpNFJFd1puUklKRTdCMnVkU3BsMzQxUnp2dmQwdmJTQlE0RzJxNFNXcXhyMnFJRk5vZ05aNUpUU2RhcjhRcFFVOXlMONIB0gFBVV95cUxNaWdvS0dhLTZYXy16NTVmX3Y3ZE85MzJfZG5BaDloN1Rkc1NPaHpYbktpZUU4MUpCX25BcmtORUFPMUNpVGQ5NkdUWWdub0hsVzBWUUl1ZWF4Nm9lSENjaFc3dlJSTFc4TE1oY0pXZ3FoVUltd2E4Y1FLdzJWbjVkS0FZNDdQSFVOR2wzcXN3bm1iYWxwbDdYWHhZY1dfRDA1TVdwekd6YXd3azNsaUFUREx3VE1Yb0R3SlY3VjdlZUZHQlJqZzBvcGZqTkdFUHJ3QXc?oc=5",
+      "sourceSlug": "news-search-india-quantum",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-07-17T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "c27908ec4d9ed01a0eb31f71",
+      "title": "Quantum-Safe Security Can No Longer Wait: Why Enterprises Must Act Now",
+      "summary": "",
+      "sourceName": "Bisinfotech",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZ0dzMUdsVmZyVG9rby1neG4wd283YXh1YnZTUmNxZXlKV1k3NFRQY0o5cm80ZFdNYWJjUnF5TFE3anQ0bTI3eUNhUUN5TjNHb3lZXzNjQ1VrWTA1ckFGZk1LZHE3ZktkNllmUWlVb25xRWRXNzdyeFpCUGVEd0ZUb3d3SnNnMUs4OEV6M29YQmprNmNneFc1cDR3RjNJNGc?oc=5",
+      "sourceSlug": "news-search-nqm",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-07-13T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "d0a54a1f86d149ddaf1396a1",
+      "title": "Indian Lab Designs Quantum Computing Algorithm to Beat Classical Computers",
+      "summary": "",
+      "sourceName": "Vision IAS",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNTTZwSWRhWTkxY2hXeEo1dFgxQ2ZPX0lxWXhmREZ1cUw4Ui1GUUNwWGo3VUlVSnk0MXBSUFBGM2RGRFZaeG9mLXhnU1lFYklfSkRaTnFfbmNqMzBOMXF4SVUwUUlJd0xCM2RuWFRnY0pVb0dIcGtzaUpTWEUtNGpyeEVZYi1wcm9OTTRWSk5rUXRLX0JYaUY5dmdNMXpJd19HVEpHSkV6SmVNT0xqUndaQjFsQ3J2eU5iVlBsMTBJdThfX3k2UThDWnFQd0VfRzc4R3k5UWtveEt0ejg0V21FeUN5YVhyVTJOVzZhNA?oc=5",
+      "sourceSlug": "news-search-india-quantum",
+      "region": "INDIA",
+      "topic": "ALGORITHMS",
+      "publishedAt": "2026-07-11T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "23257c4f063b7cd4f363e8ec",
+      "title": "Indian lab designs quantum algorithm to beat classical computers",
+      "summary": "",
+      "sourceName": "The Hindu",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUEhDTzlaTUxvTFJCSUFrZXFSbVpQX2kwb3dsWTBrWWNUTXpVVmpHUnVEeFdQV0RjMFJHNUlJTXJVakQ1Y0phU3RzWmNiUEstWWtYUE5jUVJlaVBnNXZDWEZ5NEpoY2xZV0FJcWZoVzE4Y0tfT3d3ZnVTVklfeW5falZNTVpfTDQ2LUxsd1pRLXFVU1lyTkR6dHFrQmxGcG01dUVoSTJzcTZVcGJIR2F2UkFLNi1TWTd6c3N6aFFSX0F5WWxB0gHLAUFVX3lxTFA0TGJweG1penp3M0ZCbVBldVVjWlZLd25DZHR5WXhpTGR1Ym5sZC16R2hpRHF5Q1FKdmpkQmI3SUtGQWNHVU5jdVlKZmo1RE9XeXBKMVY5Mi1oRE8xVXBtaWUwcV9aV3FKZmFBYU9xU2Zjb2syTFprM0tFZXAxZGs2MGdNZ3ljdTY3VjJwRnFadm5sTVBVbmxHU09leVdia3pIMmVJdHc5UUkxRXpIVFkwLUY3TlBkX0ltQ1RsZXY0VU5wLU9jY1RtVjRv?oc=5",
+      "sourceSlug": "news-search-india-quantum",
+      "region": "INDIA",
+      "topic": "ALGORITHMS",
+      "publishedAt": "2026-07-09T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "2d0151ea18295970de229614",
+      "title": "Can India secure a place in quantum computing?",
+      "summary": "",
+      "sourceName": "Business Today",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRm5iTThITmFiTVFyWktBZWNqdTloSjBtNmhsOEhjT1RkZjloOFhlR3IzZ2JVMVNSTTFqZmdYZTZOSEtfQmczdG9iZzRKX011RUNnd0tXVVpQUkQtRWtBTlZjYzRkYm5ZcEhETVUzbEUwZGNPOGRJZzU5M2xzM25ndU4xeFpkRlVJQU1kVHJub1FLM2RVQldPRGFab3QyM2ltY3JRY0FGWHE4ZWJxdTdhdXNpaEtEYjR40gG-AUFVX3lxTE94SVJIcTh0ZUk1TjB5UzlvN0Z6OFlPckVTRjdPeWRwOEloak9hSGwzMXpadWJoaVZ2V2h0UXV4bDg0T3BCTFoyOTFWTk5PRUlZRXlaOTFwam53dVhaWXBiakJKdlBhUmNZOVVSMFJFdWVIYm5tbXJheDd5N09yazlBTEw1M2pad2xZUnpIVm8xTHFJUUREaDg5LW4xZGpRZUVULXpmdXhaODl3VUdwQUZuZFBuNlpJZllaamdzbGc?oc=5",
+      "sourceSlug": "news-search-india-quantum",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-07-08T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "e405c03e7f28f14a1de04cbe",
+      "title": "Arvind Krishna Confirms First IBM Quantum Computer For India",
+      "summary": "",
+      "sourceName": "Quantum Zeitgeist",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1vVTRiLU1vdmEtXzhxMmJIdGhjaWc3emt4WGFrSjRBWjkyTExvSENkdGhiVExPVVlkNUY3NVRCV3lJMGR2Z2daekV0NWdXY2dtRS1NZ3gzREI3X1lMSS1XSklfVGtISGxCV1RyU0hpWkktdkFa?oc=5",
+      "sourceSlug": "news-search-india-quantum",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-07-04T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "d84769751cb2a0a82e43f81f",
+      "title": "IBM to Commission One of India's First Physical Quantum Computers in Amaravati by September 2026",
+      "summary": "",
+      "sourceName": "Quantum Computing Report",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNZG9jcnFfcWxTQ1A5RTBXVjRQdVVZRm1VVnFLelFKZmFVOWhWTDFRTGZpdE5JWW9FYzdUdnZiWlFKb2FyOEVOdTBMb2NxMVltTmdFVTlHb04tTkhhZ2w5MkZmOWFiMnAtdDhoV3M3cU9LOGdueWVjelZVVXFVNUN6amZUcE5yREdQWjhSMkkwdXA0dFFOeU9DaXVDaFRnelFDRmtJR2hNblhLLXZxaF9CTEozdUtYdWk3VGo3cnNKV00zOGtoMzVhR0pnRdIB0AFBVV95cUxNRDVCUF9URDB2WGozaEpYYzZ5bF9wc1VUaVJfbW1HdDdsNm5XTE1rbTlkc2U0dVFtQXQ2U0gwYmVyTlJxakpOTWFDSkdUbVpkREJseGg5dFh1eHpwem1MMHo3ckdqRzNaOWYwWVpPSW5NSnMyZjlpOTYxVmtUY2xTT1h2LS01d2hNS05fXy1QNlZ4TTQ3TW5GN2VXMG5qc3lLT21fc1lLMXhkb2tGV1h4MFAtRzBPUElsVHU2LTVZWEZiaFBHVEUtQkk5SlpuYnhK?oc=5",
+      "sourceSlug": "news-search-india-quantum",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-07-03T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "8937c6af9bbb5ab8a0929302",
+      "title": "'Quantum computing nearing inflection point': IBM to deploy India's first quantum computer by September i",
+      "summary": "",
+      "sourceName": "The Times of India",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPUV9XanBlWEhBN1ZTZTI3aFZDT2lUeFR5VTM2RXdvYkRxMXdELUlORnYtWl9NWE9vNDc0dWV5aEZkV0tVSTRMX2g0N0xSeGFaTnJ1alZUWjNyQTNlY0Q0Nkt1bmg5dFZ6czZyWktBeEZxazF3c3NfY05xNTR0TVBmLXF3Mzl6VFFFVGhNaFFpX3F2cXZEb01OUkVxVVhLRUttMjRzV0ktRVpfX09qYjRzVWsxd19haEh4Q1c1eVhMVDcyakUxWDlxdVFZNTU5SmYxY1JuZGdDaTBqclZsQmdEbTN4eFJkeHFnNnVTOUxIb0xOZ3hFQkdlNnIxdGF4bnFvTGY5UWVGTS1OQ2lyRTFpQkNONDR3QUZVNVHSAZ8CQVVfeXFMT2JvN3Bvd2dmYlNMRmlBcTdOeTZBbkpBMS1UTnhmSTViU3k4cWd6YjdIWGRUbk5zaWpmQzU4Yl8tUzNwd2E5YWx3aFZBdm1sU1ZmSEtESWVYc2NjUHNZRGdjNWJrZ01zQ19ZNUFTZjI2U01sV1NOdWdCNUN1czJTREswVzZFTUg5QlRRNzJNMkVPOGtDTGpZZ1lHVVNZVkdiSVBla2hEcVVOWHpNWTdFRGlGRVp5YWtzQm1naF9VcFg1YzNabTZYLWZiWDJxVjBFbmxfcnF0REJ6eXNMaDZ2MllTT19PbDMwYkVQWmNBRUphMmcyNEg0UVBVbXZWandic2Q3ZU9xRVFmMWZ5aHhVTk10M3A0WlNlTmJRSC1iTmc?oc=5",
+      "sourceSlug": "news-search-india-quantum",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-07-02T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "eedc256dd801e28090948f3a",
+      "title": "India achieves ultra-low temperature breakthrough in quantum technology",
+      "summary": "",
+      "sourceName": "TV BRICS",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYnRWVk5wQ2M1UGRjZWNiei1OVEU1NEZSYjNLZDdLSmtyRWxvNHEyRzIyN2RuTW9RdHE1TElWSC00MmRaWWxGQXpmWDhfTXZnd3FGUU9YZkVOSlp0VzBvN043eVVFamlSZkVKWVRLUUhkVFRiTTFoLXRCRGdIUWM0LWp0VHd1eEtfdTdiMHZ5ZlhteS1sdDJNZGpzOG94Z1Ixemc?oc=5",
+      "sourceSlug": "news-search-india-quantum",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-06-28T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "52779343b5e4265870e46a43",
+      "title": "India's National Quantum Mission crosses halfway mark in three years",
+      "summary": "",
+      "sourceName": "Tech Observer Magazine",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPOG1VSE1sak52QnFxVm1PZkotdzEtdW14dXRhdV9XQml6eURicUpLd2tzSEFWMnJGUjJUZ0RISS1LU1o4TVFaUXlrZ3FGNGJEU0ptcGlKWjdNcU1Mc0NGcW5XS19udktZTFpjNjRlR1F6MVFabFluTjAzWkRxa19xWGtwNGw3WHpKNHpaYUlQajVMdWUtVnU00gGcAUFVX3lxTE1SU1RRZ05QMnpwNkdlYUFLNHZyQXdzcWRzUUhQWEljLTZoQ0dpQUwwY29kSHZvTWpDV215X1VrYXoxZkxldUhRRUl0cVhzU0F1cGRveGQtSW9DZDc3RTMybHVieklYY3htY1VaSGxYUDF2RUtOWUltS1dRR3FiYkk5NWZkanlHUkl5TURrNmEzUWVEMFdYek1QWUhEbA?oc=5",
+      "sourceSlug": "news-search-nqm",
+      "region": "INDIA",
+      "topic": "POLICY",
+      "publishedAt": "2026-06-26T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "f3d7243656b975024d2ab066",
+      "title": "Quantum Valley: Inside India's ambition to lead the next computing revolution",
+      "summary": "",
+      "sourceName": "The Indian Express",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSWprU2RyOGlHZ2ZkRGIwNmZ5WTNCdFA0bkZnVktHd0hGYXRqM09KLU84MUhZWnhrc0JVOFZWTEVuYjlBT1lINEl6Ry1DR19nRW1nM1JOT09sVDFjMkNBUWRLTENpZmlHUzY3cEZ3WG4xSlRaWnI5cGozU2JPdDdvQ1ZFc05qd21pUXVEOWVpMDQ4WHRWWC1kRG0yb3pXM2p1OE5jYVFCdEpXbG8zSmYydWowMmxfaThVX0FXLTE1blRrWWhnTWxHVjhYMXZaVmc40gHXAUFVX3lxTE1QejUxQVZiNXFxN3hXMTk4QlQ1a04tQ01fMVZzZjcwazdTR1FESTRONU9oZGgta196TjFhUEQ5NWdDSmFkeHh2Z3R5bkRydUtpSzB6NnJhX2NERFAyS3pSTWdEX0JVeTBSYnZDSm5vWTlRTGI2UWlzblNHamxlZnhnUEZjSjczSGhhNUNfcEZnem5wbzNna3pabGsxWVZKYkJDUTgyczU5TWcwRVpmTFZkQnVybkhCbUVOdDhLLVBSZ085Q2dBbTI0N2NRV0VwVGZQaXZFdEhn?oc=5",
+      "sourceSlug": "news-search-india-quantum",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-06-26T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "01dd73a66f828ec1aa082e67",
+      "title": "Made-in-India breakthrough in Amravati to push quantum dreams: What is it?",
+      "summary": "",
+      "sourceName": "indiatoday.in",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNR0I5WlR3T1BWaXNfb1kxZzkwOEtxTEx4cVNtbDY5R3JvMUpZLTVhcENVaUJLTlh6bHEyTFJYU1kzUEM1U280dldNWHJlMlV5QWwtenI1bmpsX2dvVTVXSFRtN25hSEl2ZVJEYU5IWVlWVHlreEMyTDNFY0czaTNEbm9XMENyeHdLSzVDb0pXemxzbm9TeUd1TzM3anlDNjdZdWt0b25heldrT1Qwd0VUc3JzQlFmREVHQXRwQlZFV0dTRk83RzdSMUNuTnJVS1JfQnVPMdIB2gFBVV95cUxNT0JmcHFGV1ZMNFN1UEhnVFUxbW5DMEZuXzFVN0dsTmRGX0Y3ZktsTFBVM3FFb1AtWndtcHFvckhscHphbUxCYVExUjhRbk9oV2c4WEVCek93VVY5WFFwNTF0TFJ4ZmVKdDg4blBvMHBlMEd0OGhCd3dLaUlTZDVVTnFzQXplNVR6N3ZObXJwbFpUWUpCV2FUVmpYbUsycWJOekxhLXZ6LWVkRnJYcy1kY21jUTJwLTNnWnNLWUZCTWxoZE1SMGNNVnVnVGFpTURVbEYxMjJBTWd4Zw?oc=5",
+      "sourceSlug": "news-search-nqm",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-06-23T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "40ea72c956ca6c1764c14b5d",
+      "title": "Amaravati Quantum Valley achieves 4 Kelvin",
+      "summary": "",
+      "sourceName": "The New Indian Express",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOaFFic0kxdXhhWGItQ3ZMSXFQWTc2bUptZWFBNDRCUmo3NzVTdEtyVmtEZ3I3QWhyd2luSS1wTC10MFRTYkxNdlpFVzUwNEVkTWdtQmktNmZOU0pMX2NMX294dWhFazhXUkdzazAyNnpuOG5iVHZMV2pyNTVqNVFQMXFEZTI2U3lZQm5TY2wwRXVRZmR2c3oxTWdORHJfYlZ3aF9hWmw3bzBBLXRoMXfSAbsBQVVfeXFMT2pWVjBsU1VHSVZOVm52al9NOFY1NE83WXBpcGN6ZThlVEc0N0ZDSkRIMEQwdjg5VzFMWWNYRDVlS1RpdEVNckRSUXdUTnI2eUxCNjZ4anZsTDVxem8zMVRBRHRSeWZEaF9HbWw2OV9qOUVxQzcxZkV2QWVhLUdTRVFKcWE2X24yTXBJVzZ1QnZHRnBFTTNRd1JmQlJ0ZkZGcFFsclcwMEdxR3dJNHVZNHR5QmlWR001N2paNA?oc=5",
+      "sourceSlug": "news-search-nqm",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-06-20T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "535e2bd39df20e3bca1a9c6d",
+      "title": "Amaravati hits major milestone in quantum computing, dilution refrigerator reaches 4 Kelvin",
+      "summary": "",
+      "sourceName": "indiatoday.in",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQQnZRRkpqVVk3YTAtVnNwdUxLaVJPVHpaVDQ3X3lsZHdfSkwwSmVjdTREOXpoVDNUWGFMa3VBRDVhcEc3OUd2YnJxcVZqaUdIRFBWbXBJdGVYVWEyaGNYa1NybVpZalJMdzRfWm9fVlZMbDBWcVd2ejBVejM1ZEJobDU3NnZYcldxRDFZeUZPT0RWRG16d1hrM1p0VE1yRkpxaDJKX2NiZkQyYTc2UlY1SjlSVDlIMWdtNnZoN2hQbzJFMkg2YWN5ekZJVzRUTENhTzhFQWNXcWVzTDdyVXZoRkQ1VmpIRjdxOXBpckxn0gHzAUFVX3lxTE42NVVnWW9lMXc1dTZLOHV1LXpWS0ZvOGhmZGR3N0d5Yk5WR0V4VTlvMlh4LUl3OWxGQmNQdHBTX2xtdFVBTGZrZVB6WXBQMW5ER2xYaEZTMU5RZ0F3enpZSXBxTVFPcUxJR1d1aWpGeS1hZ2dhSGdSODFqd0Y0Qkt6QjNJRzBzcG9LN0k2VzVJcWtRV2RPVnMwT0F6clFHR01rNkR0bDJmTEdvMTAtTlIwNTZyRF9MTEl4dDZ0blRheGZlQ0NmN0k5Z3duUHJJSFRoMGdpZTgzcmRZUnhKMko2aDJrNVVuX3VmR0hHb29qU1o4RQ?oc=5",
+      "sourceSlug": "news-search-india-quantum",
+      "region": "INDIA",
+      "topic": "HARDWARE",
+      "publishedAt": "2026-06-20T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "a58e586daeb7eaee156534c5",
+      "title": "India pitches quantum computing collaboration with Russia under national mission",
+      "summary": "",
+      "sourceName": "The Economic Times",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNaXVTdXE5eFFrMWlkYXVFczY2NHJZZW1ORk4yMkJnSWYySG9FTzFJTF9qWFNmMWtKMjBoRnlrN19ON2R5TTdvN1dfTzVmUW81ZkdQN3lRdmhXeldsQWdwWVJCeXpDV0hFY0tuOGt6a1dKU0EyNXd0cm5EampjN1lUbmVyYy1jbWsyTjVKSnV2MFpzSkFOWjFNMDdBMnJzc0E2TDNqTldxXzc3YlhrQ3JNTXpnZzVnSFdUSDc1VWdjTnBOTENlYjF4UkI1Z24tVi1BNnVYUF9UeGItYUFjeDZRb2tSV2RXSEN2UDlQT2FWbzhsdjjSAfgBQVVfeXFMTW9hVGtvSlRfeG1JVVcxdVZrMFJ1U1NxWEF6NlIwdjQxOFJLSkpRREUyaE1ITy0xMHZLX3QzUTFHTUZtMkx4UkVnY09uMy0weWQxZGp0THVUVDRrb2ZHbm9aVExpMGt0eWEwRE1Bc1BKU2pxbms0Q2ZoWnZCdEpWSHpZZ3Z1OUdoTkhvQTNlYTBacWhCbzRPSTVxUTlLV0JDZmJWX1BBLW81YmtickxmSnpRdXpwbmR5YkpfRWhtZHBkYWM2QlVESUFxLUxORXRhR091M18tZEUxa0RBUjhySkZkSWtsMEFBUnBrdjBXY0duSDdLbm11azQ?oc=5",
+      "sourceSlug": "news-search-nqm",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-06-15T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
+    },
+    {
+      "id": "1c5064623ea0aa4ccec9a2e4",
+      "title": "India Proposes Quantum Computing Collaboration With Russia",
+      "summary": "",
+      "sourceName": "russia's pivot to asia",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPV05BYnF0bnNQU250bVE0bF9XX0RDT2hqRWZhSGVfb09ISFAyTnpDVzdWdDhfN1Fza2VsX3pCV2ptOW1HVXBZVWt5MC05VGYtY2pCNWlpdVBSZ2EtczZ2Y21jQ28zYUVHTUlNMUtLQ3VZNmZ3dEsxclBrZl9ldUhza2hKSnpLcnpia3hRdGtrYW0tRnUt?oc=5",
+      "sourceSlug": "news-search-nqm",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-06-10T07:00:00.000Z",
+      "publishedAtEstimated": false,
+      "ingestedAt": "2026-09-01T21:16:25.080Z"
     }
   ]
 }
