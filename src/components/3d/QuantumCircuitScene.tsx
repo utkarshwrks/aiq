@@ -87,7 +87,7 @@ export function QuantumCircuitScene({
               <CircuitDiagramStill circuit={active} />
             </div>
           }
-          camera={{ position: [0, 0.9, 4.4], fov: 38 }}
+          camera={{ position: [0, 0.55, 4.6], fov: 38 }}
         >
           <QuantumCircuitSceneGraph circuit={active} />
         </SceneFrame>

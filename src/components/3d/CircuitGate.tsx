@@ -78,7 +78,10 @@ export function CircuitGate({ circuit, gate, pulse, at }: CircuitGateProps) {
 
         {gate.kind === 'CNOT' ? (
           <group position={[x, targetY, 0]}>
-            <mesh rotation={[Math.PI / 2, 0, 0]}>
+            {/* The target ring lies in the XY plane, facing the reader.
+                Rotating it into XZ leaves it edge-on and invisible from
+                the schematic's viewing angle. */}
+            <mesh>
               <torusGeometry args={[0.16, 0.014, 12, 32]} />
               <meshStandardMaterial color={VIOLET} emissive={VIOLET} emissiveIntensity={0.25} />
             </mesh>
