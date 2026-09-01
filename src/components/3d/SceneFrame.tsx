@@ -23,6 +23,12 @@ type SceneFrameProps = {
    * of line-heavy geometry these scenes draw.
    */
   dpr?: [number, number];
+  /**
+   * 'demand' renders only when something invalidates, which is correct
+   * for scenes that move on interaction alone. Scenes with a continuous
+   * ambient animation pass 'always'.
+   */
+  frameloop?: 'always' | 'demand';
 };
 
 /**
@@ -46,6 +52,7 @@ export function SceneFrame({
   className,
   camera = { position: [2.6, 1.9, 2.6], fov: 42 },
   dpr = [1, 2],
+  frameloop = 'always',
 }: SceneFrameProps) {
   const reduced = useReducedMotion();
   const { ref, inView } = useInView<HTMLDivElement>({ rootMargin: '240px' });
@@ -72,8 +79,7 @@ export function SceneFrame({
               // tone mapping would wash the accent colours out.
               toneMapping: 0,
             }}
-            // Frameloop stays on demand for scenes that only move on
-            // interaction; scenes that animate continuously opt back in.
+            frameloop={frameloop}
             aria-label={description}
             role="img"
             className="size-full"
