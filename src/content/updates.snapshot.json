@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-01T21:11:47.438Z",
-  "sourceCount": 29,
-  "feedSourceCount": 19,
+  "generatedAt": "2026-09-01T21:13:48.744Z",
+  "sourceCount": 35,
+  "feedSourceCount": 25,
   "global": [
     {
       "id": "eb329b048d4a6c4140a4d283",
@@ -14,7 +14,7 @@
       "topic": "HARDWARE",
       "publishedAt": "2026-09-01T17:00:02.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "b59af070391a2e3b9ec9c22c",
@@ -27,7 +27,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T16:08:57.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Mohib Ur Rehman"
     },
     {
@@ -41,7 +41,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T15:22:56.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -55,7 +55,7 @@
       "topic": "HARDWARE",
       "publishedAt": "2026-09-01T15:08:38.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -69,7 +69,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T13:59:29.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Mohib Ur Rehman"
     },
     {
@@ -83,7 +83,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T12:59:34.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Mohib Ur Rehman"
     },
     {
@@ -97,7 +97,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T10:21:38.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Resonance"
     },
     {
@@ -111,7 +111,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T03:07:43.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -125,7 +125,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T02:57:54.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -139,7 +139,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:59:59.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Doojin Kim"
     },
     {
@@ -153,7 +153,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:59:12.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Jean-Yves Desaules"
     },
     {
@@ -167,7 +167,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:55:49.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "David Roberts"
     },
     {
@@ -181,7 +181,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:54:47.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Marco Paradina"
     },
     {
@@ -195,7 +195,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-08-31T13:20:07.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "c179c07c76bb08ca3b68c388",
@@ -208,7 +208,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-08-31T12:05:06.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "eef207b696162dce2c5e88fc",
@@ -221,7 +221,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-08-31T12:00:02.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "020d3cbb82032ebaa9c12afd",
@@ -234,7 +234,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-08-30T13:00:02.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "69ba74aae811b4b6b8c69ff7",
@@ -247,7 +247,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-08-27T20:21:27.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "c03947b267cf6555ea5c7f35",
@@ -260,7 +260,7 @@
       "topic": "FUNDING",
       "publishedAt": "2026-08-27T20:07:48.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "009bbaabebcb3a1fa488ec62",
@@ -273,7 +273,7 @@
       "topic": "POLICY",
       "publishedAt": "2026-08-25T12:05:00.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "187c6d7fd2c743a531781ffb",
@@ -286,7 +286,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-08-12T14:00:01.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Lucas Laursen"
     },
     {
@@ -300,7 +300,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-08-05T16:46:11.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Martin Schuetz"
     },
     {
@@ -314,7 +314,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-08-05T12:00:00.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "c1367e53802f9d149391e5cd",
@@ -327,7 +327,7 @@
       "topic": "ALGORITHMS",
       "publishedAt": "2026-07-31T14:00:01.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Edd Gent"
     },
     {
@@ -341,7 +341,7 @@
       "topic": "ALGORITHMS",
       "publishedAt": "2026-07-23T20:03:07.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Mao Lin"
     },
     {
@@ -355,7 +355,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-07-20T18:38:09.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Dimitar Trenev"
     },
     {
@@ -369,7 +369,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-07-18T13:00:01.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Charles Q. Choi"
     },
     {
@@ -383,7 +383,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-07-17T16:21:26.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Tyler Takeshita"
     },
     {
@@ -397,7 +397,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-07-07T13:30:01.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Charles Q. Choi"
     },
     {
@@ -411,7 +411,7 @@
       "topic": "HARDWARE",
       "publishedAt": "2026-06-02T18:30:00.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Chetan Nayak"
     },
     {
@@ -423,9 +423,9 @@
       "sourceSlug": "quantinuum-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:40.404Z",
+      "publishedAt": "2026-09-01T21:13:41.608Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "383f4e3488422ce0f27e425a",
@@ -436,9 +436,9 @@
       "sourceSlug": "quantinuum-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:40.404Z",
+      "publishedAt": "2026-09-01T21:13:41.608Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "e6873483f46f9903223c7b93",
@@ -449,22 +449,9 @@
       "sourceSlug": "quantinuum-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:40.404Z",
+      "publishedAt": "2026-09-01T21:13:41.608Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
-    },
-    {
-      "id": "10af7cf83849bee4a3d22535",
-      "title": "IonQ CEO on $1B Acquisition of Quantum Startup Oxford Ionics",
-      "summary": "",
-      "sourceName": "IonQ",
-      "sourceUrl": "https://www.bloomberg.com/news/videos/2025-09-12/ionq-ceo-on-1b-takeover-of-oxford-ionics-video",
-      "sourceSlug": "ionq-news",
-      "region": "GLOBAL",
-      "topic": "FUNDING",
-      "publishedAt": "2026-09-01T21:11:37.364Z",
-      "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "87b21d2190305b935b78c8d2",
@@ -475,9 +462,9 @@
       "sourceSlug": "ionq-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:37.363Z",
+      "publishedAt": "2026-09-01T21:13:38.709Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "b8dd0aa06e1a2797f20b0137",
@@ -488,9 +475,22 @@
       "sourceSlug": "ionq-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:37.363Z",
+      "publishedAt": "2026-09-01T21:13:38.709Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
+    },
+    {
+      "id": "7c454321b48663414deb0cff",
+      "title": "IonQ and CMC Microsystems Announce Collaboration to Expand Cloud Quantum Computing Access in Canada",
+      "summary": "",
+      "sourceName": "IonQ",
+      "sourceUrl": "https://ionq.com/news/ionq-and-cmc-microsystems-announce-collaboration-to-expand-cloud-quantum-computing-access-in-canada",
+      "sourceSlug": "ionq-news",
+      "region": "GLOBAL",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-09-01T21:13:38.709Z",
+      "publishedAtEstimated": true,
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "d2be280c7b86937beda91ad1",
@@ -501,9 +501,9 @@
       "sourceSlug": "ibm-research",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:21.580Z",
+      "publishedAt": "2026-09-01T21:13:23.629Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "983650f086861205556b8b7f",
@@ -514,9 +514,9 @@
       "sourceSlug": "ibm-research",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:21.580Z",
+      "publishedAt": "2026-09-01T21:13:23.629Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "73bf5f0a5e568aac24ba2405",
@@ -527,9 +527,9 @@
       "sourceSlug": "ibm-research",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:21.580Z",
+      "publishedAt": "2026-09-01T21:13:23.629Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "448fa331923f48e1b43667b0",
@@ -540,9 +540,9 @@
       "sourceSlug": "ibm-research",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:21.580Z",
+      "publishedAt": "2026-09-01T21:13:23.629Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "bf47f6cb92e5ec07b1f6143b",
@@ -555,7 +555,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T09:19:03.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Resonance"
     },
     {
@@ -569,7 +569,7 @@
       "topic": "ALGORITHMS",
       "publishedAt": "2026-09-01T09:05:00.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Matt Swayne"
     },
     {
@@ -583,7 +583,7 @@
       "topic": "HARDWARE",
       "publishedAt": "2026-09-01T08:35:00.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Matt Swayne"
     },
     {
@@ -597,7 +597,7 @@
       "topic": "POLICY",
       "publishedAt": "2026-09-01T08:03:44.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Matt Swayne"
     },
     {
@@ -611,7 +611,7 @@
       "topic": "EDUCATION",
       "publishedAt": "2026-09-01T07:46:46.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Matt Swayne"
     },
     {
@@ -625,7 +625,7 @@
       "topic": "FUNDING",
       "publishedAt": "2026-09-01T02:46:49.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -639,7 +639,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T02:06:57.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -653,7 +653,7 @@
       "topic": "HARDWARE",
       "publishedAt": "2026-09-01T01:59:11.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -667,7 +667,7 @@
       "topic": "HARDWARE",
       "publishedAt": "2026-09-01T01:49:18.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -681,7 +681,7 @@
       "topic": "HARDWARE",
       "publishedAt": "2026-09-01T01:33:57.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -695,7 +695,7 @@
       "topic": "INDUSTRY",
       "publishedAt": "2026-08-31T22:03:02.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Matt Swayne"
     },
     {
@@ -709,7 +709,7 @@
       "topic": "POLICY",
       "publishedAt": "2026-08-31T19:59:01.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Doug Finke"
     },
     {
@@ -723,7 +723,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:26:27.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Snehal Raj"
     },
     {
@@ -737,7 +737,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:17:49.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Andrea Coladangelo"
     },
     {
@@ -751,7 +751,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:03:30.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Zicheng Zhang"
     },
     {
@@ -765,7 +765,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:02:10.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Holly G. Stemp"
     },
     {
@@ -779,7 +779,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:00:03.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Aitor Balmaseda"
     },
     {
@@ -793,7 +793,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:00:00.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Dario Cilluffo"
     },
     {
@@ -807,7 +807,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T16:53:42.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Guocheng Zhen"
     },
     {
@@ -821,7 +821,7 @@
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T16:53:17.000Z",
       "publishedAtEstimated": false,
-      "ingestedAt": "2026-09-01T21:11:47.438Z",
+      "ingestedAt": "2026-09-01T21:13:48.744Z",
       "byline": "Parameshwar R. Pasnoori"
     }
   ],
@@ -835,9 +835,9 @@
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:46.869Z",
+      "publishedAt": "2026-09-01T21:13:48.153Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "6b3a300322462f2408029e41",
@@ -848,9 +848,9 @@
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:46.869Z",
+      "publishedAt": "2026-09-01T21:13:48.153Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "36d283fe9fd692fb2d526170",
@@ -861,9 +861,9 @@
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:46.869Z",
+      "publishedAt": "2026-09-01T21:13:48.153Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "edf9b8995038f68cf1848ffb",
@@ -874,9 +874,9 @@
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:46.869Z",
+      "publishedAt": "2026-09-01T21:13:48.153Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "6ffabcabc044b8ab780e2dfd",
@@ -887,9 +887,9 @@
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:46.869Z",
+      "publishedAt": "2026-09-01T21:13:48.153Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "8c666632d86821519d9c4ad1",
@@ -900,9 +900,9 @@
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:46.869Z",
+      "publishedAt": "2026-09-01T21:13:48.153Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "8aaec6e1e8be58f8beaf80c7",
@@ -913,9 +913,9 @@
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:46.869Z",
+      "publishedAt": "2026-09-01T21:13:48.153Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "e66a51192446929bc0ae5800",
@@ -926,9 +926,9 @@
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:46.869Z",
+      "publishedAt": "2026-09-01T21:13:48.153Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "5af40f2090c05b2646fd1ba6",
@@ -939,9 +939,9 @@
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:46.869Z",
+      "publishedAt": "2026-09-01T21:13:48.153Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "765e292a152ab6ebf5392ddb",
@@ -952,9 +952,9 @@
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:46.869Z",
+      "publishedAt": "2026-09-01T21:13:48.153Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "dca4047b6c9731ed9badd95c",
@@ -965,9 +965,9 @@
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:46.869Z",
+      "publishedAt": "2026-09-01T21:13:48.153Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "97c0a8aed791acae8e7159e1",
@@ -978,9 +978,9 @@
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:46.869Z",
+      "publishedAt": "2026-09-01T21:13:48.153Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "7a371674fdda962321960235",
@@ -991,9 +991,9 @@
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:46.869Z",
+      "publishedAt": "2026-09-01T21:13:48.153Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "b6d1a117edc7056b2e6480ab",
@@ -1004,9 +1004,9 @@
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:46.869Z",
+      "publishedAt": "2026-09-01T21:13:48.153Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "c1484db0e24e4b34a9f7721c",
@@ -1017,9 +1017,9 @@
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:46.869Z",
+      "publishedAt": "2026-09-01T21:13:48.153Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "9526abe904d26de03d09ca42",
@@ -1030,9 +1030,9 @@
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:46.869Z",
+      "publishedAt": "2026-09-01T21:13:48.153Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "90f019bb6b219ae7c5ac6515",
@@ -1043,9 +1043,9 @@
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:46.869Z",
+      "publishedAt": "2026-09-01T21:13:48.153Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     },
     {
       "id": "a2788828794759db00d881ca",
@@ -1056,9 +1056,9 @@
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:11:46.869Z",
+      "publishedAt": "2026-09-01T21:13:48.153Z",
       "publishedAtEstimated": true,
-      "ingestedAt": "2026-09-01T21:11:47.438Z"
+      "ingestedAt": "2026-09-01T21:13:48.744Z"
     }
   ]
 }
