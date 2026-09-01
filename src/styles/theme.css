@@ -1,0 +1,140 @@
+/*
+ * AIQuantumOS - The Cartographer Theme
+ * ------------------------------------------------------------------
+ * Every colour, spacing rhythm, easing curve and elevation used in the
+ * product is declared here as a custom property. Nothing downstream may
+ * hardcode a hex value; see THEME.md for the rationale and usage rules.
+ *
+ * The palette is dark-first. There is no light mode: the product is an
+ * instrument console, and instrument consoles are read in low light.
+ */
+
+:root {
+  /* ---------------------------------------------------------------
+   * Surfaces. Four steps from deep ink to elevated panel. The steps are
+   * deliberately close together; contrast comes from hairlines, not from
+   * large luminance jumps or drop shadows.
+   * --------------------------------------------------------------- */
+  --cg-bg-deep: #0a0f14;
+  --cg-bg-surface: #10171d;
+  --cg-bg-elevated: #17212a;
+  --cg-bg-inset: #0d1319;
+
+  /* Gridlines and structural rules. */
+  --cg-line-grid: #1e2b33;
+  --cg-line-hairline: rgba(140, 160, 172, 0.16);
+  --cg-line-hairline-strong: rgba(140, 160, 172, 0.32);
+  --cg-line-contour: rgba(47, 217, 196, 0.12);
+
+  /* Ink. */
+  --cg-ink: #e8eef2;
+  --cg-ink-muted: #8ca0ac;
+  --cg-ink-faint: #5c6f7a;
+
+  /* Accents. Teal carries energy and quantum state; amber is the
+   * cartographer's compass and is rationed to one use per viewport;
+   * violet marks entanglement and secondary relationships. */
+  --cg-accent-teal: #2fd9c4;
+  --cg-accent-teal-dim: #1e8f82;
+  --cg-accent-amber: #e8a845;
+  --cg-accent-amber-dim: #9c7029;
+  --cg-accent-violet: #8c7cf0;
+  --cg-accent-violet-dim: #5c50a8;
+
+  /* Semantic status. Derived from the accent family so nothing reads as
+   * a bootstrap alert colour. */
+  --cg-status-live: #2fd9c4;
+  --cg-status-warn: #e8a845;
+  --cg-status-fault: #e8685c;
+
+  /* ---------------------------------------------------------------
+   * Typography
+   * --------------------------------------------------------------- */
+  --font-display: var(--font-space-grotesk), 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), 'JetBrains Mono', ui-monospace, monospace;
+  --font-body: var(--font-inter), 'Inter', system-ui, sans-serif;
+
+  /* A modular scale at 1.25 anchored on 16px. Display sizes clamp so the
+   * hero never overruns a small viewport. */
+  --text-2xs: 0.6875rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: clamp(1.5rem, 1.2rem + 1.4vw, 2rem);
+  --text-3xl: clamp(1.875rem, 1.4rem + 2.2vw, 2.75rem);
+  --text-4xl: clamp(2.25rem, 1.5rem + 3.6vw, 4rem);
+
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.04em;
+  --tracking-caps: 0.14em;
+
+  /* ---------------------------------------------------------------
+   * Spatial rhythm. An 8px base with a 4px half-step.
+   * --------------------------------------------------------------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  --radius-sm: 2px;
+  --radius-md: 3px;
+  --radius-lg: 4px;
+  /* Instruments do not have pill buttons. The largest radius in the
+   * system is 4px, and it is used sparingly. */
+
+  --shell-max: 88rem;
+  --shell-gutter: clamp(1rem, 0.5rem + 2vw, 3rem);
+
+  /* ---------------------------------------------------------------
+   * Motion. A precision instrument settles; it does not bounce. Every
+   * transition in the product uses one of these three curves.
+   * --------------------------------------------------------------- */
+  --ease-instrument: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-instrument-in: cubic-bezier(0.64, 0, 0.78, 0);
+  --ease-linear-sweep: cubic-bezier(0.4, 0, 0.6, 1);
+
+  --dur-instant: 90ms;
+  --dur-fast: 180ms;
+  --dur-base: 320ms;
+  --dur-slow: 560ms;
+  --dur-cinematic: 1200ms;
+
+  /* ---------------------------------------------------------------
+   * Layering
+   * --------------------------------------------------------------- */
+  --z-canvas: 0;
+  --z-content: 10;
+  --z-sticky: 20;
+  --z-nav: 40;
+  --z-overlay: 60;
+  --z-toast: 80;
+
+  /* Grid overlay geometry, shared between CSS backgrounds and the SVG
+   * motif components so the two stay registered with one another. */
+  --grid-cell: 64px;
+  --grid-subcell: 16px;
+}
+
+/*
+ * Reduced motion is a first-class branch, not a stripped one. Durations
+ * collapse but the layout and the information stay identical, and every
+ * 3D scene swaps to its static fallback (handled in React).
+ */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-instant: 1ms;
+    --dur-fast: 1ms;
+    --dur-base: 1ms;
+    --dur-slow: 1ms;
+    --dur-cinematic: 1ms;
+  }
+}
