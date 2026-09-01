@@ -108,23 +108,39 @@ export async function ingestSource(
     // panel renders those items without a summary line rather than
     // fabricating one.
     const summary = activeSummariser(rawSummary, title) ?? '';
-    if (source.kind !== 'HTML' && summary.length === 0) {
+    const summaryOptional =
+      source.kind === 'HTML' || source.kind === 'NEWS_SEARCH';
+    if (!summaryOptional && summary.length === 0) {
       result.skipped += 1;
       continue;
     }
 
     seenHashes.add(hash);
+
+    // An aggregator surfaces someone else's reporting. Crediting the
+    // aggregator would misattribute the work, so the originating
+    // publisher the adapter recovered becomes the item's source name.
+    const attributed =
+      source.kind === 'NEWS_SEARCH' && entry.byline
+        ? cleanText(entry.byline)
+        : source.name;
+
     items.push({
       title,
       summary,
-      sourceName: source.name,
+      sourceName: attributed,
       sourceUrl: entry.url,
       urlHash: hash,
       region: regionFor(title, summary, source.region),
       topic: activeClassifier(title, summary, source.slug),
       publishedAt: published,
       publishedAtEstimated: parsed === null,
-      byline: entry.byline ? cleanText(entry.byline) : undefined,
+      byline:
+        source.kind === 'NEWS_SEARCH'
+          ? undefined
+          : entry.byline
+            ? cleanText(entry.byline)
+            : undefined,
       sourceSlug: source.slug,
     });
   }

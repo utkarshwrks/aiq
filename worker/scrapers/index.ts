@@ -1,6 +1,7 @@
 import type { SourceDefinition } from '../../src/lib/sources';
 import type { Scraper } from '../types';
 import { scrapeArxiv } from './arxiv';
+import { scrapeGoogleNews } from './googleNews';
 import { scrapeHtml } from './html';
 import { scrapeRss } from './rss';
 
@@ -17,9 +18,11 @@ export function scraperFor(source: SourceDefinition): Scraper {
     case 'ATOM':
     case 'JSON_API':
       return scrapeRss;
+    case 'NEWS_SEARCH':
+      return scrapeGoogleNews;
     case 'HTML':
       return scrapeHtml;
   }
 }
 
-export { scrapeArxiv, scrapeHtml, scrapeRss };
+export { scrapeArxiv, scrapeGoogleNews, scrapeHtml, scrapeRss };

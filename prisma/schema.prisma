@@ -41,6 +41,9 @@ enum SourceKind {
   ATOM
   JSON_API
   HTML
+  /// A news search feed that surfaces other publishers' work. Items from
+  /// these carry the originating publisher as their source name.
+  NEWS_SEARCH
 }
 
 model Source {

@@ -37,7 +37,7 @@
 
 export type Region = 'GLOBAL' | 'INDIA';
 
-export type SourceKind = 'RSS' | 'ATOM' | 'JSON_API' | 'HTML';
+export type SourceKind = 'RSS' | 'ATOM' | 'JSON_API' | 'HTML' | 'NEWS_SEARCH';
 
 export type SourceDefinition = {
   slug: string;
@@ -270,6 +270,42 @@ export const GLOBAL_SOURCES: readonly SourceDefinition[] = [
 
 export const INDIA_SOURCES: readonly SourceDefinition[] = [
   {
+    slug: 'quantum-insider-india',
+    name: 'The Quantum Insider India',
+    homepage: 'https://thequantuminsider.com/tag/india/',
+    endpoint: 'https://thequantuminsider.com/tag/india/feed/',
+    kind: 'RSS',
+    region: 'INDIA',
+    monogram: 'TQI',
+    covers: 'India-tagged industry coverage from a quantum trade title',
+  },
+  {
+    slug: 'news-search-nqm',
+    name: 'National Quantum Mission coverage',
+    homepage: 'https://dst.gov.in/national-quantum-mission-nqm',
+    endpoint:
+      'https://news.google.com/rss/search?q=%22National+Quantum+Mission%22&hl=en-IN&gl=IN&ceid=IN:en',
+    kind: 'NEWS_SEARCH',
+    region: 'INDIA',
+    monogram: 'NQM',
+    covers:
+      'Reporting on the National Quantum Mission across Indian outlets, credited to the originating publisher',
+    minInterval: 240,
+  },
+  {
+    slug: 'news-search-india-quantum',
+    name: 'Indian quantum computing coverage',
+    homepage: 'https://news.google.com/',
+    endpoint:
+      'https://news.google.com/rss/search?q=%22quantum+computing%22+India&hl=en-IN&gl=IN&ceid=IN:en',
+    kind: 'NEWS_SEARCH',
+    region: 'INDIA',
+    monogram: 'IQC',
+    covers:
+      'Indian quantum computing reporting across outlets, credited to the originating publisher',
+    minInterval: 240,
+  },
+  {
     slug: 'express-computer',
     name: 'Express Computer',
     homepage: 'https://www.expresscomputer.in/',
@@ -300,17 +336,6 @@ export const INDIA_SOURCES: readonly SourceDefinition[] = [
     region: 'INDIA',
     monogram: 'ETC',
     covers: 'Indian enterprise technology leadership coverage',
-    requiresKeywordFilter: true,
-  },
-  {
-    slug: 'business-standard-tech',
-    name: 'Business Standard Technology',
-    homepage: 'https://www.business-standard.com/technology',
-    endpoint: 'https://www.business-standard.com/rss/technology-108.rss',
-    kind: 'RSS',
-    region: 'INDIA',
-    monogram: 'BS',
-    covers: 'Indian business and technology reporting',
     requiresKeywordFilter: true,
   },
   {
@@ -457,10 +482,15 @@ export const ALL_SOURCES: readonly SourceDefinition[] = [
 
 export const SOURCE_COUNT = ALL_SOURCES.length;
 
-/** Count of sources read through an official feed or API rather than HTML. */
+/** Count of sources read through a feed or API rather than page markup. */
 export const FEED_SOURCE_COUNT = ALL_SOURCES.filter(
   (source) => source.kind !== 'HTML',
 ).length;
+
+/** Sources that surface other publishers' work rather than their own. */
+export const AGGREGATOR_SOURCES = ALL_SOURCES.filter(
+  (source) => source.kind === 'NEWS_SEARCH',
+);
 
 export function getSource(slug: string): SourceDefinition | undefined {
   return ALL_SOURCES.find((source) => source.slug === slug);
