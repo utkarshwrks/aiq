@@ -114,8 +114,11 @@ export function UpdatePanel({
           <span className="data text-[length:var(--text-2xs)] uppercase tracking-[0.12em] text-ink-muted">
             {syncLabel(feed.stats.lastSyncedAt, now)}
           </span>
-          <span aria-hidden className="hidden h-3 w-px bg-hairline sm:block" />
-          <span className="data hidden text-[length:var(--text-2xs)] uppercase tracking-[0.12em] text-ink-faint sm:block">
+          <span aria-hidden className="h-3 w-px bg-hairline" />
+          {/* Whether the reader is looking at live rows or the committed
+              snapshot is not a detail to hide on a small screen; it is
+              the panel's own statement about its freshness. */}
+          <span className="data text-[length:var(--text-2xs)] uppercase tracking-[0.12em] text-ink-faint">
             {feed.stats.origin === 'database' ? 'Live index' : 'Committed snapshot'}
           </span>
         </div>

@@ -66,34 +66,38 @@
  * banding for one paint, with none of the cost of an SVG filter.
  */
 .cg-contours {
-  /* Tight rings. A wide ellipse produces sweeping arcs that read as a
-     warped grid rather than as elevation banding. */
+  /* Circular rings, flattened by a transform on the drift layer rather
+     than by an elliptical gradient. A repeating radial gradient with an
+     ellipse shape elongates its rings as the radius grows, and the
+     result is a bowtie interference figure across the middle of the
+     element rather than anything resembling elevation banding. */
   background-image: repeating-radial-gradient(
-    ellipse 26% 20% at 50% 50%,
-    transparent 0 22px,
-    var(--cg-line-contour) 22px 23px
+    circle at 50% 50%,
+    transparent 0 38px,
+    var(--cg-line-contour) 38px 39px
   );
 }
 
 .cg-contours-offset {
   background-image: repeating-radial-gradient(
-    ellipse 22% 30% at 18% 72%,
-    transparent 0 28px,
-    color-mix(in oklab, var(--cg-accent-violet) 9%, transparent) 28px 29px
+    circle at 22% 74%,
+    transparent 0 46px,
+    color-mix(in oklab, var(--cg-accent-violet) 9%, transparent) 46px 47px
   );
 }
 
 /* Slow parallax drift, driven by a CSS variable that scroll handlers
  * write to. Transform-only, so it never triggers layout. */
+/* The vertical squash that turns the circular rings into contours. */
 .cg-contours-drift {
   will-change: transform;
-  transform: translate3d(0, calc(var(--cg-drift, 0) * 1px), 0);
+  transform: translate3d(0, calc(var(--cg-drift, 0) * 1px), 0) scaleY(0.58);
 }
 
 @media (prefers-reduced-motion: reduce) {
   .cg-contours-drift {
     will-change: auto;
-    transform: none;
+    transform: scaleY(0.58);
   }
 }
 

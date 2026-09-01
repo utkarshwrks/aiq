@@ -65,8 +65,23 @@ function build(year: number, month: number, day: number): Date | null {
  * text with it excised; whitespace around the cut is repaired, including
  * the common case of a date fused directly onto the end of a headline.
  */
+/**
+ * Index pages regularly emit a date immediately after the headline with
+ * no separator at all - "...Post-Quantum CryptographyAugust 17, 2026" -
+ * because the two sit in adjacent elements that render without a space.
+ * A word boundary does not exist between "y" and "A", so the date
+ * patterns below cannot see it. Splitting the fused pair first is what
+ * makes those dates recoverable.
+ *
+ * The month must be followed by a day number for the split to apply, so
+ * an ordinary word that happens to begin with a capitalised month prefix
+ * is left alone.
+ */
+const FUSED_DATE =
+  /([a-z])((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2})/g;
+
 export function extractHeadlineAndDate(input: string): Extracted {
-  const text = input.replace(/\s+/g, ' ').trim();
+  const text = input.replace(/\s+/g, ' ').replace(FUSED_DATE, '$1 $2').trim();
 
   const attempts: Array<[RegExp, (m: RegExpMatchArray) => Date | null]> = [
     [
