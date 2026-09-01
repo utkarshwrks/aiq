@@ -3,7 +3,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { useFrame } from '@react-three/fiber';
-import { Line } from '@react-three/drei';
 import {
   ENTANGLEMENT_FRAGMENT,
   ENTANGLEMENT_VERTEX,
@@ -95,12 +94,16 @@ export function EntanglementSceneGraph({
     [separation],
   );
 
-  // The correlation bundle: arcs joining the two clusters, drawn once and
-  // faded in with the perturbation.
-  const bundle = useMemo(() => {
-    const curves: THREE.Vector3[][] = [];
-    for (let i = 0; i < 14; i += 1) {
-      const t = i / 13;
+  // The correlation bundle: arcs joining the two clusters, built as a
+  // single LineSegments so the whole bundle is one draw call and one
+  // material whose opacity tracks the perturbation.
+  const bundleGeometry = useMemo(() => {
+    const positions: number[] = [];
+    const arcs = 14;
+    const segments = 28;
+
+    for (let i = 0; i < arcs; i += 1) {
+      const t = i / (arcs - 1);
       const lift = (t - 0.5) * 1.15;
       const depth = Math.sin(t * Math.PI) * 0.55 - 0.28;
       const curve = new THREE.QuadraticBezierCurve3(
@@ -108,12 +111,23 @@ export function EntanglementSceneGraph({
         new THREE.Vector3(0, lift * 1.35, depth),
         new THREE.Vector3(separation * 0.62, lift * 0.6, depth * 0.4),
       );
-      curves.push(curve.getPoints(28));
+      const points = curve.getPoints(segments);
+      for (let s = 0; s < points.length - 1; s += 1) {
+        const a = points[s]!;
+        const b = points[s + 1]!;
+        positions.push(a.x, a.y, a.z, b.x, b.y, b.z);
+      }
     }
-    return curves;
+
+    const geometry = new THREE.BufferGeometry();
+    geometry.setAttribute(
+      'position',
+      new THREE.Float32BufferAttribute(positions, 3),
+    );
+    return geometry;
   }, [separation]);
 
-  const bundleRefs = useRef<Array<THREE.Material | null>>([]);
+  const bundleMaterial = useRef<THREE.LineBasicMaterial | null>(null);
 
   useFrame((_, delta) => {
     const mat = material.current;
@@ -127,10 +141,8 @@ export function EntanglementSceneGraph({
     current.current += (target - current.current) * rate;
     mat.uniforms['uPerturb']!.value = current.current;
 
-    for (const line of bundleRefs.current) {
-      if (line && 'opacity' in line) {
-        (line as THREE.LineBasicMaterial).opacity = 0.08 + current.current * 0.42;
-      }
+    if (bundleMaterial.current) {
+      bundleMaterial.current.opacity = 0.08 + current.current * 0.42;
     }
   });
 
@@ -144,23 +156,23 @@ export function EntanglementSceneGraph({
     };
   }, [geometry]);
 
+  useEffect(() => {
+    return () => {
+      bundleGeometry.dispose();
+    };
+  }, [bundleGeometry]);
+
   return (
     <>
-      {bundle.map((points, i) => (
-        <Line
-          key={`bundle-${i}`}
-          points={points}
+      <lineSegments args={[bundleGeometry, undefined]}>
+        <lineBasicMaterial
+          ref={bundleMaterial}
           color="#8c7cf0"
-          lineWidth={1}
           transparent
           opacity={0.1}
-          ref={undefined}
-          onUpdate={(line: THREE.Object3D) => {
-            const mesh = line as unknown as { material?: THREE.Material };
-            bundleRefs.current[i] = mesh.material ?? null;
-          }}
+          depthWrite={false}
         />
-      ))}
+      </lineSegments>
 
       <instancedMesh
         args={[geometry, undefined, count * 2]}
