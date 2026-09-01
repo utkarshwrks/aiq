@@ -4,7 +4,13 @@ import { useState } from 'react';
 import { SceneFrame } from './SceneFrame';
 import { QuantumCircuitSceneGraph } from './QuantumCircuitSceneGraph';
 import { CircuitDiagramStill } from './fallbacks/CircuitDiagramStill';
-import { CIRCUITS, GHZ_CIRCUIT, type Circuit } from '@/lib/circuits';
+import {
+  BELL_CIRCUIT,
+  GHZ_CIRCUIT,
+  GROVER_CIRCUIT,
+  PHASE_ESTIMATION_CIRCUIT,
+  type Circuit,
+} from '@/lib/circuits';
 import { cn } from '@/lib/cn';
 
 type QuantumCircuitSceneProps = {
@@ -17,12 +23,12 @@ type QuantumCircuitSceneProps = {
   showCaption?: boolean;
 };
 
-const SELECTABLE = [
-  CIRCUITS['bell-2'],
-  CIRCUITS['ghz-3'],
-  CIRCUITS['grover-2'],
-  CIRCUITS['qpe-3'],
-] as const;
+const SELECTABLE: readonly Circuit[] = [
+  BELL_CIRCUIT,
+  GHZ_CIRCUIT,
+  GROVER_CIRCUIT,
+  PHASE_ESTIMATION_CIRCUIT,
+];
 
 /**
  * A quantum circuit rendered in three dimensions, with the conventional

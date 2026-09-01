@@ -158,6 +158,16 @@ export const CIRCUITS = {
   [PHASE_ESTIMATION_CIRCUIT.id]: PHASE_ESTIMATION_CIRCUIT,
 } as const;
 
+/**
+ * Lookup by id. Returns undefined rather than an index signature hit, so
+ * callers under noUncheckedIndexedAccess handle the miss explicitly.
+ */
+export function getCircuit(id: string): Circuit | undefined {
+  return Object.prototype.hasOwnProperty.call(CIRCUITS, id)
+    ? (CIRCUITS as Record<string, Circuit>)[id]
+    : undefined;
+}
+
 /** Single-qubit gates render as a labelled body on their own wire. */
 export const SINGLE_QUBIT_GATES: ReadonlySet<GateKind> = new Set<GateKind>([
   'H',
