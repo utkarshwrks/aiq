@@ -5,6 +5,7 @@ import { ReferenceList } from '@/components/ui/ReferenceList';
 import { Panel } from '@/components/ui/Panel';
 import { InstrumentLink } from '@/components/ui/InstrumentLink';
 import { BlochSphere } from '@/components/3d/lazy';
+import { DeferredScene } from '@/components/3d/DeferredScene';
 import { CONCEPTS } from '@/content/foundations';
 import { buildReferences, REFERENCES, type ReferenceKey } from '@/content/references';
 
@@ -49,7 +50,9 @@ export default function FoundationsPage() {
       {/* The instrument, positioned where the qubit is first described. */}
       <div className="mb-20 grid gap-px border border-hairline bg-hairline lg:grid-cols-[minmax(0,1fr)_minmax(0,22rem)]">
         <div className="h-[30rem] bg-inset">
-          <BlochSphere />
+          <DeferredScene subject="Bloch sphere">
+            <BlochSphere />
+          </DeferredScene>
         </div>
         <div className="flex flex-col justify-center gap-4 bg-surface p-7">
           <p className="label-caps">Instrument</p>

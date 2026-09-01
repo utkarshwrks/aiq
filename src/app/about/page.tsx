@@ -4,6 +4,7 @@ import { Panel } from '@/components/ui/Panel';
 import { InstrumentLink } from '@/components/ui/InstrumentLink';
 import { Readout } from '@/components/ui/Readout';
 import { EntanglementParticles } from '@/components/3d/lazy';
+import { DeferredScene } from '@/components/3d/DeferredScene';
 import {
   ALL_SOURCES,
   FEED_SOURCE_COUNT,
@@ -64,7 +65,9 @@ export default function AboutPage() {
         </section>
 
         <div className="h-[22rem] border border-hairline">
-          <EntanglementParticles />
+          <DeferredScene subject="entangled pair">
+            <EntanglementParticles />
+          </DeferredScene>
         </div>
 
         <section aria-labelledby="sourcing-heading" id="sourcing" className="scroll-mt-24">

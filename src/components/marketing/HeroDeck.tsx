@@ -2,6 +2,7 @@
 
 import useSWR from 'swr';
 import { BlochSphere } from '@/components/3d/lazy';
+import { DeferredScene } from '@/components/3d/DeferredScene';
 import { CoordinateStrip } from '@/components/ui/CoordinateStrip';
 import { InstrumentLink } from '@/components/ui/InstrumentLink';
 import { ContourField } from '@/components/ui/ContourField';
@@ -111,7 +112,9 @@ export function HeroDeck({ initialStats }: { initialStats: IngestionStats }) {
           </div>
 
           <div className="cg-bracket relative min-h-0 flex-1 border border-hairline bg-inset">
-            <BlochSphere />
+            <DeferredScene subject="Bloch sphere">
+              <BlochSphere />
+            </DeferredScene>
           </div>
 
           <CoordinateStrip

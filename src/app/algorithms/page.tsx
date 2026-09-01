@@ -5,6 +5,7 @@ import { ReferenceList } from '@/components/ui/ReferenceList';
 import { Panel } from '@/components/ui/Panel';
 import { Tag } from '@/components/ui/Tag';
 import { QuantumCircuitScene } from '@/components/3d/lazy';
+import { DeferredScene } from '@/components/3d/DeferredScene';
 import { ALGORITHMS, COMPLEXITY_LABELS } from '@/content/algorithms';
 import { buildReferences, REFERENCES, type ReferenceKey } from '@/content/references';
 
@@ -34,7 +35,9 @@ export default function AlgorithmsPage() {
       lede="Six algorithms and algorithm families. Each entry states the speed-up honestly and then states the resource requirement, because giving the asymptotics without the requirement is how people come to believe a desktop machine is about to break RSA."
     >
       <div className="mb-20 h-[34rem] border border-hairline">
-        <QuantumCircuitScene selectable />
+        <DeferredScene subject="quantum circuit">
+          <QuantumCircuitScene selectable />
+        </DeferredScene>
       </div>
 
       <div className="space-y-20">
