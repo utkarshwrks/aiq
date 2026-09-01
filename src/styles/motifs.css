@@ -1,0 +1,240 @@
+/*
+ * Cartographer motifs
+ * ------------------------------------------------------------------
+ * The recurring visual grammar of the product, expressed as CSS
+ * utilities so it can be applied consistently without each component
+ * re-inventing a gradient. Four motifs, used everywhere:
+ *
+ *   1. the coordinate grid      .cg-grid
+ *   2. topographic contours     .cg-contours
+ *   3. hairline rules and ticks .cg-rule / .cg-ticks
+ *   4. tabular data numerals    .data
+ */
+
+/* --- 1. Coordinate grid --------------------------------------------
+ * A survey grid: fine sub-cells inside coarse cells, both drawn with
+ * repeating-linear-gradient so there is no image request. It fades out
+ * radially so the centre of a panel stays readable.
+ */
+.cg-grid {
+  position: relative;
+  background-image:
+    repeating-linear-gradient(
+      to right,
+      var(--cg-line-grid) 0 1px,
+      transparent 1px var(--grid-cell)
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--cg-line-grid) 0 1px,
+      transparent 1px var(--grid-cell)
+    );
+  background-position: center center;
+}
+
+.cg-grid-fine {
+  background-image:
+    repeating-linear-gradient(
+      to right,
+      color-mix(in oklab, var(--cg-line-grid) 55%, transparent) 0 1px,
+      transparent 1px var(--grid-subcell)
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      color-mix(in oklab, var(--cg-line-grid) 55%, transparent) 0 1px,
+      transparent 1px var(--grid-subcell)
+    );
+}
+
+/* Vignette mask applied to any grid so it reads as a printed chart
+ * rather than a wallpaper tile. */
+.cg-grid-masked {
+  -webkit-mask-image: radial-gradient(
+    ellipse 90% 70% at 50% 45%,
+    #000 25%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 90% 70% at 50% 45%,
+    #000 25%,
+    transparent 100%
+  );
+}
+
+/* --- 2. Topographic contours ---------------------------------------
+ * Nested elliptical rings. Repeating radial gradients give real contour
+ * banding for one paint, with none of the cost of an SVG filter.
+ */
+.cg-contours {
+  background-image: repeating-radial-gradient(
+    ellipse 62% 48% at 50% 50%,
+    transparent 0 26px,
+    var(--cg-line-contour) 26px 27px
+  );
+}
+
+.cg-contours-offset {
+  background-image: repeating-radial-gradient(
+    ellipse 48% 66% at 18% 72%,
+    transparent 0 34px,
+    color-mix(in oklab, var(--cg-accent-violet) 9%, transparent) 34px 35px
+  );
+}
+
+/* Slow parallax drift, driven by a CSS variable that scroll handlers
+ * write to. Transform-only, so it never triggers layout. */
+.cg-contours-drift {
+  will-change: transform;
+  transform: translate3d(0, calc(var(--cg-drift, 0) * 1px), 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cg-contours-drift {
+    will-change: auto;
+    transform: none;
+  }
+}
+
+/* --- 3. Hairlines and tick marks ------------------------------------
+ * Structure in this product comes from 1px rules, never from shadows.
+ */
+.cg-rule {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--cg-line-hairline) 12%,
+    var(--cg-line-hairline) 88%,
+    transparent
+  );
+}
+
+.cg-rule-v {
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--cg-line-hairline) 12%,
+    var(--cg-line-hairline) 88%,
+    transparent
+  );
+}
+
+/* Latitude/longitude style tick marks along an edge. */
+.cg-ticks {
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--cg-line-hairline-strong) 0 1px,
+    transparent 1px 12px
+  );
+  height: 5px;
+}
+
+.cg-ticks-major {
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--cg-line-hairline-strong) 0 1px,
+    transparent 1px 60px
+  );
+  height: 9px;
+}
+
+/* A corner bracket set, the way a plate is registered on a chart. */
+.cg-bracket {
+  position: relative;
+}
+.cg-bracket::before,
+.cg-bracket::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-color: var(--cg-line-hairline-strong);
+  border-style: solid;
+  pointer-events: none;
+}
+.cg-bracket::before {
+  top: 0;
+  left: 0;
+  border-width: 1px 0 0 1px;
+}
+.cg-bracket::after {
+  bottom: 0;
+  right: 0;
+  border-width: 0 1px 1px 0;
+}
+
+/* --- 4. Data numerals ------------------------------------------------
+ * Anything that is a measurement, count, coordinate or timestamp.
+ */
+.data {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums slashed-zero;
+  letter-spacing: var(--tracking-normal);
+}
+
+.label-caps {
+  font-family: var(--font-mono);
+  font-size: var(--text-2xs);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-caps);
+  color: var(--cg-ink-faint);
+}
+
+/* --- Ambient signal animations --------------------------------------- */
+@keyframes cg-pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.35;
+    transform: scale(0.82);
+  }
+}
+
+@keyframes cg-sweep {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes cg-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cg-pulse {
+  animation: cg-pulse 2.4s var(--ease-linear-sweep) infinite;
+}
+
+.cg-sweep::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in oklab, var(--cg-accent-teal) 14%, transparent),
+    transparent
+  );
+  animation: cg-sweep 2.8s var(--ease-linear-sweep) infinite;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cg-pulse,
+  .cg-sweep::after {
+    animation: none;
+  }
+  .cg-sweep::after {
+    opacity: 0.4;
+  }
+}
