@@ -56,9 +56,11 @@ export type FetchOptions = {
 };
 
 function backoff(attempt: number): number {
-  // 500ms, 1500ms, 4500ms. Enough to ride out a brief upstream blip
-  // without holding the scheduler open for a source that is properly down.
-  return 500 * 3 ** (attempt - 1);
+  // 1.2s then 3.6s. Long enough that a publisher which throttles rapid
+  // repeats has actually stopped throttling us by the retry, and short
+  // enough that the scheduler is not held open by a source that is
+  // properly down.
+  return 1200 * 3 ** (attempt - 1);
 }
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));

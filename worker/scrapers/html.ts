@@ -36,6 +36,7 @@ const OVERRIDES: Record<string, Override> = {
   'xanadu-blog': { item: 'a[href*="/blog/"]' },
   'qnu-labs': { item: 'a[href*="/blog"]' },
   'iit-madras-press': { item: 'a[href*="press"]' },
+  'ibm-research': { item: 'a[href^="/blog/"]' },
 };
 
 /**

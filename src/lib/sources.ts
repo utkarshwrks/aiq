@@ -1,11 +1,27 @@
 /**
  * The source registry.
  *
- * Every endpoint below was checked to respond before being listed. The
- * ordering principle is the one stated in the brief: official feeds and
- * public APIs first, HTML index pages only where a publisher offers no
- * feed at all. Twenty-one of the thirty-one entries here are RSS or a
- * documented API.
+ * Every endpoint below was checked by actually reading it, not merely by
+ * confirming it returns 200. The ordering principle is the one stated in
+ * the brief: official feeds and public APIs first, HTML index pages only
+ * where a publisher offers no usable feed.
+ *
+ * Three entries changed during that check. IBM's legacy WordPress feed
+ * now redirects to a rebuilt blog with no feed, so it reads as HTML. The
+ * Press Information Bureau was dropped: it answers 403 to any identified
+ * non-browser client, and spoofing a browser user agent to get around
+ * that is not something this pipeline does. The Department of Science
+ * and Technology was dropped for a duller reason - its advertised
+ * rss.xml serves the ordinary page, and that page carries no article
+ * list in its static markup, so there is nothing to read.
+ *
+ * National Quantum Mission and policy coverage is instead picked up
+ * through The Hindu's science desk and MediaNama, both of which report
+ * DST announcements and both of which publish real feeds.
+ *
+ * SOURCE_COUNT and FEED_SOURCE_COUNT are derived at the foot of this
+ * file rather than written into prose here, so the figures the interface
+ * shows can never drift from the list.
  *
  * This module is shared between the Next application and the ingestion
  * worker, so the sourcing disclosure the reader sees is generated from
@@ -56,8 +72,10 @@ export const GLOBAL_SOURCES: readonly SourceDefinition[] = [
     slug: 'ibm-research',
     name: 'IBM Research',
     homepage: 'https://research.ibm.com/blog',
-    endpoint: 'https://www.ibm.com/blogs/research/feed/',
-    kind: 'RSS',
+    // The legacy WordPress feed now redirects to the rebuilt blog, which
+    // publishes no feed of its own; the index page is the only option.
+    endpoint: 'https://research.ibm.com/blog',
+    kind: 'HTML',
     region: 'GLOBAL',
     monogram: 'IBM',
     covers: 'IBM Quantum hardware roadmap, Qiskit and research posts',
@@ -246,25 +264,36 @@ export const GLOBAL_SOURCES: readonly SourceDefinition[] = [
 
 export const INDIA_SOURCES: readonly SourceDefinition[] = [
   {
-    slug: 'pib-science',
-    name: 'Press Information Bureau',
-    homepage: 'https://pib.gov.in/',
-    endpoint: 'https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3',
+    slug: 'the-hindu-science',
+    name: 'The Hindu Science',
+    homepage: 'https://www.thehindu.com/sci-tech/science/',
+    endpoint: 'https://www.thehindu.com/sci-tech/science/feeder/default.rss',
     kind: 'RSS',
     region: 'INDIA',
-    monogram: 'PIB',
-    covers: 'Government of India science and technology releases',
+    monogram: 'THS',
+    covers: 'Indian science reporting, including national mission coverage',
     requiresKeywordFilter: true,
   },
   {
-    slug: 'dst-whatsnew',
-    name: 'Department of Science and Technology',
-    homepage: 'https://dst.gov.in/',
-    endpoint: 'https://dst.gov.in/whatsnew/rss.xml',
+    slug: 'medianama',
+    name: 'MediaNama',
+    homepage: 'https://www.medianama.com/',
+    endpoint: 'https://www.medianama.com/feed/',
     kind: 'RSS',
     region: 'INDIA',
-    monogram: 'DST',
-    covers: 'National Quantum Mission and DST programme announcements',
+    monogram: 'MN',
+    covers: 'Indian technology policy and regulation',
+    requiresKeywordFilter: true,
+  },
+  {
+    slug: 'inc42',
+    name: 'Inc42',
+    homepage: 'https://inc42.com/',
+    endpoint: 'https://inc42.com/feed/',
+    kind: 'RSS',
+    region: 'INDIA',
+    monogram: 'I42',
+    covers: 'Indian startup funding and deep-technology ventures',
     requiresKeywordFilter: true,
   },
   {
