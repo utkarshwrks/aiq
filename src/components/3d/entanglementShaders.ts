@@ -64,9 +64,13 @@ export const ENTANGLEMENT_VERTEX = /* glsl */ `
   }
 `;
 
+/*
+ * No explicit precision qualifier here. three.js prepends a matching
+ * precision preamble to both stages; declaring mediump in the fragment
+ * shader alone makes uPerturb mediump in one stage and highp in the
+ * other, which is a link-time validation failure, not a warning.
+ */
 export const ENTANGLEMENT_FRAGMENT = /* glsl */ `
-  precision mediump float;
-
   uniform vec3 uSpinUp;
   uniform vec3 uSpinDown;
   uniform float uPerturb;
