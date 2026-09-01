@@ -1,4 +1,7 @@
 import type { Metadata, Viewport } from 'next';
+import { SiteHeader } from '@/components/layout/SiteHeader';
+import { SiteFooter } from '@/components/layout/SiteFooter';
+import { SkipLink } from '@/components/layout/SkipLink';
 import { fontVariables } from '@/lib/fonts';
 import { SITE } from '@/lib/site';
 import '@/styles/globals.css';
@@ -53,7 +56,12 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={fontVariables} suppressHydrationWarning>
-      <body>{children}</body>
+      <body className="min-h-dvh antialiased">
+        <SkipLink />
+        <SiteHeader />
+        {children}
+        <SiteFooter />
+      </body>
     </html>
   );
 }
