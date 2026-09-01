@@ -172,8 +172,8 @@ export function CircuitGate({ circuit, gate, pulse, at }: CircuitGateProps) {
         <lineBasicMaterial color={EDGE} />
       </lineSegments>
 
-      <Html center distanceFactor={6} zIndexRange={[8, 0]} style={{ pointerEvents: 'none' }}>
-        <span className="data select-none whitespace-nowrap text-[0.62rem] text-ink" aria-hidden>
+      <Html center zIndexRange={[8, 0]} style={{ pointerEvents: 'none' }}>
+        <span className="data select-none whitespace-nowrap text-[0.6875rem] text-ink" aria-hidden>
           {gate.kind === 'MEASURE' ? 'M' : gate.kind}
           {gate.param && <span className="text-ink-faint"> {gate.param}</span>}
         </span>

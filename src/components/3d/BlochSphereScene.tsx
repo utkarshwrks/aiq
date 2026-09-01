@@ -195,7 +195,7 @@ export function BlochSphereScene({
       />
 
       {/* --- State vector --------------------------------------------- */}
-      <Line points={[ORIGIN, tip]} color={TEAL} lineWidth={2.6} />
+      <Line points={[ORIGIN, tip]} color={TEAL} lineWidth={3} />
       <mesh
         position={tip}
         onPointerDown={beginDrag}
@@ -221,14 +221,16 @@ export function BlochSphereScene({
         CARDINAL_STATES.map((state) => (
           <Html
             key={state.label}
-            position={blochToWorld(state.vector).multiplyScalar(1.24)}
+            position={blochToWorld(state.vector).multiplyScalar(1.26)}
             center
-            distanceFactor={7}
+            // No distanceFactor: an instrument's labels are set at a
+            // constant size, not scaled by how far the geometry happens
+            // to be from the camera.
             zIndexRange={[10, 0]}
             style={{ pointerEvents: 'none' }}
           >
             <span
-              className="data select-none whitespace-nowrap text-[0.7rem] text-ink-faint"
+              className="data select-none whitespace-nowrap text-[0.6875rem] text-ink-faint"
               aria-hidden
             >
               {state.label}

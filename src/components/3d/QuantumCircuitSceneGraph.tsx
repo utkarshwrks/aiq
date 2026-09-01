@@ -95,13 +95,12 @@ export function QuantumCircuitSceneGraph({
             {/* Wire label, set as a register index the way a schematic
                 labels its lines. */}
             <Html
-              position={[startX - 0.32, y, 0]}
+              position={[startX - 0.34, y, 0]}
               center
-              distanceFactor={6}
               zIndexRange={[8, 0]}
               style={{ pointerEvents: 'none' }}
             >
-              <span className="data select-none whitespace-nowrap text-[0.62rem] text-ink-faint" aria-hidden>
+              <span className="data select-none whitespace-nowrap text-[0.6875rem] text-ink-faint" aria-hidden>
                 q{i}
               </span>
             </Html>

@@ -25,7 +25,12 @@ type BlochSphereProps = {
   showLabels?: boolean;
 };
 
-const DEFAULT_ANGLES: BlochAngles = { theta: Math.PI * 0.38, phi: Math.PI * 0.28 };
+/**
+ * Chosen so the vector is clearly oblique to the default camera bearing.
+ * At phi near the camera's own azimuth the vector projects onto a few
+ * pixels at the centre of the frame and reads as if it were missing.
+ */
+const DEFAULT_ANGLES: BlochAngles = { theta: Math.PI * 0.36, phi: Math.PI * 0.74 };
 const STEP = Math.PI / 24;
 
 /**
