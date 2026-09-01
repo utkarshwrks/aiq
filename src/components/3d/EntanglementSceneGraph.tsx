@@ -68,7 +68,7 @@ export function EntanglementSceneGraph({
   }, [count]);
 
   const geometry = useMemo(() => {
-    const base = new THREE.IcosahedronGeometry(0.018, 0);
+    const base = new THREE.IcosahedronGeometry(0.021, 0);
     const instanced = new THREE.InstancedBufferGeometry();
     instanced.index = base.index;
     instanced.attributes['position'] = base.attributes['position'] as THREE.BufferAttribute;

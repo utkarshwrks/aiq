@@ -83,8 +83,10 @@ export const ENTANGLEMENT_FRAGMENT = /* glsl */ `
 
     // Particles further from the camera recede rather than all sitting at
     // the same weight, which is what gives the cloud any volume at all.
-    float fog = clamp(1.0 - (vDepth - 2.0) / 7.0, 0.15, 1.0);
-    float energy = 0.45 + 0.55 * uPerturb;
+    // The floor is deliberately high: below roughly 0.4 the accents stop
+    // reading as teal and violet and collapse into indistinct dark dots.
+    float fog = clamp(1.0 - (vDepth - 2.6) / 9.0, 0.42, 1.0);
+    float energy = 0.72 + 0.28 * uPerturb;
 
     gl_FragColor = vec4(colour * energy * fog, 1.0);
   }
