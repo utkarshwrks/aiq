@@ -19,6 +19,12 @@
  * through The Hindu's science desk and MediaNama, both of which report
  * DST announcements and both of which publish real feeds.
  *
+ * QpiAI and BosonQ Psi are likewise absent from the ingestion list: both
+ * render their newsrooms client-side, so a static fetch returns markup
+ * with no articles in it. Reading a page that reliably yields nothing is
+ * worse than not listing it. Both companies are profiled on the India
+ * plate, which is where they belong.
+ *
  * SOURCE_COUNT and FEED_SOURCE_COUNT are derived at the foot of this
  * file rather than written into prose here, so the figures the interface
  * shows can never drift from the list.
@@ -362,28 +368,6 @@ export const INDIA_SOURCES: readonly SourceDefinition[] = [
     region: 'INDIA',
     monogram: 'QNU',
     covers: 'Quantum key distribution and quantum-safe security, Bengaluru',
-    minInterval: 720,
-  },
-  {
-    slug: 'qpiai',
-    name: 'QpiAI',
-    homepage: 'https://www.qpiai.tech/',
-    endpoint: 'https://www.qpiai.tech/',
-    kind: 'HTML',
-    region: 'INDIA',
-    monogram: 'QPI',
-    covers: 'Full-stack quantum computing and AI systems, Bengaluru',
-    minInterval: 720,
-  },
-  {
-    slug: 'bosonq-psi',
-    name: 'BosonQ Psi',
-    homepage: 'https://bosonqpsi.com/',
-    endpoint: 'https://bosonqpsi.com/',
-    kind: 'HTML',
-    region: 'INDIA',
-    monogram: 'BQP',
-    covers: 'Quantum-accelerated simulation software, Bhilai and Buffalo',
     minInterval: 720,
   },
   {

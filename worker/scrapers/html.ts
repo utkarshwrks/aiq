@@ -1,5 +1,6 @@
 import * as cheerio from 'cheerio';
 import type { RawItem, Scraper } from '../types';
+import { extractHeadlineAndDate } from './headline';
 import { fetchText } from './http';
 
 /**
@@ -98,24 +99,37 @@ export const scrapeHtml: Scraper = async (source) => {
     }
     if (seen.has(url)) return;
 
-    const titleNode = override?.title ? node.find(override.title).first() : node;
-    const title = titleNode.text().replace(/\s+/g, ' ').trim();
-    if (!isPlausibleHeadline(title)) return;
+    // Prefer a heading inside the card. An index page that marks its
+    // headline up as a heading has told us where the headline is, and
+    // taking the whole anchor's text instead would glue the category
+    // chip and the date onto the front of it.
+    const heading = node.find('h1, h2, h3, h4, h5').first();
+    const rawTitle = (
+      override?.title
+        ? node.find(override.title).first().text()
+        : heading.length > 0
+          ? heading.text()
+          : node.text()
+    );
+
+    const { headline, date: inlineDate } = extractHeadlineAndDate(rawTitle);
+    if (!isPlausibleHeadline(headline)) return;
 
     seen.add(url);
 
-    // Index pages rarely carry a machine-readable date. Leaving it
-    // undefined is correct: the pipeline will fall back to the time of
-    // first sighting rather than invent a publication date.
-    const dateText = override?.date
-      ? node.find(override.date).first().attr('datetime') ??
-        node.find(override.date).first().text()
-      : node.find('time').first().attr('datetime');
+    // A machine-readable datetime is authoritative where one exists. The
+    // date recovered from the card text is the fallback, and leaving the
+    // field undefined is the last resort - the pipeline then dates the
+    // item from first sighting rather than inventing a publication date.
+    const markedUpDate =
+      node.find('time').first().attr('datetime') ??
+      node.find('time').first().text().trim() ??
+      undefined;
 
     items.push({
-      title,
+      title: headline,
       url,
-      publishedAt: dateText ?? undefined,
+      publishedAt: markedUpDate || inlineDate?.toISOString() || undefined,
       // Index pages give a headline and a link. Anything more would mean
       // following through to the article body, which this adapter does
       // not do.
