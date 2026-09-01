@@ -12,7 +12,18 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit && tsc --noEmit -p worker/tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "ingest": "tsx worker/cli.ts",
+    "ingest:dry": "tsx worker/cli.ts --dry",
+    "worker": "tsx worker/index.ts",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio",
+    "capture": "node scripts/capture.mjs"
   },
   "dependencies": {
     "@prisma/client": "^7.10.0",
