@@ -93,9 +93,11 @@ export async function ingestSource(
       continue;
     }
 
-    // Index pages carry no date. Falling back to now is honest for a
-    // first sighting, and the age check below still applies to feeds.
-    const published = parseDate(entry.publishedAt) ?? new Date();
+    // An index page that carries no date leaves us with first sighting,
+    // which is recorded as such rather than passed off as a publication
+    // time. The ranking downstream keeps these below dated items.
+    const parsed = parseDate(entry.publishedAt);
+    const published = parsed ?? new Date();
     if (tooOld(published)) {
       result.skipped += 1;
       continue;
@@ -121,6 +123,7 @@ export async function ingestSource(
       region: source.region,
       topic: activeClassifier(title, summary, source.slug),
       publishedAt: published,
+      publishedAtEstimated: parsed === null,
       byline: entry.byline ? cleanText(entry.byline) : undefined,
       sourceSlug: source.slug,
     });

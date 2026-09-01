@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-09-01T21:08:24.979Z",
-  "sourceCount": 31,
+  "generatedAt": "2026-09-01T21:10:28.628Z",
+  "sourceCount": 29,
   "feedSourceCount": 19,
   "global": [
     {
-      "id": "412f5b81f9a9e807cd7fd0af",
-      "title": "Business Nov 24, 2025 Aramco and Pasqal make history with Saudi Arabia's first quantum...",
+      "id": "da92264532345f6ef5ced613",
+      "title": "D-Wave Announces the Resignation of Chief Financial Officer",
       "summary": "",
-      "sourceName": "Pasqal",
-      "sourceUrl": "https://www.pasqal.com/newsroom/aramco-and-pasqal-make-history-with-saudi-arabia-first-quantum-computer/",
-      "sourceSlug": "pasqal-news",
+      "sourceName": "D-Wave Quantum",
+      "sourceUrl": "https://www.dwavequantum.com/company/newsroom/press-release/d-wave-announces-the-resignation-of-chief-financial-officer/",
+      "sourceSlug": "dwave-newsroom",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:21.585Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:17.685Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "b0d46bbd86a1c1b1b6ea1dac",
@@ -24,8 +24,8 @@
       "sourceSlug": "dwave-newsroom",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:19.947Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:17.685Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "887712e4e981cc5e41f5d118",
@@ -36,8 +36,8 @@
       "sourceSlug": "dwave-newsroom",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:19.947Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:17.685Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "85f2e9e6c845d46814f69eac",
@@ -48,8 +48,8 @@
       "sourceSlug": "dwave-newsroom",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:19.947Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:17.685Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "517f183cb59ca79ba8d9ae3d",
@@ -60,8 +60,8 @@
       "sourceSlug": "dwave-newsroom",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:19.947Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:17.685Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "e860aebf8732d876cd53aca0",
@@ -72,20 +72,8 @@
       "sourceSlug": "dwave-newsroom",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:19.947Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
-    },
-    {
-      "id": "da92264532345f6ef5ced613",
-      "title": "D-Wave Announces the Resignation of Chief Financial Officer",
-      "summary": "",
-      "sourceName": "D-Wave Quantum",
-      "sourceUrl": "https://www.dwavequantum.com/company/newsroom/press-release/d-wave-announces-the-resignation-of-chief-financial-officer/",
-      "sourceSlug": "dwave-newsroom",
-      "region": "GLOBAL",
-      "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:19.946Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:17.685Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "739492fe102d59ad6866547c",
@@ -96,8 +84,8 @@
       "sourceSlug": "quantinuum-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:19.537Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:17.378Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "383f4e3488422ce0f27e425a",
@@ -108,8 +96,8 @@
       "sourceSlug": "quantinuum-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:19.537Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:17.378Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "e6873483f46f9903223c7b93",
@@ -120,224 +108,152 @@
       "sourceSlug": "quantinuum-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:19.537Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
-    },
-    {
-      "id": "87b21d2190305b935b78c8d2",
-      "title": "IonQ Appoints Dr. Eric Ball and Timothy Baxter to Board of DirectorsAugust 25, 20262026-08-25IonQ Press ReleaseRead more",
-      "summary": "",
-      "sourceName": "IonQ",
-      "sourceUrl": "https://ionq.com/news/ionq-appoints-dr-eric-ball-and-timothy-baxter-to-board-of-directors",
-      "sourceSlug": "ionq-news",
-      "region": "GLOBAL",
-      "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:16.752Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:17.378Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "b8dd0aa06e1a2797f20b0137",
-      "title": "IonQ's Skyloom Optical Communications Terminals Reach 84 On-Orbit Installations Following Latest LaunchAugust 24, 20262026-08-24IonQ Press ReleaseRead more",
+      "title": "IonQ's Skyloom Optical Communications Terminals Reach 84 On-Orbit Installations Following Latest Launch",
       "summary": "",
       "sourceName": "IonQ",
       "sourceUrl": "https://ionq.com/news/ionqs-skyloom-optical-communications-terminals-reach-84-on-orbit-installations-following-latest-launch",
       "sourceSlug": "ionq-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:16.752Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:14.375Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "7c454321b48663414deb0cff",
-      "title": "IonQ and CMC Microsystems Announce Collaboration to Expand Cloud Quantum Computing Access in CanadaAugust 18, 20262026-08-18IonQ Press ReleaseRead more",
+      "title": "IonQ and CMC Microsystems Announce Collaboration to Expand Cloud Quantum Computing Access in Canada",
       "summary": "",
       "sourceName": "IonQ",
       "sourceUrl": "https://ionq.com/news/ionq-and-cmc-microsystems-announce-collaboration-to-expand-cloud-quantum-computing-access-in-canada",
       "sourceSlug": "ionq-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:16.752Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:14.375Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "73001bd8fcc6be6977d00912",
-      "title": "UPDATED: DARPA Selects IonQ to Produce Next-Generation Atomic ClocksAugust 6, 20262026-08-06IonQ Press ReleaseRead more",
+      "title": "UPDATED: DARPA Selects IonQ to Produce Next-Generation Atomic Clocks",
       "summary": "",
       "sourceName": "IonQ",
       "sourceUrl": "https://ionq.com/news/updated-darpa-selects-ionq-to-produce-next-generation-atomic-clocks",
       "sourceSlug": "ionq-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:16.752Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:14.375Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "1001d3d807efc7e52c3d942b",
-      "title": "IonQ's Space Division Awarded NRO Radar Commercial Augmentation ContractAugust 6, 20262026-08-06IonQ Press ReleaseRead more",
+      "title": "IonQ's Space Division Awarded NRO Radar Commercial Augmentation Contract",
       "summary": "",
       "sourceName": "IonQ",
       "sourceUrl": "https://ionq.com/news/ionqs-space-division-awarded-nro-radar-commercial-augmentation-contract",
       "sourceSlug": "ionq-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:16.752Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:14.375Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "73bf5a1060885808c9a50995",
-      "title": "IonQ Announces Record Second Quarter 2026 Revenues, Growing 287% YoYAugust 5, 20262026-08-05IonQ Press ReleaseRead more",
+      "title": "IonQ Announces Record Second Quarter 2026 Revenues, Growing 287% YoY",
       "summary": "",
       "sourceName": "IonQ",
       "sourceUrl": "https://ionq.com/news/ionq-announces-record-second-quarter-2026-revenues-growing-287-yoy",
       "sourceSlug": "ionq-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:16.752Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:14.375Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "70a85df75fddf9359700d9f7",
-      "title": "IonQ and Sandia National Laboratories Sign MOU to Accelerate Quantum Co-Design for National Security ApplicationsAugust 4, 20262026-08-04IonQ Press ReleaseRead more",
+      "title": "IonQ and Sandia National Laboratories Sign MOU to Accelerate Quantum Co-Design for National Security Applications",
       "summary": "",
       "sourceName": "IonQ",
       "sourceUrl": "https://ionq.com/news/ionq-and-sandia-national-laboratories-sign-mou-to-accelerate-quantum-co-design-for-national-security-applications",
       "sourceSlug": "ionq-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:16.752Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:14.375Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "94a24b6211d7e94cd812d1ee",
-      "title": "IonQ and EPB Partner to Launch the Tennessee Quantum Communications Research CenterAugust 3, 20262026-08-03IonQ Press ReleaseRead more",
+      "title": "IonQ and EPB Partner to Launch the Tennessee Quantum Communications Research Center",
       "summary": "",
       "sourceName": "IonQ",
       "sourceUrl": "https://ionq.com/news/ionq-and-epb-partner-to-launch-the-tennessee-quantum-communications-research-center",
       "sourceSlug": "ionq-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:16.752Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:14.375Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "4c04c6fc43e7d9698c62d2af",
-      "title": "IonQ Completes Acquisition of SkyWater TechnologyJuly 31, 20262026-07-31IonQ Press ReleaseRead more",
+      "title": "IonQ Completes Acquisition of SkyWater Technology",
       "summary": "",
       "sourceName": "IonQ",
       "sourceUrl": "https://ionq.com/news/ionq-completes-acquisition-of-skywater-technology",
       "sourceSlug": "ionq-news",
       "region": "GLOBAL",
       "topic": "FUNDING",
-      "publishedAt": "2026-09-01T21:08:16.752Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:14.375Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "53b35f6e7969e34fd53b8629",
-      "title": "IonQ Receives Regulatory Approval to Complete Acquisition of SkyWater TechnologyJuly 28, 20262026-07-28IonQ Press ReleaseRead more",
+      "title": "IonQ Receives Regulatory Approval to Complete Acquisition of SkyWater Technology",
       "summary": "",
       "sourceName": "IonQ",
       "sourceUrl": "https://ionq.com/news/ionq-receives-regulatory-approval-to-complete-acquisition-of-skywater-technology",
       "sourceSlug": "ionq-news",
       "region": "GLOBAL",
       "topic": "FUNDING",
-      "publishedAt": "2026-09-01T21:08:16.752Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
-    },
-    {
-      "id": "7eb057b02a7a9cc81f23bdb8",
-      "title": "IonQ to Report Second Quarter 2026 Financial Results on August 5, 2026July 24, 20262026-07-24IonQ Press ReleaseRead more",
-      "summary": "",
-      "sourceName": "IonQ",
-      "sourceUrl": "https://ionq.com/news/ionq-to-report-second-quarter-2026-financial-results-on-august-5-2026",
-      "sourceSlug": "ionq-news",
-      "region": "GLOBAL",
-      "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:16.752Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:14.375Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "413679ee959900db6f855f80",
-      "title": "IonQ Introduces Clavis XG Multiplex, Making Quantum Security Deployable at Scale in Metro NetworksJune 17, 20262026-06-17IonQ Press ReleaseRead more",
+      "title": "IonQ Introduces Clavis XG Multiplex, Making Quantum Security Deployable at Scale in Metro Networks",
       "summary": "",
       "sourceName": "IonQ",
       "sourceUrl": "https://ionq.com/news/ionq-introduces-clavis-xg-multiplex-making-quantum-security-deployable-at-scale-in-metro-networks",
       "sourceSlug": "ionq-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:16.752Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:14.375Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "10af7cf83849bee4a3d22535",
-      "title": "IonQ CEO on $1B Acquisition of Quantum Startup Oxford IonicsSeptember 12, 2025Read more",
+      "title": "IonQ CEO on $1B Acquisition of Quantum Startup Oxford Ionics",
       "summary": "",
       "sourceName": "IonQ",
       "sourceUrl": "https://www.bloomberg.com/news/videos/2025-09-12/ionq-ceo-on-1b-takeover-of-oxford-ionics-video",
       "sourceSlug": "ionq-news",
       "region": "GLOBAL",
       "topic": "FUNDING",
-      "publishedAt": "2026-09-01T21:08:16.752Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:14.375Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
-      "id": "d1bf5402d34d8f3bf413f4c2",
-      "title": "From vision to reality: a unified neural solver for the power grid",
+      "id": "87b21d2190305b935b78c8d2",
+      "title": "IonQ Appoints Dr. Eric Ball and Timothy Baxter to Board of Directors",
       "summary": "",
-      "sourceName": "IBM Research",
-      "sourceUrl": "https://research.ibm.com/blog/gridfm-neural-solver-power-grid",
-      "sourceSlug": "ibm-research",
+      "sourceName": "IonQ",
+      "sourceUrl": "https://ionq.com/news/ionq-appoints-dr-eric-ball-and-timothy-baxter-to-board-of-directors",
+      "sourceSlug": "ionq-news",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:00.925Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
-    },
-    {
-      "id": "7c7b2d4ea753810c0fbbb309",
-      "title": "How IBM is searching for quantum advantage in differential equations",
-      "summary": "",
-      "sourceName": "IBM Research",
-      "sourceUrl": "https://research.ibm.com/blog/hari-krovi-differential-equations",
-      "sourceSlug": "ibm-research",
-      "region": "GLOBAL",
-      "topic": "ALGORITHMS",
-      "publishedAt": "2026-09-01T21:08:00.925Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
-    },
-    {
-      "id": "0f56abf9b7bd700aede21568",
-      "title": "Ponder This Challenge - August 2026 - The Wheel of Buttons",
-      "summary": "",
-      "sourceName": "IBM Research",
-      "sourceUrl": "https://research.ibm.com/blog/ponder-this-august-2026",
-      "sourceSlug": "ibm-research",
-      "region": "GLOBAL",
-      "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:00.925Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
-    },
-    {
-      "id": "0b382f80a4556fb93787c8e9",
-      "title": "Researchers demonstrate quantum advantage through trusted quantum computation",
-      "summary": "",
-      "sourceName": "IBM Research",
-      "sourceUrl": "https://research.ibm.com/blog/quantum-advantage",
-      "sourceSlug": "ibm-research",
-      "region": "GLOBAL",
-      "topic": "ALGORITHMS",
-      "publishedAt": "2026-09-01T21:08:00.925Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
-    },
-    {
-      "id": "4a3fb7da96a036201e89aac7",
-      "title": "Bringing a common language to AI evaluation",
-      "summary": "",
-      "sourceName": "IBM Research",
-      "sourceUrl": "https://research.ibm.com/blog/every-evaluation-ever",
-      "sourceSlug": "ibm-research",
-      "region": "GLOBAL",
-      "topic": "FUNDING",
-      "publishedAt": "2026-09-01T21:08:00.925Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:14.374Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "d2be280c7b86937beda91ad1",
@@ -348,8 +264,8 @@
       "sourceSlug": "ibm-research",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:00.924Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:09:57.902Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "983650f086861205556b8b7f",
@@ -360,8 +276,8 @@
       "sourceSlug": "ibm-research",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:00.924Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:09:57.902Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "73bf5f0a5e568aac24ba2405",
@@ -372,8 +288,8 @@
       "sourceSlug": "ibm-research",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:00.924Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:09:57.902Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "448fa331923f48e1b43667b0",
@@ -384,8 +300,8 @@
       "sourceSlug": "ibm-research",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:00.924Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:09:57.902Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "1b325a2ace582ddcaeeaaeeb",
@@ -396,8 +312,8 @@
       "sourceSlug": "ibm-research",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:00.924Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:09:57.902Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "f71a6913c3aa6433674a46ed",
@@ -408,8 +324,8 @@
       "sourceSlug": "ibm-research",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:00.924Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:09:57.902Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "33c53f3c51ba0e8c695df0c4",
@@ -420,8 +336,68 @@
       "sourceSlug": "ibm-research",
       "region": "GLOBAL",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:00.924Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:09:57.902Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
+    },
+    {
+      "id": "d1bf5402d34d8f3bf413f4c2",
+      "title": "From vision to reality: a unified neural solver for the power grid",
+      "summary": "",
+      "sourceName": "IBM Research",
+      "sourceUrl": "https://research.ibm.com/blog/gridfm-neural-solver-power-grid",
+      "sourceSlug": "ibm-research",
+      "region": "GLOBAL",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-09-01T21:09:57.902Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
+    },
+    {
+      "id": "7c7b2d4ea753810c0fbbb309",
+      "title": "How IBM is searching for quantum advantage in differential equations",
+      "summary": "",
+      "sourceName": "IBM Research",
+      "sourceUrl": "https://research.ibm.com/blog/hari-krovi-differential-equations",
+      "sourceSlug": "ibm-research",
+      "region": "GLOBAL",
+      "topic": "ALGORITHMS",
+      "publishedAt": "2026-09-01T21:09:57.902Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
+    },
+    {
+      "id": "0f56abf9b7bd700aede21568",
+      "title": "Ponder This Challenge - August 2026 - The Wheel of Buttons",
+      "summary": "",
+      "sourceName": "IBM Research",
+      "sourceUrl": "https://research.ibm.com/blog/ponder-this-august-2026",
+      "sourceSlug": "ibm-research",
+      "region": "GLOBAL",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-09-01T21:09:57.902Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
+    },
+    {
+      "id": "0b382f80a4556fb93787c8e9",
+      "title": "Researchers demonstrate quantum advantage through trusted quantum computation",
+      "summary": "",
+      "sourceName": "IBM Research",
+      "sourceUrl": "https://research.ibm.com/blog/quantum-advantage",
+      "sourceSlug": "ibm-research",
+      "region": "GLOBAL",
+      "topic": "ALGORITHMS",
+      "publishedAt": "2026-09-01T21:09:57.902Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
+    },
+    {
+      "id": "4a3fb7da96a036201e89aac7",
+      "title": "Bringing a common language to AI evaluation",
+      "summary": "",
+      "sourceName": "IBM Research",
+      "sourceUrl": "https://research.ibm.com/blog/every-evaluation-ever",
+      "sourceSlug": "ibm-research",
+      "region": "GLOBAL",
+      "topic": "FUNDING",
+      "publishedAt": "2026-09-01T21:09:57.902Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "eb329b048d4a6c4140a4d283",
@@ -433,7 +409,7 @@
       "region": "GLOBAL",
       "topic": "HARDWARE",
       "publishedAt": "2026-09-01T17:00:02.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "b59af070391a2e3b9ec9c22c",
@@ -445,7 +421,7 @@
       "region": "GLOBAL",
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T16:08:57.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Mohib Ur Rehman"
     },
     {
@@ -458,7 +434,7 @@
       "region": "GLOBAL",
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T15:22:56.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -471,7 +447,7 @@
       "region": "GLOBAL",
       "topic": "HARDWARE",
       "publishedAt": "2026-09-01T15:08:38.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -484,7 +460,7 @@
       "region": "GLOBAL",
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T13:59:29.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Mohib Ur Rehman"
     },
     {
@@ -497,7 +473,7 @@
       "region": "GLOBAL",
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T12:59:34.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Mohib Ur Rehman"
     },
     {
@@ -510,7 +486,7 @@
       "region": "GLOBAL",
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T10:21:38.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Resonance"
     },
     {
@@ -523,7 +499,7 @@
       "region": "GLOBAL",
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T09:19:03.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Resonance"
     },
     {
@@ -536,7 +512,7 @@
       "region": "GLOBAL",
       "topic": "ALGORITHMS",
       "publishedAt": "2026-09-01T09:05:00.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Matt Swayne"
     },
     {
@@ -549,7 +525,7 @@
       "region": "GLOBAL",
       "topic": "HARDWARE",
       "publishedAt": "2026-09-01T08:35:00.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Matt Swayne"
     },
     {
@@ -562,7 +538,7 @@
       "region": "GLOBAL",
       "topic": "POLICY",
       "publishedAt": "2026-09-01T08:03:44.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Matt Swayne"
     },
     {
@@ -575,7 +551,7 @@
       "region": "GLOBAL",
       "topic": "EDUCATION",
       "publishedAt": "2026-09-01T07:46:46.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Matt Swayne"
     },
     {
@@ -588,7 +564,7 @@
       "region": "GLOBAL",
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T03:07:43.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -601,7 +577,7 @@
       "region": "GLOBAL",
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T02:57:54.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -614,7 +590,7 @@
       "region": "GLOBAL",
       "topic": "FUNDING",
       "publishedAt": "2026-09-01T02:46:49.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -627,7 +603,7 @@
       "region": "GLOBAL",
       "topic": "INDUSTRY",
       "publishedAt": "2026-09-01T02:06:57.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -640,7 +616,7 @@
       "region": "GLOBAL",
       "topic": "HARDWARE",
       "publishedAt": "2026-09-01T01:59:11.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -653,7 +629,7 @@
       "region": "GLOBAL",
       "topic": "HARDWARE",
       "publishedAt": "2026-09-01T01:49:18.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -666,7 +642,7 @@
       "region": "GLOBAL",
       "topic": "HARDWARE",
       "publishedAt": "2026-09-01T01:33:57.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Mohamed Abdel-Kareem"
     },
     {
@@ -679,7 +655,7 @@
       "region": "GLOBAL",
       "topic": "INDUSTRY",
       "publishedAt": "2026-08-31T22:03:02.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Matt Swayne"
     },
     {
@@ -692,7 +668,7 @@
       "region": "GLOBAL",
       "topic": "POLICY",
       "publishedAt": "2026-08-31T19:59:01.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Doug Finke"
     },
     {
@@ -705,7 +681,7 @@
       "region": "GLOBAL",
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:59:59.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Doojin Kim"
     },
     {
@@ -718,7 +694,7 @@
       "region": "GLOBAL",
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:59:12.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Jean-Yves Desaules"
     },
     {
@@ -731,7 +707,7 @@
       "region": "GLOBAL",
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:55:49.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "David Roberts"
     },
     {
@@ -744,250 +720,252 @@
       "region": "GLOBAL",
       "topic": "RESEARCH_PAPER",
       "publishedAt": "2026-08-31T17:54:47.000Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
       "byline": "Marco Paradina"
+    },
+    {
+      "id": "ecaf1a88803060b50143613d",
+      "title": "\"Train classical, deploy quantum\" requires rethinking generalization",
+      "summary": "Generative models have become central across science and industry, from image and text synthesis to the design of molecules and materials.",
+      "sourceName": "arXiv quant-ph",
+      "sourceUrl": "https://arxiv.org/abs/2608.31117v1",
+      "sourceSlug": "arxiv-quant-ph",
+      "region": "GLOBAL",
+      "topic": "RESEARCH_PAPER",
+      "publishedAt": "2026-08-31T17:26:27.000Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
+      "byline": "Snehal Raj"
+    },
+    {
+      "id": "1587a8326ec634b6a8491b7c",
+      "title": "Unconditional Certified Randomness without Structure",
+      "summary": "We obtain a certified randomness protocol in the quantum random oracle model.",
+      "sourceName": "arXiv quant-ph",
+      "sourceUrl": "https://arxiv.org/abs/2608.31112v1",
+      "sourceSlug": "arxiv-quant-ph",
+      "region": "GLOBAL",
+      "topic": "RESEARCH_PAPER",
+      "publishedAt": "2026-08-31T17:17:49.000Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z",
+      "byline": "Andrea Coladangelo"
     }
   ],
   "india": [
     {
-      "id": "f592c734af1c3c58f36cf919",
-      "title": "QpiAI Indus Quantum Computer",
-      "summary": "",
-      "sourceName": "QpiAI",
-      "sourceUrl": "https://www.qpiai.tech/products/qpiai-indus-quantum",
-      "sourceSlug": "qpiai",
-      "region": "INDIA",
-      "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:23.892Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
-    },
-    {
-      "id": "e4c4469f9dc31f9ee15adaa1",
-      "title": "Enterprise Gen AI Solutions",
-      "summary": "",
-      "sourceName": "QpiAI",
-      "sourceUrl": "https://www.qpiai.tech/solutions/gen-ai-solutions",
-      "sourceSlug": "qpiai",
-      "region": "INDIA",
-      "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:23.892Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
-    },
-    {
-      "id": "6b3a300322462f2408029e41",
-      "title": "Claude Mythos Found Cryptographic Weaknesses: What Should CISOs Do Next?August 17, 2026",
-      "summary": "",
-      "sourceName": "QNu Labs",
-      "sourceUrl": "https://qnulabs.com/blog/claude-found-cryptographic-weakness-what-ciso-do",
-      "sourceSlug": "qnu-labs",
-      "region": "INDIA",
-      "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:23.748Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
-    },
-    {
-      "id": "36d283fe9fd692fb2d526170",
-      "title": "AI Cryptanalysis: Why CISOs Need Crypto AgilityAugust 17, 2026",
-      "summary": "",
-      "sourceName": "QNu Labs",
-      "sourceUrl": "https://qnulabs.com/blog/ai-cryptanalysis-what-cisos-should-do",
-      "sourceSlug": "qnu-labs",
-      "region": "INDIA",
-      "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:23.748Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
-    },
-    {
-      "id": "edf9b8995038f68cf1848ffb",
-      "title": "How to Implement Post-Quantum CryptographyAugust 17, 2026",
-      "summary": "",
-      "sourceName": "QNu Labs",
-      "sourceUrl": "https://qnulabs.com/blog/post-quantum-cryptography-implementation",
-      "sourceSlug": "qnu-labs",
-      "region": "INDIA",
-      "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:23.748Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
-    },
-    {
-      "id": "6ffabcabc044b8ab780e2dfd",
-      "title": "How to Build a Cryptographic Agility RoadmapAugust 17, 2026",
-      "summary": "",
-      "sourceName": "QNu Labs",
-      "sourceUrl": "https://qnulabs.com/blog/cryptographic-agility-roadmap",
-      "sourceSlug": "qnu-labs",
-      "region": "INDIA",
-      "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:23.748Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
-    },
-    {
       "id": "8c666632d86821519d9c4ad1",
-      "title": "What Is a PKI Certificate? The Complete GuideAugust 7, 2026",
+      "title": "What Is a PKI Certificate? The Complete Guide",
       "summary": "",
       "sourceName": "QNu Labs",
       "sourceUrl": "https://qnulabs.com/blog/what-is-pki-certificate",
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:23.748Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:27.971Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "8aaec6e1e8be58f8beaf80c7",
-      "title": "What Is Quantum Encryption? How Does it Work?August 7, 2026",
+      "title": "What Is Quantum Encryption? How Does it Work?",
       "summary": "",
       "sourceName": "QNu Labs",
       "sourceUrl": "https://qnulabs.com/blog/what-is-quantum-encryption",
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:23.748Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:27.971Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "e66a51192446929bc0ae5800",
-      "title": "Post Quantum Cryptography Migration: A Complete guideAugust 7, 2026",
+      "title": "Post Quantum Cryptography Migration: A Complete guide",
       "summary": "",
       "sourceName": "QNu Labs",
       "sourceUrl": "https://qnulabs.com/blog/guide-to-pqc-post-quantum-cryptography-migration",
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:23.748Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:27.971Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "5af40f2090c05b2646fd1ba6",
-      "title": "PQC HSM: How Hardware Security Modules Fit Into Post-Quantum MigrationJuly 28, 2026",
+      "title": "PQC HSM: How Hardware Security Modules Fit Into Post-Quantum Migration",
       "summary": "",
       "sourceName": "QNu Labs",
       "sourceUrl": "https://qnulabs.com/blog/pqc-hsm",
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:23.748Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:27.971Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "765e292a152ab6ebf5392ddb",
-      "title": "Hybrid Cryptography for the Post Quantum EraJuly 28, 2026",
+      "title": "Hybrid Cryptography for the Post Quantum Era",
       "summary": "",
       "sourceName": "QNu Labs",
       "sourceUrl": "https://qnulabs.com/blog/hybrid-cryptography",
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:23.748Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:27.971Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "dca4047b6c9731ed9badd95c",
-      "title": "PQC vs Classical Cryptography: What Changes for Enterprise Security?July 28, 2026",
+      "title": "PQC vs Classical Cryptography: What Changes for Enterprise Security?",
       "summary": "",
       "sourceName": "QNu Labs",
       "sourceUrl": "https://qnulabs.com/blog/pqc-vs-classical-cryptography",
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:23.748Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:27.971Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "97c0a8aed791acae8e7159e1",
-      "title": "Quantum Cryptography vs Post-Quantum Cryptography: What's the Key Differences?July 22, 2026",
+      "title": "Quantum Cryptography vs Post-Quantum Cryptography: What's the Key Differences?",
       "summary": "",
       "sourceName": "QNu Labs",
       "sourceUrl": "https://qnulabs.com/blog/quantum-cryptography-vs-post-quantum-cryptography",
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:23.748Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:27.971Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "7a371674fdda962321960235",
-      "title": "Quantum Readiness Assessment for EnterprisesJuly 20, 2026",
+      "title": "Quantum Readiness Assessment for Enterprises",
       "summary": "",
       "sourceName": "QNu Labs",
       "sourceUrl": "https://qnulabs.com/blog/quantum-readiness-assessment",
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:23.748Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:27.971Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "b6d1a117edc7056b2e6480ab",
-      "title": "PQC Certificates: What They Are and Why They MatterJuly 20, 2026",
+      "title": "PQC Certificates: What They Are and Why They Matter",
       "summary": "",
       "sourceName": "QNu Labs",
       "sourceUrl": "https://qnulabs.com/blog/pqc-certificate",
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:23.748Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:27.971Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "c1484db0e24e4b34a9f7721c",
-      "title": "Cybercrime Now Sells Subscriptions. Here Is What That Costs You.July 16, 2026",
+      "title": "Cybercrime Now Sells Subscriptions. Here Is What That Costs You.",
       "summary": "",
       "sourceName": "QNu Labs",
       "sourceUrl": "https://qnulabs.com/blog/cybercrime-now-sells-subscriptions-here-is-what-that-costs-you",
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:23.748Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:27.971Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "9526abe904d26de03d09ca42",
-      "title": "Dark Data: The Blind Spot AI Turned Into a TargetJuly 15, 2026",
+      "title": "Dark Data: The Blind Spot AI Turned Into a Target",
       "summary": "",
       "sourceName": "QNu Labs",
       "sourceUrl": "https://qnulabs.com/blog/dark-data-the-blind-spot-ai-turned-into-a-target",
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:23.748Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:27.971Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "90f019bb6b219ae7c5ac6515",
-      "title": "Invisible Banking: The Quiet Revolution Reshaping India's Financial EcosystemJuly 9, 2026",
+      "title": "Invisible Banking: The Quiet Revolution Reshaping India's Financial Ecosystem",
       "summary": "",
       "sourceName": "QNu Labs",
       "sourceUrl": "https://qnulabs.com/blog/invisible-banking-the-quiet-revolution-reshaping-indias-financial-ecosystem",
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:23.748Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:27.971Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "a2788828794759db00d881ca",
-      "title": "The Global Quantum Security Shift: Why 2026 Matters July 8, 2026",
+      "title": "The Global Quantum Security Shift: Why 2026 Matters",
       "summary": "",
       "sourceName": "QNu Labs",
       "sourceUrl": "https://qnulabs.com/blog/global-quantum-security-2026-changed-everything",
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:23.748Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:27.971Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     },
     {
       "id": "2b4f8d97f4ffcf0360abba08",
-      "title": "2029 Is the New 2035: The Post-Quantum Deadline Just Moved UpAugust 21, 2026",
+      "title": "2029 Is the New 2035: The Post-Quantum Deadline Just Moved Up",
       "summary": "",
       "sourceName": "QNu Labs",
       "sourceUrl": "https://qnulabs.com/blog/2029-is-the-new-2035-the-post-quantum-deadline-just-moved-up",
       "sourceSlug": "qnu-labs",
       "region": "INDIA",
       "topic": "INDUSTRY",
-      "publishedAt": "2026-09-01T21:08:23.747Z",
-      "ingestedAt": "2026-09-01T21:08:24.979Z"
+      "publishedAt": "2026-09-01T21:10:27.970Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
+    },
+    {
+      "id": "6b3a300322462f2408029e41",
+      "title": "Claude Mythos Found Cryptographic Weaknesses: What Should CISOs Do Next?",
+      "summary": "",
+      "sourceName": "QNu Labs",
+      "sourceUrl": "https://qnulabs.com/blog/claude-found-cryptographic-weakness-what-ciso-do",
+      "sourceSlug": "qnu-labs",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-09-01T21:10:27.970Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
+    },
+    {
+      "id": "36d283fe9fd692fb2d526170",
+      "title": "AI Cryptanalysis: Why CISOs Need Crypto Agility",
+      "summary": "",
+      "sourceName": "QNu Labs",
+      "sourceUrl": "https://qnulabs.com/blog/ai-cryptanalysis-what-cisos-should-do",
+      "sourceSlug": "qnu-labs",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-09-01T21:10:27.970Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
+    },
+    {
+      "id": "edf9b8995038f68cf1848ffb",
+      "title": "How to Implement Post-Quantum Cryptography",
+      "summary": "",
+      "sourceName": "QNu Labs",
+      "sourceUrl": "https://qnulabs.com/blog/post-quantum-cryptography-implementation",
+      "sourceSlug": "qnu-labs",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-09-01T21:10:27.970Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
+    },
+    {
+      "id": "6ffabcabc044b8ab780e2dfd",
+      "title": "How to Build a Cryptographic Agility Roadmap",
+      "summary": "",
+      "sourceName": "QNu Labs",
+      "sourceUrl": "https://qnulabs.com/blog/cryptographic-agility-roadmap",
+      "sourceSlug": "qnu-labs",
+      "region": "INDIA",
+      "topic": "INDUSTRY",
+      "publishedAt": "2026-09-01T21:10:27.970Z",
+      "ingestedAt": "2026-09-01T21:10:28.628Z"
     }
   ]
 }

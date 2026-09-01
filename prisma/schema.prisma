@@ -86,6 +86,9 @@ model UpdateItem {
   region      Region
   topic       Topic
   publishedAt DateTime
+  /// True when publishedAt is the time of first sighting rather than a
+  /// date the source stated. The panel labels these differently.
+  publishedAtEstimated Boolean @default(false)
   ingestedAt  DateTime @default(now())
   /// Optional author or institution line where the source provides one.
   byline      String?

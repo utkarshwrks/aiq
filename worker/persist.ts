@@ -91,6 +91,7 @@ export async function storeItems(items: readonly NormalisedItem[]): Promise<numb
       region: item.region,
       topic: item.topic,
       publishedAt: item.publishedAt,
+      publishedAtEstimated: item.publishedAtEstimated,
       byline: item.byline ?? null,
       sourceId: idBySlug.get(item.sourceSlug) ?? null,
     })),

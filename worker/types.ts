@@ -32,6 +32,13 @@ export type NormalisedItem = {
     | 'INDUSTRY'
     | 'EDUCATION';
   publishedAt: Date;
+  /**
+   * True when the source gave no publication date and the timestamp is
+   * the moment we first saw the item. Carried all the way to the
+   * interface, which labels those items "first seen" rather than
+   * claiming a publication time it does not know.
+   */
+  publishedAtEstimated: boolean;
   byline?: string | undefined;
   sourceSlug: string;
 };

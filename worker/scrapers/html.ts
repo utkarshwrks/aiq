@@ -30,8 +30,8 @@ type Override = {
 const OVERRIDES: Record<string, Override> = {
   'ionq-news': { item: 'a[href*="/news/"]' },
   'rigetti-news': { item: 'a[href*="/news/"]' },
-  'quantinuum-news': { item: 'a[href*="/news"]' },
-  'dwave-newsroom': { item: 'a[href*="/news"]' },
+  'quantinuum-news': { item: 'a[href*="/news/"]' },
+  'dwave-newsroom': { item: 'a[href*="/news/"]' },
   'psiquantum-news': { item: 'a[href*="/news/"]' },
   'pasqal-news': { item: 'a[href*="/news"]' },
   'xanadu-blog': { item: 'a[href*="/blog/"]' },
@@ -91,12 +91,20 @@ export const scrapeHtml: Scraper = async (source) => {
     const href = (anchor.is('a') ? anchor : node.find('a').first()).attr('href');
     if (!href) return;
 
-    let url: string;
+    let parsed: URL;
     try {
-      url = new URL(href, source.endpoint).toString();
+      parsed = new URL(href, source.endpoint);
     } catch {
       return;
     }
+
+    // A section landing page - /news, /blog - is navigation, not an
+    // article. Requiring a path segment beneath it is what keeps the
+    // section's own hero card out of the feed.
+    const segments = parsed.pathname.split('/').filter(Boolean);
+    if (segments.length < 2) return;
+
+    const url = parsed.toString();
     if (seen.has(url)) return;
 
     // Prefer a heading inside the card. An index page that marks its

@@ -26,6 +26,12 @@ export type UpdateItem = {
   topic: Topic;
   /** ISO 8601, UTC. */
   publishedAt: string;
+  /**
+   * True when the source stated no date and publishedAt is first
+   * sighting. The panel says "first seen" for these instead of claiming
+   * a publication time it does not have.
+   */
+  publishedAtEstimated: boolean;
   ingestedAt: string;
   byline?: string;
 };
