@@ -29,7 +29,12 @@
   /* Ink. */
   --cg-ink: #e8eef2;
   --cg-ink-muted: #8ca0ac;
-  --cg-ink-faint: #5c6f7a;
+  /* 4.74:1 against --cg-bg-elevated, the lightest ground it appears on,
+     which clears WCAG AA for normal text. The original #5c6f7a came in
+     at 3.11:1 there and failed on every route; it is used for labels and
+     plate numbers, which are small, so there was no large-text exemption
+     to fall back on either. */
+  --cg-ink-faint: #7a8d99;
 
   /* Accents. Teal carries energy and quantum state; amber is the
    * cartographer's compass and is rationed to one use per viewport;

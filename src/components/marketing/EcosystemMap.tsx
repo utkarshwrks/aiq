@@ -7,7 +7,6 @@ import { InstrumentLink } from '@/components/ui/InstrumentLink';
 import { Tag } from '@/components/ui/Tag';
 import { MODALITIES, PLAYERS, type Player } from '@/content/ecosystem';
 import { INDIA_NODES, type IndiaNode } from '@/content/india';
-import { cn } from '@/lib/cn';
 
 /**
  * The ecosystem plot.
@@ -300,16 +299,24 @@ export function EcosystemMap() {
               )}
             </div>
 
-            <ul className="border-t border-hairline p-5">
-              <p className="label-caps mb-3">Modalities represented</p>
-              <div className="flex flex-wrap gap-1.5">
+            <div className="border-t border-hairline p-5">
+              <p className="label-caps mb-3" id="modality-legend">
+                Modalities represented
+              </p>
+              {/* A ul may only contain li. The heading and the flex row
+                  that were previously inside it made the list invalid and
+                  detached every item from its parent. */}
+              <ul
+                aria-labelledby="modality-legend"
+                className="flex list-none flex-wrap gap-1.5"
+              >
                 {Object.entries(MODALITIES).map(([key, modality]) => (
-                  <li key={key} className={cn('list-none')}>
+                  <li key={key}>
                     <Tag>{modality.label}</Tag>
                   </li>
                 ))}
-              </div>
-            </ul>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

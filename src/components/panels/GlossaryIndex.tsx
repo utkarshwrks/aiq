@@ -232,12 +232,16 @@ function Entry({ entry }: { entry: GlossaryEntry }) {
       id={`term-${entry.term.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
       className="scroll-mt-40 bg-surface p-6"
     >
-      <div className="flex flex-wrap items-baseline justify-between gap-3">
-        <dt className="text-[length:var(--text-lg)] text-ink">{entry.term}</dt>
+      {/* dt and dd must be direct children of the div that groups them
+          inside a dl. Wrapping the term and its chip in a further div
+          detaches the dt from the list, which is both invalid and
+          announced incorrectly. */}
+      <dt className="flex flex-wrap items-baseline justify-between gap-3 text-[length:var(--text-lg)] text-ink">
+        <span>{entry.term}</span>
         <Tag tone={CATEGORY_TONE[entry.category]} swatch>
           {GLOSSARY_CATEGORIES[entry.category]}
         </Tag>
-      </div>
+      </dt>
 
       <dd className="mt-3 text-[length:var(--text-sm)] leading-relaxed text-ink-muted">
         {entry.definition}
