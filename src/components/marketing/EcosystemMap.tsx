@@ -25,6 +25,29 @@ import { cn } from '@/lib/cn';
 const WIDTH = 1000;
 const HEIGHT = 500;
 
+/**
+ * The plot is cropped to 72N-45S. Every programme in the register sits
+ * inside that band, and the full 90-to-90 extent spends a third of the
+ * figure's height on empty polar ocean. The caption states the crop.
+ */
+const VIEW_TOP = ((90 - 72) / 180) * HEIGHT;
+const VIEW_BOTTOM = ((90 + 45) / 180) * HEIGHT;
+const VIEW_HEIGHT = VIEW_BOTTOM - VIEW_TOP;
+
+/**
+ * Region labels. Without a coastline the reader needs some anchor, and
+ * four faint chart labels do the job that a quarter megabyte of country
+ * outlines would otherwise be doing.
+ */
+const REGION_LABELS: ReadonlyArray<{ text: string; lat: number; lon: number }> = [
+  { text: 'NORTH AMERICA', lat: 48, lon: -100 },
+  { text: 'SOUTH AMERICA', lat: -14, lon: -60 },
+  { text: 'EUROPE', lat: 58, lon: 18 },
+  { text: 'AFRICA', lat: 4, lon: 20 },
+  { text: 'ASIA', lat: 46, lon: 96 },
+  { text: 'OCEANIA', lat: -24, lon: 137 },
+];
+
 /** Equirectangular: longitude maps linearly to x, latitude to y. */
 function project(lat: number, lon: number): { x: number; y: number } {
   return {
@@ -95,7 +118,7 @@ export function EcosystemMap() {
         <div className="mt-10 grid gap-px border border-hairline bg-hairline lg:grid-cols-[minmax(0,1fr)_20rem]">
           <div className="relative bg-inset p-4">
             <svg
-              viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
+              viewBox={`0 ${VIEW_TOP} ${WIDTH} ${VIEW_HEIGHT}`}
               className="w-full"
               role="img"
               aria-label={`World plot of ${nodes.length} quantum computing programmes and mission hubs`}
@@ -104,11 +127,13 @@ export function EcosystemMap() {
               <g stroke="var(--cg-line-grid)" strokeWidth="1">
                 {Array.from({ length: 13 }, (_, i) => {
                   const x = (i / 12) * WIDTH;
-                  return <line key={`m${i}`} x1={x} y1="0" x2={x} y2={HEIGHT} />;
+                  return (
+                    <line key={`m${i}`} x1={x} y1={VIEW_TOP} x2={x} y2={VIEW_BOTTOM} />
+                  );
                 })}
-                {Array.from({ length: 10 }, (_, i) => {
-                  const y = (i / 9) * HEIGHT;
-                  return <line key={`p${i}`} x1="0" y1={y} x2={WIDTH} y2={y} />;
+                {[60, 40, 20, 0, -20, -40].map((lat) => {
+                  const { y } = project(lat, 0);
+                  return <line key={`p${lat}`} x1="0" y1={y} x2={WIDTH} y2={y} />;
                 })}
               </g>
 
@@ -133,17 +158,38 @@ export function EcosystemMap() {
                   <text
                     key={lon}
                     x={project(0, lon).x}
-                    y="12"
+                    y={VIEW_TOP + 12}
                     textAnchor={lon === -180 ? 'start' : lon === 180 ? 'end' : 'middle'}
                   >
                     {lon}
                   </text>
                 ))}
-                {[60, 30, 0, -30, -60].map((lat) => (
+                {[60, 40, 20, 0, -20, -40].map((lat) => (
                   <text key={lat} x="4" y={project(lat, 0).y + 3}>
                     {lat}
                   </text>
                 ))}
+              </g>
+
+              {/* Region anchors, held well back so they never compete
+                  with the plotted markers. */}
+              <g
+                fill="var(--cg-ink-faint)"
+                fillOpacity="0.45"
+                fontSize="11"
+                fontFamily="var(--font-mono)"
+                letterSpacing="2"
+                textAnchor="middle"
+                aria-hidden
+              >
+                {REGION_LABELS.map((label) => {
+                  const { x, y } = project(label.lat, label.lon);
+                  return (
+                    <text key={label.text} x={x} y={y}>
+                      {label.text}
+                    </text>
+                  );
+                })}
               </g>
 
               {nodes.map((node) => {
@@ -204,7 +250,7 @@ export function EcosystemMap() {
             </svg>
 
             <p className="data mt-2 text-[length:var(--text-2xs)] text-ink-faint">
-              EQUIRECTANGULAR PROJECTION / {nodes.length} PLOTTED
+              EQUIRECTANGULAR PROJECTION / 72N TO 45S / {nodes.length} PLOTTED
             </p>
           </div>
 

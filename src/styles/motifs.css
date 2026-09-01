@@ -66,18 +66,20 @@
  * banding for one paint, with none of the cost of an SVG filter.
  */
 .cg-contours {
+  /* Tight rings. A wide ellipse produces sweeping arcs that read as a
+     warped grid rather than as elevation banding. */
   background-image: repeating-radial-gradient(
-    ellipse 62% 48% at 50% 50%,
-    transparent 0 26px,
-    var(--cg-line-contour) 26px 27px
+    ellipse 26% 20% at 50% 50%,
+    transparent 0 22px,
+    var(--cg-line-contour) 22px 23px
   );
 }
 
 .cg-contours-offset {
   background-image: repeating-radial-gradient(
-    ellipse 48% 66% at 18% 72%,
-    transparent 0 34px,
-    color-mix(in oklab, var(--cg-accent-violet) 9%, transparent) 34px 35px
+    ellipse 22% 30% at 18% 72%,
+    transparent 0 28px,
+    color-mix(in oklab, var(--cg-accent-violet) 9%, transparent) 28px 29px
   );
 }
 
