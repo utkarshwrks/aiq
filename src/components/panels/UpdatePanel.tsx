@@ -77,8 +77,10 @@ export function UpdatePanel({
 
   const feed = data ?? initial;
 
-  // One reference instant per render, so a column of twenty timestamps
-  // cannot disagree with itself about what "now" is.
+  // One reference instant per feed revision, so a column of twenty
+  // timestamps cannot disagree with itself about what "now" is, and the
+  // whole panel does not re-time on every unrelated re-render.
+  // eslint-disable-next-line react-hooks/exhaustive-deps -- deliberately re-taken when the feed changes
   const now = useMemo(() => Date.now(), [feed]);
 
   const filter = (items: UpdateFeed['global']) => {

@@ -8,6 +8,8 @@ type PanelProps = {
   /** Fine sub-cell grid behind the panel contents. */
   gridded?: boolean;
   as?: 'div' | 'article' | 'section' | 'li';
+  /** Anchor target, so a panel can be linked to directly. */
+  id?: string;
 };
 
 /**
@@ -21,9 +23,11 @@ export function Panel({
   bracketed = false,
   gridded = false,
   as: Tag = 'div',
+  id,
 }: PanelProps) {
   return (
     <Tag
+      id={id}
       className={cn(
         'relative border border-hairline bg-surface',
         'rounded-[var(--radius-md)]',
