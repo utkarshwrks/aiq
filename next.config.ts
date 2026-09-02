@@ -14,7 +14,7 @@ const nextConfig: NextConfig = {
   },
 
   experimental: {
-    optimizePackageImports: ['lucide-react', '@react-three/drei', 'date-fns'],
+    optimizePackageImports: ['lucide-react', '@react-three/drei'],
   },
 
   async headers() {
