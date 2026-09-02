@@ -43,7 +43,7 @@ test.describe('routes', () => {
     // rather than in the bar, so the test opens it the way a reader would.
     const narrow = (page.viewportSize()?.width ?? 0) < 1024;
     if (narrow) {
-      await page.getByRole('button', { name: 'Open navigation' }).click();
+      await page.getByRole('button', { name: 'Open index' }).click();
     }
 
     const scope = narrow ? page.locator('#nav-drawer') : page.getByRole('navigation', { name: 'Primary' });
@@ -58,7 +58,7 @@ test.describe('routes', () => {
 
     const narrow = (page.viewportSize()?.width ?? 0) < 1024;
     if (narrow) {
-      await page.getByRole('button', { name: 'Open navigation' }).click();
+      await page.getByRole('button', { name: 'Open index' }).click();
       await expect(
         page.locator('#nav-drawer [aria-current="page"]'),
       ).toContainText('Glossary');

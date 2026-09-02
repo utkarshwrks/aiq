@@ -94,7 +94,7 @@ test.describe('keyboard operation', () => {
     );
 
     await page.goto('/');
-    await page.getByRole('button', { name: 'Open navigation' }).click();
+    await page.getByRole('button', { name: 'Open index' }).click();
     await expect(page.locator('#nav-drawer')).toBeVisible();
 
     await page.keyboard.press('Escape');

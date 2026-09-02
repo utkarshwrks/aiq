@@ -104,12 +104,14 @@ export function SiteHeader() {
           </ul>
         </nav>
 
+        {/* The accessible name contains the visible word, because a
+            voice-control user says what they see: "click Index". */}
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
           aria-controls="nav-drawer"
-          aria-label={open ? 'Close navigation' : 'Open navigation'}
+          aria-label={open ? 'Close index' : 'Open index'}
           className="flex items-center gap-2 border border-hairline px-3 py-2 font-mono text-[length:var(--text-2xs)] uppercase tracking-[0.12em] text-ink-muted transition-colors duration-[var(--dur-fast)] hover:border-teal hover:text-teal lg:hidden"
         >
           {open ? <X aria-hidden className="size-3.5" /> : <Menu aria-hidden className="size-3.5" />}
