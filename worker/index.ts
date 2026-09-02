@@ -14,7 +14,10 @@ import { disconnect } from './persist';
  * silently shift when sources are read.
  */
 
-const SCHEDULE = process.env['INGEST_CRON'] ?? '0 */3 * * *';
+// Present-but-empty is not configured; see the note in src/lib/site.ts.
+// An empty INGEST_CRON would otherwise fail cron.validate and stop the
+// scheduler from ever starting.
+const SCHEDULE = process.env['INGEST_CRON']?.trim() || '0 */3 * * *';
 const TIMEZONE = 'Etc/UTC';
 
 let running = false;

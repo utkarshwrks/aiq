@@ -4,13 +4,35 @@
  * attribution - is declared here once.
  */
 
+/**
+ * Reads an environment variable, treating present-but-empty as absent.
+ *
+ * `??` only falls back on null and undefined, so a variable that a host
+ * materialises as an empty string passes straight through it. Vercel
+ * does exactly that for a declared-but-blank variable, and the empty
+ * string reached `new URL()` in the root layout's metadataBase and took
+ * the production build down with ERR_INVALID_URL before a single page
+ * was collected.
+ *
+ * A variable that is set to nothing means "not configured". Anywhere
+ * else in this codebase that reads an environment variable already
+ * checks truthiness or length for the same reason; this is the one place
+ * that used `??` and it is the one place that broke.
+ */
+export function configured(value: string | undefined): string | undefined {
+  const trimmed = value?.trim();
+  return trimmed && trimmed.length > 0 ? trimmed : undefined;
+}
+
 export const SITE = {
   name: 'AIQuantumOS',
   /** Used in <title> templates and structured data. */
   tagline: 'A living knowledge operating system for quantum computing',
   description:
     'AIQuantumOS is a continuously updated reference for quantum computing: first-principles foundations, algorithm explainers, a mapped global and Indian ecosystem, and an ingestion pipeline that tracks research and policy as it is published.',
-  url: process.env['NEXT_PUBLIC_SITE_URL'] ?? 'https://aiquantumos.com',
+  url:
+    configured(process.env['NEXT_PUBLIC_SITE_URL']) ??
+    'https://aiquantumos.com',
   locale: 'en_IN',
   builder: {
     name: 'Cybokrafts Universal Innovations Pvt. Ltd.',
