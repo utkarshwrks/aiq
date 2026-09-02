@@ -1,30 +1,50 @@
 'use client';
 
 import { useDeferredValue, useMemo, useRef, useState } from 'react';
+import useSWR from 'swr';
 import { Search, X } from 'lucide-react';
 import { Tag } from '@/components/ui/Tag';
 import {
+  glossarySlug,
   GLOSSARY_CATEGORIES,
   GLOSSARY_LETTERS,
   SORTED_GLOSSARY,
   type GlossaryEntry,
 } from '@/content/glossary';
+import type { SearchResult } from '@/lib/glossary/search';
 import { cn } from '@/lib/cn';
 
 /**
  * The glossary index.
  *
- * Search runs entirely client-side over the full term list. That is the
- * right call at this size: forty-odd entries is a few kilobytes, and
- * shipping them means results appear as the reader types with no request
- * and no loading state. A server-backed search would be slower and worse
- * for a corpus this small; it becomes the right answer somewhere in the
- * high hundreds of entries.
+ * Search is answered twice. The scored client-side match runs on every
+ * keystroke and renders immediately, so results appear as the reader
+ * types with no request and no loading state. In parallel the same query
+ * goes to `/api/glossary/search`, which answers from Postgres full-text
+ * search where a database is configured; when that response arrives it
+ * replaces the local ordering.
  *
- * Matching is scored rather than boolean so that a query matching a term
- * outranks one matching only a definition, which is what a reader
- * expects when they type a word they already half-know.
+ * Neither layer is redundant. The local pass is what makes the field
+ * feel instant and is the only search that exists when the site runs
+ * with no database, which it is required to do. The Postgres pass brings
+ * stemming and phrase queries the client scoring does not attempt, and
+ * is what keeps this honest as the corpus grows past the point where
+ * shipping it to the browser is reasonable.
+ *
+ * Matching is scored rather than boolean in both, so that a query
+ * matching a term outranks one matching only a definition, which is what
+ * a reader expects when they type a word they already half-know.
  */
+
+const BY_SLUG = new Map(
+  SORTED_GLOSSARY.map((entry) => [glossarySlug(entry.term), entry] as const),
+);
+
+const fetcher = async (url: string): Promise<SearchResult> => {
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`glossary search failed: ${response.status}`);
+  return (await response.json()) as SearchResult;
+};
 
 const CATEGORY_TONE = {
   concept: 'teal',
@@ -57,8 +77,17 @@ export function GlossaryIndex() {
 
   // Deferred so a fast typist is never blocked by the list re-rendering.
   const deferred = useDeferredValue(query);
+  const needle = deferred.trim();
 
-  const results = useMemo(() => {
+  // Null key means SWR does not fire: an empty box is the A-to-Z index,
+  // not a search for nothing.
+  const { data: remote } = useSWR<SearchResult>(
+    needle ? `/api/glossary/search?q=${encodeURIComponent(needle)}` : null,
+    fetcher,
+    { keepPreviousData: true, revalidateOnFocus: false },
+  );
+
+  const local = useMemo(() => {
     const needle = deferred.trim().toLowerCase();
     const scoped =
       category === 'all'
@@ -73,6 +102,24 @@ export function GlossaryIndex() {
       .sort((a, b) => b.score - a.score || a.entry.term.localeCompare(b.entry.term))
       .map((result) => result.entry);
   }, [deferred, category]);
+
+  /**
+   * Postgres answered, so use its ranking. The category filter is applied
+   * here rather than in the query because it is a client-side narrowing
+   * of an already-ranked set, and re-querying on every chip press would
+   * spend a request to reorder nothing.
+   */
+  const results = useMemo(() => {
+    if (!needle || remote?.origin !== 'postgres') return local;
+
+    const ranked = remote.hits
+      .map((hit) => BY_SLUG.get(hit.slug))
+      .filter((entry): entry is GlossaryEntry => Boolean(entry));
+
+    return category === 'all'
+      ? ranked
+      : ranked.filter((entry) => entry.category === category);
+  }, [needle, remote, local, category]);
 
   const grouped = useMemo(() => {
     // Alphabetical grouping only makes sense for an unfiltered list; once

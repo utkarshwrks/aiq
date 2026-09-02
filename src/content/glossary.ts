@@ -24,6 +24,18 @@ export type GlossaryEntry = {
     | 'programme';
 };
 
+/**
+ * Stable identifier for a term, derived rather than authored so the two
+ * can never disagree. Used as the primary key of the Postgres mirror and
+ * as the anchor a definition can be linked to directly.
+ */
+export function glossarySlug(term: string): string {
+  return term
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
 export const GLOSSARY: readonly GlossaryEntry[] = [
   {
     term: 'Amplitude',

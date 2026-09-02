@@ -68,36 +68,36 @@ model Source {
   createdAt   DateTime   @default(now())
   updatedAt   DateTime   @updatedAt
 
-  items       UpdateItem[]
-  runs        IngestionLog[]
+  items UpdateItem[]
+  runs  IngestionLog[]
 
   @@index([region, enabled])
   @@map("sources")
 }
 
 model UpdateItem {
-  id          String   @id @default(cuid())
-  title       String
+  id                   String   @id @default(cuid())
+  title                String
   /// Short original paraphrase written during ingestion. Never an
   /// excerpt: the panel curates and links out, it does not republish.
-  summary     String
-  sourceName  String
-  sourceUrl   String
+  summary              String
+  sourceName           String
+  sourceUrl            String
   /// SHA-256 of the canonicalised URL. Unique, and the sole basis for
   /// deduplication across runs and across sources that syndicate.
-  urlHash     String   @unique
-  region      Region
-  topic       Topic
-  publishedAt DateTime
+  urlHash              String   @unique
+  region               Region
+  topic                Topic
+  publishedAt          DateTime
   /// True when publishedAt is the time of first sighting rather than a
   /// date the source stated. The panel labels these differently.
-  publishedAtEstimated Boolean @default(false)
-  ingestedAt  DateTime @default(now())
+  publishedAtEstimated Boolean  @default(false)
+  ingestedAt           DateTime @default(now())
   /// Optional author or institution line where the source provides one.
-  byline      String?
+  byline               String?
 
-  sourceId    String?
-  source      Source?  @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+  sourceId String?
+  source   Source? @relation(fields: [sourceId], references: [id], onDelete: SetNull)
 
   /// The feed is read by region and ordered by publication date on every
   /// request, so that pair is the index that matters.
@@ -107,20 +107,53 @@ model UpdateItem {
 }
 
 model IngestionLog {
-  id          String    @id @default(cuid())
-  startedAt   DateTime  @default(now())
-  finishedAt  DateTime?
+  id           String    @id @default(cuid())
+  startedAt    DateTime  @default(now())
+  finishedAt   DateTime?
   /// Null for a whole-schedule run; set when a single source was read.
-  sourceId    String?
-  source      Source?   @relation(fields: [sourceId], references: [id], onDelete: SetNull)
-  itemsSeen   Int       @default(0)
-  itemsStored Int       @default(0)
-  itemsSkipped Int      @default(0)
-  ok          Boolean   @default(true)
+  sourceId     String?
+  source       Source?   @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+  itemsSeen    Int       @default(0)
+  itemsStored  Int       @default(0)
+  itemsSkipped Int       @default(0)
+  ok           Boolean   @default(true)
   /// Truncated error message when a run fails. Kept short on purpose;
   /// this table is for observability, not for stack traces.
-  error       String?
+  error        String?
 
   @@index([startedAt(sort: Desc)])
   @@map("ingestion_log")
+}
+
+/// Glossary terms, mirrored from `src/content/glossary.ts` by
+/// `npm run db:seed:glossary`.
+///
+/// The authored file stays the source of truth: it is reviewable in a
+/// pull request, it renders with no database attached, and it is what
+/// the A-to-Z index is built from. This table exists so that search can
+/// be answered by Postgres full-text search rather than by shipping the
+/// corpus to the browser - which is the right trade at a few hundred
+/// entries even though it is not yet at forty-six.
+model GlossaryTerm {
+  id         String   @id @default(cuid())
+  slug       String   @unique
+  term       String
+  definition String
+  /// Alternate spellings and abbreviations, weighted into the search
+  /// document so "CNOT" finds "controlled-NOT".
+  aliases    String[] @default([])
+  /// The same aliases as one space-joined string.
+  ///
+  /// This exists because `array_to_string` is STABLE rather than
+  /// IMMUTABLE, and Postgres will not accept a non-immutable function in
+  /// an index expression. Indexing the joined text is what makes the
+  /// alias weighting available to the GIN index rather than forcing a
+  /// sequential scan. Written by the seed alongside `aliases`; never
+  /// edited independently of it.
+  aliasText  String   @default("")
+  category   String
+  updatedAt  DateTime @updatedAt
+
+  @@index([category])
+  @@map("glossary_terms")
 }
