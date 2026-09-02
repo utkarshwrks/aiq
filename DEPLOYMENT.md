@@ -31,13 +31,21 @@ live database.
 
    | Variable | Required | Notes |
    | --- | --- | --- |
-   | `NEXT_PUBLIC_SITE_URL` | Recommended | Canonical origin for metadata and the sitemap |
+   | `NEXT_PUBLIC_SITE_URL` | Recommended | Canonical origin for metadata and the sitemap. Set it once the production domain is known; until then the fallback in `src/lib/site.ts` is used |
    | `DATABASE_URL` | Optional | Without it the committed snapshot is served and reported as such |
+   | `REDIS_URL` | Optional | Caches the composed feed and glossary search for five minutes. Pointless without `DATABASE_URL`, since the snapshot path is not cached |
 
 3. Deploy.
 
-`prisma generate` runs through the `postinstall` hook, so no custom build
-command is needed.
+`vercel.json` runs `prisma generate` explicitly before `next build`. The
+`postinstall` hook does the same thing, but Vercel restores a cached
+`node_modules` on most builds and skips install scripts when it does, so
+the generate step cannot be left to it alone.
+
+**The feed will read "Committed snapshot" until a worker is running.**
+That is correct behaviour, not a broken deployment: Vercel hosts the
+application only. The ingestion worker is a long-running process with a
+cron schedule and cannot run as a serverless function - see section 3.
 
 **Note on `DATABASE_URL` and serverless.** If you point the application at
 Postgres, use a pooled connection string. Serverless functions open a
