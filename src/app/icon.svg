@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!--
+    The favicon: the CompassRose from src/components/ui/CompassRose.tsx,
+    reduced for a 16px render. The dashed bearing ring, the inner ring and
+    the intercardinal ticks are all dropped and the remaining opacities
+    raised, because at tab size they collapse into a smudge. What survives
+    is what identifies the mark: the ring, the cardinal spurs and the
+    north needle.
+  -->
+  <rect width="32" height="32" fill="#0A0F14"/>
+  <g stroke="#2fd9c4" fill="none" stroke-width="1.4">
+    <circle cx="16" cy="16" r="12.5" stroke-opacity="0.55"/>
+    <path d="M16 1.5v4M16 26.5v4M1.5 16h4M26.5 16h4" stroke-opacity="0.8" stroke-linecap="square"/>
+    <path d="M16 5.5l3.4 10.5h-6.8L16 5.5z" fill="#2fd9c4" stroke="none"/>
+    <path d="M16 26.5l-3.4-10.5h6.8L16 26.5z" stroke-opacity="0.55"/>
+  </g>
+</svg>
