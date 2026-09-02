@@ -6,6 +6,7 @@ import { RefreshCw } from 'lucide-react';
 import { UpdateRow } from './UpdateRow';
 import { InstrumentLink } from '@/components/ui/InstrumentLink';
 import { syncLabel } from '@/lib/relativeTime';
+import { useNow } from '@/hooks/useNow';
 import { TOPIC_LABELS, type Topic, type UpdateFeed } from '@/lib/updates/types';
 import { cn } from '@/lib/cn';
 
@@ -16,6 +17,8 @@ type UpdatePanelProps = {
   variant?: 'widget' | 'full';
   /** Rows shown per column in the widget form. */
   limit?: number;
+  /** Reference instant taken on the server so the first client render matches. */
+  now: number;
 };
 
 const REGIONS = [
@@ -58,6 +61,7 @@ export function UpdatePanel({
   initial,
   variant = 'widget',
   limit = 6,
+  now: serverNow,
 }: UpdatePanelProps) {
   const [tab, setTab] = useState<RegionKey>('global');
   const [topic, setTopic] = useState<Topic | 'ALL'>('ALL');
@@ -77,11 +81,12 @@ export function UpdatePanel({
 
   const feed = data ?? initial;
 
-  // One reference instant per feed revision, so a column of twenty
-  // timestamps cannot disagree with itself about what "now" is, and the
-  // whole panel does not re-time on every unrelated re-render.
-  // eslint-disable-next-line react-hooks/exhaustive-deps -- deliberately re-taken when the feed changes
-  const now = useMemo(() => Date.now(), [feed]);
+  // One reference instant for the whole panel, so a column of twenty
+  // timestamps cannot disagree with itself about what "now" is. It
+  // starts as the server's instant - taking it from Date.now() during
+  // render would make the server and client markup differ on every row
+  // - and moves to the client's clock once mounted.
+  const now = useNow(serverNow);
 
   const filter = (items: UpdateFeed['global']) => {
     const scoped = topic === 'ALL' ? items : items.filter((i) => i.topic === topic);

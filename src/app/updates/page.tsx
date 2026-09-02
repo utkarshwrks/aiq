@@ -21,6 +21,7 @@ export const revalidate = 600;
 
 export default async function UpdatesPage() {
   const feed = await getUpdateFeed(60);
+  const now = Date.now();
 
   return (
     <PageShell
@@ -46,7 +47,7 @@ export default async function UpdatesPage() {
         </div>
       }
     >
-      <UpdatePanel initial={feed} variant="full" />
+      <UpdatePanel initial={feed} variant="full" now={now} />
 
       <section className="mt-20" aria-labelledby="sources-heading">
         <div className="flex flex-col gap-4 border-b border-hairline pb-6 md:flex-row md:items-end md:justify-between">

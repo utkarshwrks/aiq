@@ -8,6 +8,7 @@ import { InstrumentLink } from '@/components/ui/InstrumentLink';
 import { ContourField } from '@/components/ui/ContourField';
 import type { IngestionStats } from '@/lib/updates/types';
 import { syncLabel } from '@/lib/relativeTime';
+import { useNow } from '@/hooks/useNow';
 
 /**
  * The hero.
@@ -29,7 +30,15 @@ const fetcher = async (url: string): Promise<IngestionStats> => {
   return (await response.json()) as IngestionStats;
 };
 
-export function HeroDeck({ initialStats }: { initialStats: IngestionStats }) {
+export function HeroDeck({
+  initialStats,
+  now: serverNow,
+}: {
+  initialStats: IngestionStats;
+  /** Reference instant taken on the server so the first client render matches. */
+  now: number;
+}) {
+  const now = useNow(serverNow);
   const { data } = useSWR<IngestionStats>('/api/stats', fetcher, {
     fallbackData: initialStats,
     revalidateOnFocus: false,
@@ -90,7 +99,7 @@ export function HeroDeck({ initialStats }: { initialStats: IngestionStats }) {
           </dl>
 
           <p className="data mt-3 text-[length:var(--text-2xs)] uppercase tracking-[0.12em] text-ink-faint">
-            {syncLabel(stats.lastSyncedAt)}
+            {syncLabel(stats.lastSyncedAt, now)}
             {stats.origin === 'snapshot' && ' / committed snapshot'}
           </p>
 

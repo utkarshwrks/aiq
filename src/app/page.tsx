@@ -22,10 +22,13 @@ export const revalidate = 600;
 
 export default async function CommandDeck() {
   const feed = await getUpdateFeed(24);
+  // One instant for the whole render, handed to both clients so their
+  // first paint matches this markup exactly.
+  const now = Date.now();
 
   return (
     <main id="main">
-      <HeroDeck initialStats={feed.stats} />
+      <HeroDeck initialStats={feed.stats} now={now} />
 
       <FoundationsStrip />
 
@@ -43,7 +46,7 @@ export default async function CommandDeck() {
           />
 
           <div className="mt-10">
-            <UpdatePanel initial={feed} variant="widget" limit={6} />
+            <UpdatePanel initial={feed} variant="widget" limit={6} now={now} />
           </div>
         </div>
       </section>
