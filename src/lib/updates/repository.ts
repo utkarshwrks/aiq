@@ -1,4 +1,5 @@
 import { hasDatabase, prisma } from '@/lib/prisma';
+import { cached, FEED_TTL_SECONDS } from '@/lib/cache';
 import { FEED_SOURCE_COUNT, SOURCE_COUNT } from '@/lib/sources';
 import { snapshotFeed, snapshotStats } from './snapshotSource';
 import type { IngestionStats, UpdateFeed, UpdateItem } from './types';
@@ -112,26 +113,36 @@ async function databaseFeed(limit: number): Promise<UpdateFeed> {
 }
 
 export async function getUpdateFeed(limit = DEFAULT_LIMIT): Promise<UpdateFeed> {
+  // The snapshot is read from a committed file. Caching it would put a
+  // network hop in front of a local read to save nothing.
   if (!hasDatabase()) return snapshotFeed(limit);
 
-  try {
-    const feed = await databaseFeed(limit);
-    // An empty database is not a working database from the reader's
-    // point of view. Before the first ingestion run completes, the
-    // snapshot is the better answer.
-    if (feed.global.length === 0 && feed.india.length === 0) {
+  // Keyed by limit, because the homepage widget and the full plate ask
+  // for different depths and must not be served each other's answer.
+  return cached(`feed:v1:${limit}`, FEED_TTL_SECONDS, async () => {
+    try {
+      const feed = await databaseFeed(limit);
+      // An empty database is not a working database from the reader's
+      // point of view. Before the first ingestion run completes, the
+      // snapshot is the better answer.
+      if (feed.global.length === 0 && feed.india.length === 0) {
+        return snapshotFeed(limit);
+      }
+      return feed;
+    } catch (error) {
+      console.error('[updates] database read failed, serving snapshot', error);
       return snapshotFeed(limit);
     }
-    return feed;
-  } catch (error) {
-    console.error('[updates] database read failed, serving snapshot', error);
-    return snapshotFeed(limit);
-  }
+  });
 }
 
 export async function getIngestionStats(): Promise<IngestionStats> {
   if (!hasDatabase()) return snapshotStats();
 
+  return cached('stats:v1', FEED_TTL_SECONDS, () => readStats());
+}
+
+async function readStats(): Promise<IngestionStats> {
   try {
     const [lastRun, total] = await Promise.all([
       prisma.ingestionLog.findFirst({

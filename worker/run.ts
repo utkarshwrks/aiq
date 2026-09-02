@@ -10,6 +10,7 @@ import {
   syncSources,
 } from './persist';
 import { buildSnapshot, writeSnapshot } from './snapshot';
+import { invalidateFeedCache } from './cache';
 
 /**
  * One ingestion run, invokable from the CLI or from the scheduler.
@@ -120,6 +121,13 @@ export async function main(): Promise<void> {
     // success with an empty result set.
     if (report.failed.length === report.sources) {
       process.exitCode = 1;
+    }
+
+    // Rows are on disk; drop the warm feed so readers see them now
+    // rather than at the end of the TTL. Never after a dry run, which
+    // wrote nothing.
+    if (!options.dry && report.persisted) {
+      await invalidateFeedCache();
     }
   } finally {
     await disconnect();
