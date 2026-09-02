@@ -13,6 +13,7 @@ import {
   NODE_KIND_LABELS,
 } from '@/content/india';
 import { buildReferences, REFERENCES } from '@/content/references';
+import { Figure, MissionStructure } from '@/components/diagrams';
 
 export const metadata: Metadata = {
   title: 'India',
@@ -111,6 +112,14 @@ export default function IndiaPage() {
           </dl>
         </div>
       </section>
+
+      <Figure
+        label="Fig. / How the mission is organised"
+        caption="The mission funds four thematic hubs at institutions that already do the work, rather than building one new national laboratory. That choice is why the register below is a map of existing campuses."
+        className="mt-12"
+      >
+        <MissionStructure />
+      </Figure>
 
       {/* --- The register --------------------------------------------- */}
       <div className="mt-20 space-y-14">

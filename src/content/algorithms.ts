@@ -99,7 +99,6 @@ export const ALGORITHMS: readonly Algorithm[] = [
       'Find the lowest eigenvalue of a Hamiltonian - physically, the ground-state energy of a molecule or material. This is the calculation at the centre of computational chemistry, and it is exactly the problem Feynman had in mind when he proposed quantum computers.',
     mechanism: [
       'A parameterised circuit - the ansatz - prepares a trial state. The quantum device measures the expectation value of the Hamiltonian in that state, which the variational principle guarantees is an upper bound on the true ground-state energy. A classical optimiser adjusts the parameters and the loop repeats.',
-      'The division of labour is the point. The quantum computer does only the one thing it is uniquely good at - preparing and measuring an entangled state - while the optimisation, which classical computers handle well, stays classical. That keeps the quantum circuits shallow enough to run on noisy hardware.',
       'The weaknesses are equally structural. Choosing an ansatz expressive enough to contain the ground state but shallow enough to run is unsolved in general; the number of measurements needed to estimate an energy to chemical accuracy is very large; and the optimisation landscape suffers from barren plateaus where gradients vanish exponentially with system size.',
     ],
     complexity: {

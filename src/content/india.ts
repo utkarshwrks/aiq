@@ -12,6 +12,11 @@ import type { ReferenceKey } from './references';
 export type IndiaNode = {
   slug: string;
   name: string;
+  /** Compact form for diagrams and dense tables, where the full legal
+   *  name does not fit. Hubs only. */
+  short?: string;
+  /** The hub's theme in one or two words, for the mission diagram. */
+  theme?: string;
   kind: 'hub' | 'institution' | 'company' | 'agency';
   city: string;
   lat: number;
@@ -46,6 +51,8 @@ export const INDIA_NODES: readonly IndiaNode[] = [
   {
     slug: 'iisc-bengaluru',
     name: 'Indian Institute of Science',
+    short: 'IISc Bengaluru',
+    theme: 'Computing',
     kind: 'hub',
     city: 'Bengaluru',
     lat: 13.02,
@@ -60,6 +67,8 @@ export const INDIA_NODES: readonly IndiaNode[] = [
   {
     slug: 'iit-madras',
     name: 'Indian Institute of Technology Madras',
+    short: 'IIT Madras',
+    theme: 'Communication',
     kind: 'hub',
     city: 'Chennai',
     lat: 12.99,
@@ -74,6 +83,8 @@ export const INDIA_NODES: readonly IndiaNode[] = [
   {
     slug: 'iit-bombay',
     name: 'Indian Institute of Technology Bombay',
+    short: 'IIT Bombay',
+    theme: 'Sensing',
     kind: 'hub',
     city: 'Mumbai',
     lat: 19.13,
@@ -88,6 +99,8 @@ export const INDIA_NODES: readonly IndiaNode[] = [
   {
     slug: 'iit-delhi',
     name: 'Indian Institute of Technology Delhi',
+    short: 'IIT Delhi',
+    theme: 'Materials',
     kind: 'hub',
     city: 'New Delhi',
     lat: 28.55,

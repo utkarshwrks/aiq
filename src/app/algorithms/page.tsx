@@ -8,6 +8,7 @@ import { QuantumCircuitScene } from '@/components/3d/lazy';
 import { DeferredScene } from '@/components/3d/DeferredScene';
 import { ALGORITHMS, COMPLEXITY_LABELS } from '@/content/algorithms';
 import { buildReferences, REFERENCES, type ReferenceKey } from '@/content/references';
+import { ConceptFigure } from '@/components/diagrams';
 
 export const metadata: Metadata = {
   title: 'Algorithms',
@@ -93,6 +94,8 @@ export default function AlgorithmsPage() {
                     </p>
                   ))}
                 </div>
+
+                <ConceptFigure slug={algorithm.slug} className="mt-8" />
 
                 <h3 className="label-caps mt-8">Why it matters</h3>
                 <p className="mt-3 text-[length:var(--text-base)] leading-relaxed text-ink-muted">

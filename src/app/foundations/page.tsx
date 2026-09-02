@@ -3,6 +3,7 @@ import { PageShell } from '@/components/layout/PageShell';
 import { Citation } from '@/components/ui/Citation';
 import { ReferenceList } from '@/components/ui/ReferenceList';
 import { Panel } from '@/components/ui/Panel';
+import { ConceptFigure } from '@/components/diagrams';
 import { InstrumentLink } from '@/components/ui/InstrumentLink';
 import { BlochSphere } from '@/components/3d/lazy';
 import { DeferredScene } from '@/components/3d/DeferredScene';
@@ -119,6 +120,8 @@ export default function FoundationsPage() {
                   </p>
                 ))}
               </div>
+
+              <ConceptFigure slug={concept.slug} className="mt-9" />
 
               <Panel bracketed className="mt-8 border-amber/20 bg-amber/[0.03] p-6">
                 <p className="label-caps !text-amber/80">Commonly mis-stated</p>

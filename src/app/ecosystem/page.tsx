@@ -7,6 +7,7 @@ import { InstrumentLink } from '@/components/ui/InstrumentLink';
 import { ReferenceList } from '@/components/ui/ReferenceList';
 import { MODALITIES, PLAYERS, playersByModality } from '@/content/ecosystem';
 import { buildReferences } from '@/content/references';
+import { Figure, ModalityTradeoffs } from '@/components/diagrams';
 
 export const metadata: Metadata = {
   title: 'Ecosystem',
@@ -37,6 +38,14 @@ export default function EcosystemPage() {
         </div>
       }
     >
+      <Figure
+        label="Fig. / What each approach buys and pays"
+        caption="Relative standing, not measurement: the pips are read off each modality's own trade-off below, and they move with every hardware generation. Annealing is omitted because it does not run gate-model algorithms at all. What the shape shows is that none of these approaches leads on all four constraints, which is why the field has not converged on one architecture."
+        className="mb-16"
+      >
+        <ModalityTradeoffs />
+      </Figure>
+
       <div className="space-y-16">
         {groups.map(({ modality, players }) => {
           const info = MODALITIES[modality];
