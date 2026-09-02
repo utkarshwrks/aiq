@@ -4,6 +4,7 @@ import { Tag } from '@/components/ui/Tag';
 import { Citation } from '@/components/ui/Citation';
 import { ReferenceList } from '@/components/ui/ReferenceList';
 import { Readout } from '@/components/ui/Readout';
+import { TimelineSequence } from '@/components/marketing/TimelineSequence';
 import { ERA_LABELS, MILESTONES, byDecade } from '@/content/timeline';
 import { buildReferences, REFERENCES } from '@/content/references';
 
@@ -45,7 +46,9 @@ export default function TimelinePage() {
         </div>
       }
     >
-      <div className="space-y-16">
+      <TimelineSequence milestones={MILESTONES} />
+
+      <div className="mt-20 space-y-16">
         {decades.map(({ decade, items }) => (
           <section key={decade} id={decade} className="scroll-mt-24">
             <div className="mb-8 flex items-center gap-5">
