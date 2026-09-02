@@ -33,6 +33,7 @@ export function EntanglementParticles({
     <div className={cn('relative size-full', className)}>
       <SceneFrame
         subject="entangled pair"
+        testId="scene-entanglement"
         description="Two clusters of particles either side of a bundle of connecting arcs. Perturbing one cluster changes both, and paired particles always carry opposite spins."
         fallback={<EntanglementStill />}
         camera={{ position: [0, 0.35, 4.2], fov: 42 }}

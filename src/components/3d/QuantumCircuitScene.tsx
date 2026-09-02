@@ -81,6 +81,7 @@ export function QuantumCircuitScene({
       <div className="relative min-h-0 flex-1">
         <SceneFrame
           subject="quantum circuit"
+          testId="scene-circuit"
           description={`Three-dimensional rendering of the ${active.name} circuit. ${active.summary}`}
           fallback={
             <div className="flex size-full items-center justify-center p-8">

@@ -3,6 +3,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { useFrame } from '@react-three/fiber';
+import { mulberry32 } from '@/lib/prng';
+import { useFrozen, FROZEN_TIME } from './frozen';
 import {
   ENTANGLEMENT_FRAGMENT,
   ENTANGLEMENT_VERTEX,
@@ -38,17 +40,23 @@ export function EntanglementSceneGraph({
   const [target, setTarget] = useState(0);
   const current = useRef(0);
 
-  // Seeds are generated once. Both clusters read the same array, which is
-  // precisely how the pairing is enforced.
+  const frozen = useFrozen();
+
+  // Seeds are generated once, from a fixed seed. Both clusters read the
+  // same array, which is precisely how the pairing is enforced; the
+  // determinism additionally means the field is laid out identically on
+  // every load rather than rearranging itself between visits.
   const { seeds, clusters } = useMemo(() => {
     const total = count * 2;
     const seedArray = new Float32Array(total * 3);
     const clusterArray = new Float32Array(total);
 
+    const random = mulberry32(0x5eed);
+
     for (let i = 0; i < count; i += 1) {
-      const sx = Math.random();
-      const sy = Math.random();
-      const sz = Math.random();
+      const sx = random();
+      const sy = random();
+      const sz = random();
 
       // Left member.
       seedArray[i * 3] = sx;
@@ -132,6 +140,14 @@ export function EntanglementSceneGraph({
   useFrame((_, delta) => {
     const mat = material.current;
     if (!mat) return;
+
+    // Frozen: pin the phase instead of advancing it, so the one frame
+    // that is drawn is the same frame every time.
+    if (frozen) {
+      mat.uniforms['uTime']!.value = FROZEN_TIME;
+      mat.uniforms['uPerturb']!.value = 0;
+      return;
+    }
 
     mat.uniforms['uTime']!.value += delta;
 

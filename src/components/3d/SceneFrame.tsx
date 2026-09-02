@@ -1,7 +1,8 @@
 'use client';
 
-import { Suspense, type ReactNode } from 'react';
+import { Suspense, useState, type ReactNode } from 'react';
 import { Canvas, type CanvasProps } from '@react-three/fiber';
+import { FrozenContext, useFrozenFromUrl } from './frozen';
 import { cn } from '@/lib/cn';
 import { CalibrationLoader } from '@/components/ui/CalibrationLoader';
 import { useInView } from '@/hooks/useInView';
@@ -29,6 +30,11 @@ type SceneFrameProps = {
    * ambient animation pass 'always'.
    */
   frameloop?: 'always' | 'demand';
+  /**
+   * Stable handle for the visual regression suite. Also the element
+   * that carries `data-frozen` once a deterministic frame has drawn.
+   */
+  testId?: string;
 };
 
 /**
@@ -53,13 +59,20 @@ export function SceneFrame({
   camera = { position: [2.6, 1.9, 2.6], fov: 42 },
   dpr = [1, 2],
   frameloop = 'always',
+  testId,
 }: SceneFrameProps) {
   const reduced = useReducedMotion();
+  const frozen = useFrozenFromUrl();
+  const [drawn, setDrawn] = useState(false);
   const { ref, inView } = useInView<HTMLDivElement>({ rootMargin: '240px' });
 
   return (
     <div
       ref={ref}
+      {...(testId ? { 'data-testid': testId } : {})}
+      // The suite waits on this rather than on a timeout: it is the
+      // scene's own statement that a deterministic frame is on screen.
+      data-frozen={frozen && (drawn || reduced) ? 'true' : 'false'}
       className={cn('relative size-full overflow-hidden bg-inset', className)}
     >
       {reduced ? (
@@ -79,12 +92,17 @@ export function SceneFrame({
               // tone mapping would wash the accent colours out.
               toneMapping: 0,
             }}
-            frameloop={frameloop}
+            // Frozen scenes render on demand only, so nothing advances
+            // between the first frame and the screenshot.
+            frameloop={frozen ? 'demand' : frameloop}
+            onCreated={() => setDrawn(true)}
             aria-label={description}
             role="img"
             className="size-full"
           >
-            {children}
+            <FrozenContext.Provider value={frozen}>
+              {children}
+            </FrozenContext.Provider>
           </Canvas>
         </Suspense>
       ) : (

@@ -82,6 +82,7 @@ export function BlochSphere({
       <div className="relative min-h-0 flex-1">
         <SceneFrame
           subject="Bloch sphere"
+          testId="scene-bloch"
           description="Interactive Bloch sphere. A teal state vector points from the centre of a wireframe globe to a point on its surface; amber and violet arcs mark the polar and azimuthal angles."
           fallback={<BlochSphereStill />}
           camera={{ position: [2.4, 1.7, 2.4], fov: 40 }}

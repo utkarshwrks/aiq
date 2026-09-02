@@ -3,6 +3,7 @@
 import { useMemo, useRef } from 'react';
 import * as THREE from 'three';
 import { useFrame } from '@react-three/fiber';
+import { useFrozen, FROZEN_TIME } from './frozen';
 import { Line, Html, OrbitControls } from '@react-three/drei';
 import type { Circuit } from '@/lib/circuits';
 import { CircuitGate } from './CircuitGate';
@@ -56,8 +57,10 @@ export function QuantumCircuitSceneGraph({
 
   const cycle = duration + dwell;
 
+  const frozen = useFrozen();
+
   useFrame(({ clock }) => {
-    const t = clock.getElapsedTime() % cycle;
+    const t = (frozen ? FROZEN_TIME : clock.getElapsedTime()) % cycle;
     // Progress holds at 1 during the dwell so the last gate stays lit
     // briefly before the run restarts, rather than snapping dark.
     const progress = t < duration ? t / duration : 1;

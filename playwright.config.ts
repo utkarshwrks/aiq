@@ -25,12 +25,12 @@ export default defineConfig({
     {
       name: 'desktop',
       use: { ...devices['Desktop Chrome'], viewport: { width: 1440, height: 900 } },
-      testIgnore: /reduced-motion\.spec\.ts/,
+      testIgnore: [/reduced-motion\.spec\.ts/, /visual\.spec\.ts/],
     },
     {
       name: 'mobile',
       use: { ...devices['Pixel 7'] },
-      testIgnore: /reduced-motion\.spec\.ts/,
+      testIgnore: [/reduced-motion\.spec\.ts/, /visual\.spec\.ts/],
     },
     {
       // A dedicated project for the reduced-motion branch, since it
@@ -43,6 +43,29 @@ export default defineConfig({
         contextOptions: { reducedMotion: 'reduce' },
       },
       testMatch: /reduced-motion\.spec\.ts/,
+    },
+    {
+      // Visual regression runs in one project only, at one viewport, with
+      // the GPU flags pinned. Reference images are expensive to maintain
+      // and worthless if the renderer differs between the run that wrote
+      // them and the run that checks them.
+      name: 'visual',
+      use: {
+        ...devices['Desktop Chrome'],
+        viewport: { width: 1280, height: 800 },
+        // A fixed device pixel ratio: a retina capture compared against a
+        // non-retina reference fails on every pixel for no reason.
+        deviceScaleFactor: 1,
+        launchOptions: {
+          args: [
+            '--use-gl=angle',
+            '--enable-webgl',
+            '--ignore-gpu-blocklist',
+            '--hide-scrollbars',
+          ],
+        },
+      },
+      testMatch: /visual\.spec\.ts/,
     },
   ],
 
