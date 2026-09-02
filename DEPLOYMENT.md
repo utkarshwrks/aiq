@@ -10,6 +10,20 @@ the worker switched off entirely.
 
 ### Vercel
 
+`vercel.json` sets the framework, the install and build commands, and
+cache headers for the icon and the self-hosted fonts. It deliberately
+does **not** pin a region: single-region placement differs by plan, and
+an India-facing product wants `bom1` (Mumbai), which is set once in
+Project Settings > Functions rather than in the file, where it would fail
+a deploy on a plan that does not allow it.
+
+No environment variable is required to deploy. With none set, the build
+succeeds and the site serves the committed ingestion snapshot - which is
+the intended preview-deployment experience. `prisma generate` runs
+without `DATABASE_URL` present; only `prisma db push` and the seed need a
+live database.
+
+
 1. Import the repository. Vercel detects Next.js; no build settings need
    changing.
 2. Set environment variables (Project → Settings → Environment
@@ -63,6 +77,34 @@ npx prisma migrate deploy                # applying, in an environment
 Postgres 14 or later. The schema is small; the `update_items` table grows
 by a few hundred rows per day and is pruned to a 180-day horizon on every
 run.
+
+Then seed the glossary mirror, which also installs the GIN index that
+full-text search reads:
+
+```bash
+npm run db:seed:glossary
+```
+
+Re-run it after any edit to `src/content/glossary.ts`. It upserts by slug
+and deletes anything no longer in the file, so it is safe to run at every
+deploy; wiring it into your release step is the reliable option.
+
+## 2b. Redis
+
+Optional. Set `REDIS_URL` on both the application and the worker and the
+composed feed, the ingestion stats and glossary search results are cached
+for five minutes; the worker drops those keys at the end of each run so
+new items appear immediately rather than at the end of the TTL.
+
+```bash
+export REDIS_URL="rediss://default:password@host:6379"
+```
+
+Leave it unset and every read goes to Postgres, or to the committed
+snapshot. A configured but unreachable Redis is logged and read through -
+it will not take the site down. Any managed Redis works; the cache holds
+a few kilobytes and needs no persistence, since everything in it is
+derived and re-derivable.
 
 ## 3. The ingestion worker
 

@@ -55,6 +55,16 @@ npm run ingest                      # one ingestion pass
 With `DATABASE_URL` set, the panel reads live rows and its status bar
 reports "Live index".
 
+### Optional: Redis
+
+```bash
+export REDIS_URL="redis://localhost:6379"
+```
+
+Caches the composed Update Panel feed and glossary search results for
+five minutes. Entirely optional - with it unset the application reads
+Postgres, or the committed snapshot, directly.
+
 ### Running the ingestion worker
 
 ```bash
@@ -78,9 +88,12 @@ nothing anywhere.
 | `npm run lint` | ESLint, flat config, `next/core-web-vitals` |
 | `npm run typecheck` | Type-checks the application **and** the worker |
 | `npm test` | Vitest unit suite |
-| `npm run test:e2e` | Playwright, across desktop, mobile and reduced motion |
+| `npm run test:e2e` | Playwright, across desktop, mobile, reduced motion and visual |
+| `npm run test:visual` | Visual regression for the 3D scenes and the timeline sequence |
+| `npm run test:visual:update` | Rewrite the reference screenshots after a deliberate change |
 | `npm run ingest` | One ingestion pass |
 | `npm run worker` | The scheduled ingestion service |
+| `npm run db:seed:glossary` | Mirror the glossary into Postgres for full-text search |
 | `npm run capture` | Headless screenshot of a route, for checking the 3D scenes |
 
 ## Project layout
@@ -95,8 +108,9 @@ src/
     panels/       Update panel, glossary index
     ui/           Primitives: Container, Panel, Tag, Readout, Citation, ...
   content/        The written material and the ingestion snapshot
-  hooks/          useReducedMotion, useInView
-  lib/            Site manifest, source registry, quantum maths, repository
+  hooks/          useReducedMotion, useInView, useNow
+  lib/            Site manifest, source registry, quantum maths, repository,
+                  TTL cache, glossary full-text search
   styles/         theme.css (tokens), motifs.css (visual grammar), globals.css
 worker/
   scrapers/       One adapter per source kind, behind one polite HTTP layer

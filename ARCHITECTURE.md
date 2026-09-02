@@ -200,6 +200,41 @@ reader is never quietly looking at stale data believing it is live.
 Both backends apply the same ordering, so switching between them does not
 reorder the feed.
 
+In front of the database backend sits a TTL cache, `src/lib/cache.ts`.
+The composed feed and the ingestion stats are held in Redis for five
+minutes under versioned keys (`feed:v1:<limit>`, `stats:v1`), keyed by
+limit because the homepage widget and the full plate ask for different
+depths. The worker deletes those keys at the end of a run that persisted
+anything, so a completed ingestion is visible immediately rather than at
+the end of the window.
+
+Redis is optional and non-fatal by construction: unset `REDIS_URL` and
+every call runs its loader; a configured but unreachable Redis logs once
+and reads through. The snapshot path is deliberately not cached, since
+that would put a network hop in front of a local file read.
+
+### 4.1 Glossary search
+
+`src/lib/glossary/search.ts` follows the same two-backend shape.
+Postgres full-text search ranks with `ts_rank` over a weighted document -
+headword `A`, aliases `B`, definition `C` - so a term match outranks a
+definition match. Queries are parsed with `websearch_to_tsquery`, which
+accepts what people actually type and, unlike `to_tsquery`, does not
+throw on malformed input.
+
+The table is a projection of `src/content/glossary.ts`, rebuilt by
+`npm run db:seed:glossary`. The authored file stays the source of truth:
+it is reviewable in a pull request and it renders with no database
+attached. The seed also installs the GIN index over the same expression
+the query builds, without which Postgres recomputes every row's tsvector
+on every search.
+
+The client renders its own scored match immediately and replaces the
+ordering when the server answers, so the field is instant and still
+correct. With no database configured, the endpoint answers from that same
+local scoring - search is not the one feature that stops working without
+Postgres.
+
 ## 5. Rendering
 
 Pages are React Server Components. The Update Panel is server-rendered
@@ -221,17 +256,50 @@ than slowing it, the Suspense boundary shows a themed calibration state,
 and the canvas carries a text alternative because a WebGL surface is
 opaque to assistive technology.
 
+### 5.1 Figures
+
+Explanatory imagery lives in `src/components/diagrams/` as authored
+inline SVG - twelve figures, no raster assets and no stock photography.
+`Figure.tsx` owns the frame and a shared constant block (`D`) so that
+twelve drawings cannot drift into twelve line weights; `registry.tsx`
+maps a content slug to its figure, which keeps the content files free of
+component imports and lets a concept render without one.
+
+The figures are not decoration. Each replaced prose that used to carry
+the same point, which is why every caption is written to stand on its own
+- it is the drawing's text alternative as much as its caption, and the
+`role="img"` label on each SVG carries the same description.
+
+Two of them make quantitative-looking claims and are deliberately
+unnumbered: see DECISIONS entry 22.
+
 ## 6. Testing
 
 - **Unit** (Vitest): the ingestion pipeline, the quantum maths, the
   circuit layout. The pipeline is testable without a network or a
   database because `ingestSource` returns items rather than persisting
   them.
-- **End-to-end** (Playwright): three projects — desktop, mobile, and a
+- **End-to-end** (Playwright): four projects — desktop, mobile, a
   dedicated reduced-motion project that asserts every 3D scene is
-  actually replaced rather than merely slowed. The emoji constraint is
-  asserted by scanning every route's rendered text on every run.
-- **Visual** (`scripts/capture.mjs`): headless render of a route with
-  console errors reported. Scenes cannot be asserted on meaningfully in a
-  unit test, so this is how they get checked. It found a GLSL precision
-  mismatch that silently prevented the particle shader from ever linking.
+  actually replaced rather than merely slowed, and `visual` below. The
+  emoji constraint is asserted by scanning every route's rendered text on
+  every run.
+- **Visual regression** (`npm run test:visual`): reference screenshots of
+  all three 3D scenes and the timeline sequence. A Bloch sphere either
+  renders a sphere with a vector on it or it renders a black square, and
+  only a pixel comparison tells the two apart.
+
+  Determinism is the whole problem, and it is solved by stopping the
+  clock rather than by waiting longer. `?frozen=1` pins every scene to a
+  fixed animation phase and switches its render loop to `demand`; the
+  scene sets `data-frozen="true"` once a deterministic frame has drawn,
+  and the suite waits on that rather than on a timeout. Particle seeds
+  come from a fixed PRNG. The project runs at one viewport with
+  `deviceScaleFactor: 1` and pinned GPU flags.
+
+  Update references with `npm run test:visual:update`, and read the diff
+  before accepting it.
+- **Manual capture** (`scripts/capture.mjs`): headless render of a route
+  with console errors reported, for looking at something rather than
+  asserting it. It found a GLSL precision mismatch that silently
+  prevented the particle shader from ever linking.
